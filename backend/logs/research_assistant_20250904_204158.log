@@ -1,1 +1,140 @@
 2025-09-04 20:41:58,507 - DEBUG - Using selector: SelectSelector
+2025-09-04 20:52:31,395 - INFO - Received message: Gardening Pesticides , workflow_step: search
+2025-09-04 20:52:31,399 - INFO - New workflow search for: Gardening Pesticides 
+2025-09-04 20:52:31,408 - INFO - Searching arXiv: 'Gardening Pesticides ' (results 1-8)
+2025-09-04 20:52:31,461 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Gardening+Pesticides+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 20:52:31,483 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 20:52:33,959 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Gardening+Pesticides+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 58291
+2025-09-04 20:52:34,662 - INFO - Got first page: 100 of 541 total results
+2025-09-04 20:52:34,672 - INFO - Found 8 papers (more available: True)
+2025-09-04 20:55:21,109 - INFO - Received message: Mathematics algebra, workflow_step: search
+2025-09-04 20:55:21,133 - INFO - New workflow search for: Mathematics algebra
+2025-09-04 20:55:21,148 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-8)
+2025-09-04 20:55:21,149 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 20:55:21,163 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 20:55:24,480 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25459
+2025-09-04 20:55:25,155 - INFO - Got first page: 100 of 361261 total results
+2025-09-04 20:55:25,160 - INFO - Found 8 papers (more available: True)
+2025-09-04 20:55:37,147 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 20:55:37,153 - INFO - Starting download: 2 papers, field=Mathematics, topic=algebra
+2025-09-04 20:55:37,173 - INFO - Starting download: 2 papers
+2025-09-04 20:55:37,179 - INFO - Created download directory: E:\Next JS\researchbot\papers\Mathematics\algebra
+2025-09-04 20:55:37,194 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Mathematics\algebra
+2025-09-04 20:55:37,582 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 20:55:37,591 - INFO - Download completed: 0 successful downloads
+2025-09-04 20:55:37,593 - INFO - Download with references completed successfully
+2025-09-04 21:03:23,388 - INFO - Received message: Physics mechanics, workflow_step: search
+2025-09-04 21:03:23,392 - INFO - New workflow search for: Physics mechanics
+2025-09-04 21:03:23,397 - INFO - Searching arXiv: 'Physics mechanics' (results 1-8)
+2025-09-04 21:03:23,400 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Physics+mechanics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 21:03:23,426 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 21:03:26,805 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Physics+mechanics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 28101
+2025-09-04 21:03:27,592 - INFO - Got first page: 100 of 1146438 total results
+2025-09-04 21:03:27,597 - INFO - Found 8 papers (more available: True)
+2025-09-04 21:04:24,266 - INFO - Received message: Biology genetics, workflow_step: search
+2025-09-04 21:04:24,267 - INFO - New workflow search for: Biology genetics
+2025-09-04 21:04:24,268 - INFO - Searching arXiv: 'Biology genetics' (results 1-8)
+2025-09-04 21:04:24,269 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 21:04:24,293 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 21:04:25,966 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 48598
+2025-09-04 21:04:26,248 - INFO - Got first page: 100 of 23039 total results
+2025-09-04 21:04:26,250 - INFO - Found 8 papers (more available: True)
+2025-09-04 21:04:51,678 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 21:04:51,680 - INFO - Starting download: 1 papers, field=Biology, topic=genetics
+2025-09-04 21:04:51,698 - INFO - Starting download: 1 papers
+2025-09-04 21:04:51,713 - INFO - Created download directory: E:\Next JS\researchbot\papers\Biology\genetics
+2025-09-04 21:04:51,718 - INFO - Downloading 1 papers to E:\Next JS\researchbot\papers\Biology\genetics
+2025-09-04 21:04:51,772 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 21:04:51,773 - INFO - Download completed: 0 successful downloads
+2025-09-04 21:04:51,774 - INFO - Download with references completed successfully
+2025-09-04 21:05:26,354 - INFO - Received message: Mathematics optimization, workflow_step: search
+2025-09-04 21:05:26,356 - INFO - New workflow search for: Mathematics optimization
+2025-09-04 21:05:26,358 - INFO - Searching arXiv: 'Mathematics optimization' (results 1-8)
+2025-09-04 21:05:26,359 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+optimization&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 21:05:26,362 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 21:05:27,591 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+optimization&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 765
+2025-09-04 21:05:27,602 - INFO - Got first page: 1 of 470521 total results
+2025-09-04 21:05:27,603 - INFO - Sleeping: 2.991678 seconds
+2025-09-04 21:05:30,603 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+optimization&id_list=&sortBy=relevance&sortOrder=descending&start=1&max_results=100
+2025-09-04 21:05:31,649 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+optimization&id_list=&sortBy=relevance&sortOrder=descending&start=1&max_results=100 HTTP/1.1" 200 34717
+2025-09-04 21:05:32,004 - INFO - Found 8 papers (more available: True)
+2025-09-04 21:05:47,870 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 21:05:47,871 - INFO - Starting download: 1 papers, field=Mathematics, topic=optimization
+2025-09-04 21:05:47,872 - INFO - Starting download: 1 papers
+2025-09-04 21:05:47,873 - INFO - Created download directory: E:\Next JS\researchbot\papers\Mathematics\optimization
+2025-09-04 21:05:47,874 - INFO - Downloading 1 papers to E:\Next JS\researchbot\papers\Mathematics\optimization
+2025-09-04 21:05:47,876 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 21:05:47,876 - INFO - Download completed: 0 successful downloads
+2025-09-04 21:05:47,882 - INFO - Download with references completed successfully
+2025-09-04 21:35:20,938 - INFO - Received message: Biology evolution, workflow_step: search
+2025-09-04 21:35:21,166 - INFO - New workflow search for: Biology evolution
+2025-09-04 21:35:21,443 - INFO - Searching arXiv: 'Biology evolution' (results 1-8)
+2025-09-04 21:35:21,676 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+evolution&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 21:35:21,829 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 21:35:24,136 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+evolution&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 50289
+2025-09-04 21:35:24,505 - INFO - Got first page: 100 of 171421 total results
+2025-09-04 21:35:24,508 - INFO - Found 8 papers (more available: True)
+2025-09-04 21:36:07,909 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 21:36:07,910 - INFO - Starting download: 1 papers, field=Biology, topic=evolution
+2025-09-04 21:36:07,915 - INFO - Starting download: 1 papers
+2025-09-04 21:36:07,928 - INFO - Created download directory: E:\Next JS\researchbot\papers\Biology\evolution
+2025-09-04 21:36:07,942 - INFO - Downloading 1 papers to E:\Next JS\researchbot\papers\Biology\evolution
+2025-09-04 21:36:08,035 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 21:36:08,037 - INFO - Download completed: 0 successful downloads
+2025-09-04 21:36:08,039 - INFO - Download with references completed successfully
+2025-09-04 21:41:26,060 - INFO - Received message: Fitness and health Diet and exercise plan, workflow_step: search
+2025-09-04 21:41:26,119 - INFO - New workflow search for: Fitness and health Diet and exercise plan
+2025-09-04 21:41:26,119 - INFO - Searching arXiv: 'Fitness and health Diet and exercise plan' (results 1-8)
+2025-09-04 21:41:26,120 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 21:41:26,260 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 21:41:29,254 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 7395
+2025-09-04 21:41:29,284 - INFO - Got first page: 10 of 2750552 total results
+2025-09-04 21:41:29,288 - INFO - Sleeping: 2.970466 seconds
+2025-09-04 21:41:32,264 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100
+2025-09-04 21:41:32,930 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100 HTTP/1.1" 200 449
+2025-09-04 21:41:32,940 - DEBUG - Got error (try 0): Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100)
+2025-09-04 21:41:32,942 - INFO - Sleeping: 2.989900 seconds
+2025-09-04 21:41:35,934 - INFO - Requesting page (first: False, try: 1): https://export.arxiv.org/api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100
+2025-09-04 21:41:36,033 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100 HTTP/1.1" 200 449
+2025-09-04 21:41:36,042 - DEBUG - Got error (try 1): Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100)
+2025-09-04 21:41:36,044 - INFO - Sleeping: 2.991444 seconds
+2025-09-04 21:41:39,039 - INFO - Requesting page (first: False, try: 2): https://export.arxiv.org/api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100
+2025-09-04 21:41:39,166 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100 HTTP/1.1" 200 449
+2025-09-04 21:41:39,175 - DEBUG - Got error (try 2): Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100)
+2025-09-04 21:41:39,177 - INFO - Sleeping: 2.991809 seconds
+2025-09-04 21:41:42,170 - INFO - Requesting page (first: False, try: 3): https://export.arxiv.org/api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100
+2025-09-04 21:41:42,303 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100 HTTP/1.1" 200 449
+2025-09-04 21:41:42,307 - DEBUG - Giving up (try 3): Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100)
+2025-09-04 21:41:42,308 - ERROR - Error searching arXiv: Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=Fitness+and+health+Diet+and+exercise+plan&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100)
+2025-09-04 21:42:05,566 - INFO - Received message: Business Sales and marketing, workflow_step: search
+2025-09-04 21:42:05,567 - INFO - New workflow search for: Business Sales and marketing
+2025-09-04 21:42:05,567 - INFO - Searching arXiv: 'Business Sales and marketing' (results 1-8)
+2025-09-04 21:42:05,568 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Business+Sales+and+marketing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 21:42:05,571 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 21:42:09,216 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Business+Sales+and+marketing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 61527
+2025-09-04 21:42:10,403 - INFO - Got first page: 100 of 2749844 total results
+2025-09-04 21:42:10,406 - INFO - Found 8 papers (more available: True)
+2025-09-04 21:42:44,190 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 21:42:44,193 - INFO - Starting download: 1 papers, field=Business, topic=Sales and marketing
+2025-09-04 21:42:44,208 - INFO - Starting download: 1 papers
+2025-09-04 21:42:44,228 - INFO - Created download directory: E:\Next JS\researchbot\papers\Business\Sales_and_marketing
+2025-09-04 21:42:44,236 - INFO - Downloading 1 papers to E:\Next JS\researchbot\papers\Business\Sales_and_marketing
+2025-09-04 21:42:44,390 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 21:42:44,573 - INFO - Download completed: 0 successful downloads
+2025-09-04 21:42:44,636 - INFO - Download with references completed successfully
+2025-09-04 21:43:21,912 - INFO - Received message: Business sales, workflow_step: search
+2025-09-04 21:43:21,912 - INFO - New workflow search for: Business sales
+2025-09-04 21:43:21,912 - INFO - Searching arXiv: 'Business sales' (results 1-8)
+2025-09-04 21:43:21,913 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Business+sales&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 21:43:21,916 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 21:43:23,847 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Business+sales&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 62227
+2025-09-04 21:43:25,099 - INFO - Got first page: 100 of 10911 total results
+2025-09-04 21:43:25,103 - INFO - Found 8 papers (more available: True)
+2025-09-04 21:44:08,699 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 21:44:08,703 - INFO - Starting download: 2 papers, field=Business, topic=sales
+2025-09-04 21:44:08,706 - INFO - Starting download: 2 papers
+2025-09-04 21:44:08,707 - INFO - Created download directory: E:\Next JS\researchbot\papers\Business\sales
+2025-09-04 21:44:08,720 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Business\sales
+2025-09-04 21:44:08,726 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 21:44:08,731 - INFO - Download completed: 0 successful downloads
+2025-09-04 21:44:08,732 - INFO - Download with references completed successfully
