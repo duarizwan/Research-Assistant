@@ -1,0 +1,10 @@
+2025-08-28 00:31:23,555 - INFO - Starting Enhanced Research Assistant
+2025-08-28 00:32:15,082 - INFO - Searching arXiv: 'Maths statistics' (results 1-10)
+2025-08-28 00:32:15,083 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Maths+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-28 00:32:17,934 - INFO - Got first page: 100 of 301112 total results
+2025-08-28 00:32:17,936 - INFO - Found 10 papers (more available: True)
+2025-08-28 00:33:23,530 - INFO - Downloading 2 papers to papers\maths\statistics
+2025-08-28 00:33:23,553 - INFO - Starting download: 2404.15905v2
+2025-08-28 00:33:23,556 - INFO - Starting download: 2501.13626v2
+2025-08-28 00:33:25,072 - INFO - Successfully downloaded 2404.15905v2 (180KB)
+2025-08-28 00:33:25,463 - INFO - Successfully downloaded 2501.13626v2 (407KB)

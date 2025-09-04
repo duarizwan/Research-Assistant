@@ -1,0 +1,25 @@
+2025-09-01 19:22:38,826 - DEBUG - Using selector: SelectSelector
+2025-09-01 19:31:13,659 - INFO - Received message: bioscience robotics, workflow_step: search
+2025-09-01 19:31:14,072 - INFO - New workflow search for: bioscience robotics
+2025-09-01 19:31:14,340 - INFO - Searching arXiv: 'bioscience robotics' (results 1-8)
+2025-09-01 19:31:14,598 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=bioscience+robotics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 19:31:14,852 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 19:31:17,685 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=bioscience+robotics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 52853
+2025-09-01 19:31:18,051 - INFO - Got first page: 100 of 55823 total results
+2025-09-01 19:31:18,057 - INFO - Found 8 papers (more available: True)
+2025-09-01 19:32:38,148 - INFO - Received message: BBA Finance, workflow_step: search
+2025-09-01 19:32:38,149 - INFO - New workflow search for: BBA Finance
+2025-09-01 19:32:38,150 - INFO - Searching arXiv: 'BBA Finance' (results 1-8)
+2025-09-01 19:32:38,162 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=BBA+Finance&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 19:32:38,165 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 19:32:39,887 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=BBA+Finance&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 54005
+2025-09-01 19:32:40,361 - INFO - Got first page: 100 of 24683 total results
+2025-09-01 19:32:40,365 - INFO - Found 8 papers (more available: True)
+2025-09-01 19:42:32,245 - INFO - Received message: accounts finance, workflow_step: search
+2025-09-01 19:42:32,270 - INFO - New workflow search for: accounts finance
+2025-09-01 19:42:32,283 - INFO - Searching arXiv: 'accounts finance' (results 1-8)
+2025-09-01 19:42:32,317 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=accounts+finance&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 19:42:32,322 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 19:42:34,120 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=accounts+finance&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 52367
+2025-09-01 19:42:34,525 - INFO - Got first page: 100 of 141752 total results
+2025-09-01 19:42:34,527 - INFO - Found 8 papers (more available: True)

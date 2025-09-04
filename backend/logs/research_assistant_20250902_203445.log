@@ -1,0 +1,9 @@
+2025-09-02 20:34:45,079 - DEBUG - Using selector: SelectSelector
+2025-09-02 20:37:59,724 - INFO - Received message: Biology genetics, workflow_step: search
+2025-09-02 20:37:59,741 - INFO - New workflow search for: Biology genetics
+2025-09-02 20:37:59,742 - INFO - Searching arXiv: 'Biology genetics' (results 1-8)
+2025-09-02 20:37:59,745 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-02 20:37:59,755 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-02 20:38:02,437 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 48594
+2025-09-02 20:38:02,935 - INFO - Got first page: 100 of 23006 total results
+2025-09-02 20:38:02,937 - INFO - Found 8 papers (more available: True)

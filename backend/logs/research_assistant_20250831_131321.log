@@ -1,0 +1,9 @@
+2025-08-31 13:13:21,055 - DEBUG - Using selector: SelectSelector
+2025-08-31 13:13:43,763 - INFO - Received message: bio photosynthesis, workflow_step: search
+2025-08-31 13:13:43,804 - INFO - New workflow search for: bio photosynthesis
+2025-08-31 13:13:43,804 - INFO - Searching arXiv: 'bio photosynthesis' (results 1-8)
+2025-08-31 13:13:43,806 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=bio+photosynthesis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 13:13:44,014 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 13:13:52,815 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=bio+photosynthesis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 60514
+2025-08-31 13:13:53,423 - INFO - Got first page: 100 of 4100 total results
+2025-08-31 13:13:53,427 - INFO - Found 8 papers (more available: True)

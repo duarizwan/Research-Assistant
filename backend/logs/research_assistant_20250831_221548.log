@@ -1,0 +1,26 @@
+2025-08-31 22:15:48,704 - DEBUG - Using selector: SelectSelector
+2025-08-31 22:17:03,063 - INFO - Received message: Physics astrophysics, workflow_step: search
+2025-08-31 22:17:03,147 - INFO - New workflow search for: Physics astrophysics
+2025-08-31 22:17:03,277 - INFO - Searching arXiv: 'Physics astrophysics' (results 1-8)
+2025-08-31 22:17:03,335 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 22:17:03,381 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 22:17:05,351 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 33934
+2025-08-31 22:17:05,743 - INFO - Got first page: 100 of 1253529 total results
+2025-08-31 22:17:05,745 - INFO - Found 8 papers (more available: True)
+2025-08-31 22:33:18,363 - INFO - Received message: Mathematics statistics, workflow_step: search
+2025-08-31 22:33:18,374 - INFO - New workflow search for: Mathematics statistics
+2025-08-31 22:33:18,375 - INFO - Searching arXiv: 'Mathematics statistics' (results 1-8)
+2025-08-31 22:33:18,380 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 22:33:18,393 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 22:33:21,125 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 22860
+2025-08-31 22:33:21,277 - INFO - Got first page: 100 of 413087 total results
+2025-08-31 22:33:21,279 - INFO - Found 8 papers (more available: True)
+2025-08-31 22:34:43,145 - INFO - Received message: download papers, workflow_step: download
+2025-08-31 22:34:43,146 - INFO - Starting download: 2 papers, field=Mathematics, topic=statistics, format=IEEE
+2025-08-31 22:34:43,155 - INFO - Starting download with references: 2 papers, format: IEEE
+2025-08-31 22:34:43,169 - INFO - Created download directory: E:\Next JS\researchbot\papers\Mathematics\statistics
+2025-08-31 22:34:43,175 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Mathematics\statistics
+2025-08-31 22:34:43,186 - DEBUG - Loaded metadata for 7 papers
+2025-08-31 22:34:43,203 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-08-31 22:34:43,212 - INFO - Download completed: 0 successful downloads
+2025-08-31 22:34:43,218 - INFO - Download with references completed successfully

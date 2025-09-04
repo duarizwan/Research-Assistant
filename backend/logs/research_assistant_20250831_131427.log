@@ -1,0 +1,3 @@
+2025-08-31 13:14:27,686 - DEBUG - Using selector: SelectSelector
+2025-08-31 13:14:56,659 - INFO - Received message: download papers, workflow_step: download
+2025-08-31 13:14:56,661 - WARNING - No papers info available in session

@@ -1,0 +1,17 @@
+2025-09-01 21:58:41,814 - DEBUG - Using selector: SelectSelector
+2025-09-01 22:41:24,700 - INFO - Received message: Physics particle physics, workflow_step: search
+2025-09-01 22:41:24,996 - INFO - New workflow search for: Physics particle physics
+2025-09-01 22:41:25,187 - INFO - Searching arXiv: 'Physics particle physics' (results 1-8)
+2025-09-01 22:41:25,312 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Physics+particle+physics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 22:41:25,438 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 22:41:27,950 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Physics+particle+physics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 33320
+2025-09-01 22:41:28,526 - INFO - Got first page: 100 of 1054868 total results
+2025-09-01 22:41:28,537 - INFO - Found 8 papers (more available: True)
+2025-09-01 22:41:49,057 - INFO - Received message: download papers, workflow_step: download
+2025-09-01 22:41:49,058 - INFO - Starting download: 2 papers, field=Physics, topic=particle physics
+2025-09-01 22:41:49,068 - INFO - Starting download: 2 papers
+2025-09-01 22:41:49,084 - INFO - Created download directory: E:\Next JS\researchbot\papers\Physics\particle_physics
+2025-09-01 22:41:49,086 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Physics\particle_physics
+2025-09-01 22:41:49,163 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-01 22:41:49,242 - INFO - Download completed: 0 successful downloads
+2025-09-01 22:41:49,244 - INFO - Download with references completed successfully

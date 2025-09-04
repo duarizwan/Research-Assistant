@@ -1,0 +1,20 @@
+2025-08-28 00:48:31,274 - __main__ - INFO - ============================================================
+2025-08-28 00:48:31,274 - __main__ - INFO - Research Assistant v2.0 Starting
+2025-08-28 00:48:31,274 - __main__ - INFO - Verbose mode: False
+2025-08-28 00:48:31,275 - __main__ - INFO - Preview mode: False
+2025-08-28 00:48:31,275 - __main__ - INFO - Python version: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-28 00:48:31,275 - __main__ - INFO - Working directory: E:\Ai\ChatBot
+2025-08-28 00:48:31,276 - __main__ - DEBUG - Ensured directory exists: papers
+2025-08-28 00:48:31,276 - __main__ - DEBUG - Ensured directory exists: logs
+2025-08-28 00:48:31,276 - __main__ - INFO - Starting interactive chat loop
+2025-08-28 00:49:33,148 - __main__ - DEBUG - Valid input received: Math
+2025-08-28 00:49:38,397 - __main__ - DEBUG - Valid input received: help
+2025-08-28 00:49:58,108 - __main__ - DEBUG - Valid input received: geometry
+2025-08-28 00:51:04,188 - __main__ - DEBUG - Session state saved
+2025-08-28 00:51:04,189 - __main__ - DEBUG - Session state saved
+2025-08-28 00:51:04,189 - __main__ - DEBUG - Session state cleared
+2025-08-28 00:51:04,189 - __main__ - INFO - Application exit requested: 0
+2025-08-28 00:51:04,189 - __main__ - INFO - Application shutting down
+2025-08-28 00:51:04,213 - __main__ - DEBUG - Loaded metadata for 5 papers
+2025-08-28 00:51:04,222 - __main__ - DEBUG - Saved metadata for 5 papers
+2025-08-28 00:51:04,222 - __main__ - INFO - Research Assistant shutdown complete

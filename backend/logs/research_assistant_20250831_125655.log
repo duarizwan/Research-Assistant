@@ -1,0 +1,17 @@
+2025-08-31 12:57:06,872 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\main.py')}
+2025-08-31 12:57:19,962 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125655.log')}
+2025-08-31 12:57:20,564 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125655.log')}
+2025-08-31 12:57:21,163 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125655.log')}
+2025-08-31 12:57:21,735 - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs'), (<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125655.log')}
+2025-08-31 12:57:22,313 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125655.log')}
+2025-08-31 12:57:22,944 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125655.log')}
+2025-08-31 12:57:23,624 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125655.log')}
+2025-08-31 12:57:24,765 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125655.log')}
+2025-08-31 12:57:25,522 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125655.log')}
+2025-08-31 12:57:26,225 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125655.log')}
+2025-08-31 12:57:40,492 - DEBUG - 1 change detected: {(<Change.added: 1>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125740.log')}
+2025-08-31 12:57:41,237 - DEBUG - 7 changes detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs'), (<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125740.log'), (<Change.added: 1>, 'E:\\Next JS\\researchbot\\backend\\__pycache__\\main.cpython-313.pyc'), (<Change.deleted: 3>, 'E:\\Next JS\\researchbot\\backend\\__pycache__\\main.cpython-313.pyc.2624124379392'), (<Change.added: 1>, 'E:\\Next JS\\researchbot\\backend\\__pycache__\\main.cpython-313.pyc.2624124379392'), (<Change.deleted: 3>, 'E:\\Next JS\\researchbot\\backend\\__pycache__\\main.cpython-313.pyc'), (<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\__pycache__')}
+2025-08-31 12:57:42,592 - DEBUG - 1 change detected: {(<Change.added: 1>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125742.log')}
+2025-08-31 12:57:43,590 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs')}
+2025-08-31 12:57:47,500 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\main.py')}
+2025-08-31 12:57:52,678 - DEBUG - 1 change detected: {(<Change.modified: 2>, 'E:\\Next JS\\researchbot\\backend\\logs\\research_assistant_20250831_125740.log')}

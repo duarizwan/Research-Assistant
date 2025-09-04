@@ -1,0 +1,49 @@
+2025-09-01 19:22:50,536 - DEBUG - Using selector: SelectSelector
+2025-09-01 21:08:12,532 - INFO - Received message: Artificial intelligence CNN model and its implementation, workflow_step: search
+2025-09-01 21:08:12,633 - INFO - New workflow search for: Artificial intelligence CNN model and its implementation
+2025-09-01 21:08:12,649 - INFO - Searching arXiv: 'Artificial intelligence CNN model and its implementation' (results 1-8)
+2025-09-01 21:08:12,700 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Artificial+intelligence+CNN+model+and+its+implementation&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 21:08:12,853 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 21:08:15,457 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Artificial+intelligence+CNN+model+and+its+implementation&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63800
+2025-09-01 21:08:15,784 - INFO - Got first page: 100 of 2772376 total results
+2025-09-01 21:08:15,788 - INFO - Found 8 papers (more available: True)
+2025-09-01 21:10:08,022 - INFO - Received message: Mathematics statistics, workflow_step: search
+2025-09-01 21:10:08,022 - INFO - New workflow search for: Mathematics statistics
+2025-09-01 21:10:08,025 - INFO - Searching arXiv: 'Mathematics statistics' (results 1-8)
+2025-09-01 21:10:08,033 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 21:10:08,038 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 21:10:11,260 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 22869
+2025-09-01 21:10:11,622 - INFO - Got first page: 100 of 413190 total results
+2025-09-01 21:10:11,630 - INFO - Found 8 papers (more available: True)
+2025-09-01 21:29:12,631 - INFO - Received message: Fitness diet plan, workflow_step: search
+2025-09-01 21:29:12,876 - INFO - New workflow search for: Fitness diet plan
+2025-09-01 21:29:13,106 - INFO - Searching arXiv: 'Fitness diet plan' (results 1-8)
+2025-09-01 21:29:13,404 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 21:29:13,664 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 21:29:15,771 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 69628
+2025-09-01 21:29:16,161 - INFO - Got first page: 100 of 127775 total results
+2025-09-01 21:29:16,170 - INFO - Found 8 papers (more available: True)
+2025-09-01 21:45:24,584 - INFO - Received message: Pharmacy medical tests, workflow_step: search
+2025-09-01 21:45:24,615 - INFO - New workflow search for: Pharmacy medical tests
+2025-09-01 21:45:24,690 - INFO - Searching arXiv: 'Pharmacy medical tests' (results 1-8)
+2025-09-01 21:45:24,802 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Pharmacy+medical+tests&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 21:45:25,002 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 21:45:27,381 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Pharmacy+medical+tests&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 68910
+2025-09-01 21:45:27,817 - INFO - Got first page: 100 of 226441 total results
+2025-09-01 21:45:27,823 - INFO - Found 8 papers (more available: True)
+2025-09-01 21:51:11,047 - INFO - Received message: Biology evolution, workflow_step: search
+2025-09-01 21:51:11,064 - INFO - New workflow search for: Biology evolution
+2025-09-01 21:51:11,197 - INFO - Searching arXiv: 'Biology evolution' (results 1-8)
+2025-09-01 21:51:11,338 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+evolution&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 21:51:11,568 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 21:51:14,311 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+evolution&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 50334
+2025-09-01 21:51:14,910 - INFO - Got first page: 100 of 171223 total results
+2025-09-01 21:51:14,915 - INFO - Found 8 papers (more available: True)
+2025-09-01 21:53:33,721 - INFO - Received message: Mathematics algebra, workflow_step: search
+2025-09-01 21:53:33,837 - INFO - New workflow search for: Mathematics algebra
+2025-09-01 21:53:33,935 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-8)
+2025-09-01 21:53:33,996 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 21:53:34,091 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 21:53:36,209 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25462
+2025-09-01 21:53:36,606 - INFO - Got first page: 100 of 360925 total results
+2025-09-01 21:53:36,609 - INFO - Found 8 papers (more available: True)

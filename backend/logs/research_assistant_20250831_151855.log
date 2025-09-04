@@ -1,0 +1,21 @@
+2025-08-31 15:18:55,685 - DEBUG - Using selector: SelectSelector
+2025-08-31 15:20:32,805 - INFO - Received message: chemistry inorganic, workflow_step: search
+2025-08-31 15:20:32,806 - INFO - New workflow search for: chemistry inorganic
+2025-08-31 15:20:32,807 - INFO - Searching arXiv: 'chemistry inorganic' (results 1-8)
+2025-08-31 15:20:32,808 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=chemistry+inorganic&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 15:20:32,813 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 15:20:34,223 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=chemistry+inorganic&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 4251
+2025-08-31 15:20:34,410 - INFO - Got first page: 5 of 16835 total results
+2025-08-31 15:20:34,414 - INFO - Sleeping: 2.818459 seconds
+2025-08-31 15:20:37,236 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=chemistry+inorganic&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100
+2025-08-31 15:20:38,726 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=chemistry+inorganic&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100 HTTP/1.1" 200 63976
+2025-08-31 15:20:39,086 - INFO - Found 8 papers (more available: True)
+2025-08-31 15:20:56,391 - INFO - Received message: download papers, workflow_step: download
+2025-08-31 15:20:56,392 - INFO - Starting download: 2 papers, field=chemistry, topic=inorganic, format=APA
+2025-08-31 15:20:56,395 - INFO - Starting download with references: 2 papers, format: APA
+2025-08-31 15:20:56,396 - INFO - Created download directory: E:\Next JS\researchbot\papers\chemistry\inorganic
+2025-08-31 15:20:56,399 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\chemistry\inorganic
+2025-08-31 15:20:56,426 - DEBUG - Loaded metadata for 7 papers
+2025-08-31 15:20:56,429 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-08-31 15:20:56,429 - INFO - Download completed: 0 successful downloads
+2025-08-31 15:20:56,430 - INFO - Download with references completed successfully

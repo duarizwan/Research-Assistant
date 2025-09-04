@@ -1,0 +1,17 @@
+2025-09-01 19:06:52,889 - DEBUG - Using selector: SelectSelector
+2025-09-01 19:09:33,280 - INFO - Received message: Fitness DIET PLAN, workflow_step: search
+2025-09-01 19:09:33,367 - INFO - New workflow search for: Fitness DIET PLAN
+2025-09-01 19:09:33,516 - INFO - Searching arXiv: 'Fitness DIET PLAN' (results 1-8)
+2025-09-01 19:09:33,741 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+DIET+PLAN&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 19:09:34,131 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 19:09:37,821 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+DIET+PLAN&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 69631
+2025-09-01 19:09:38,091 - INFO - Got first page: 100 of 127775 total results
+2025-09-01 19:09:38,093 - INFO - Found 8 papers (more available: True)
+2025-09-01 19:10:04,585 - INFO - Received message: download papers, workflow_step: download
+2025-09-01 19:10:04,586 - INFO - Starting download: 2 papers, field=Fitness, topic=DIET PLAN, format=none
+2025-09-01 19:10:04,591 - INFO - Starting download with references: 2 papers, format: none
+2025-09-01 19:10:04,604 - INFO - Created download directory: E:\Next JS\researchbot\papers\Fitness\DIET_PLAN
+2025-09-01 19:10:04,605 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Fitness\DIET_PLAN
+2025-09-01 19:10:04,608 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-01 19:10:04,611 - INFO - Download completed: 0 successful downloads
+2025-09-01 19:10:04,611 - INFO - Download with references completed successfully

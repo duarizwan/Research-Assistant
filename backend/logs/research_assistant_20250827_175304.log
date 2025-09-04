@@ -1,0 +1,12 @@
+2025-08-27 17:53:04,070 - INFO - Starting Enhanced Research Assistant
+2025-08-27 17:53:44,530 - INFO - Searching arXiv: 'Machine Learning Reinforcement Learning' (results 1-10)
+2025-08-27 17:53:44,531 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Machine+Learning+Reinforcement+Learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-27 17:53:46,709 - INFO - Got first page: 100 of 433400 total results
+2025-08-27 17:53:46,711 - INFO - Found 10 papers (more available: True)
+2025-08-27 17:55:13,101 - INFO - Downloading 3 papers to papers\machine_learning\reinforcement_learning
+2025-08-27 17:55:13,103 - INFO - Starting download: 2405.15430v1
+2025-08-27 17:55:13,104 - INFO - Starting download: 2307.01452v2
+2025-08-27 17:55:13,104 - INFO - Starting download: 2210.00770v1
+2025-08-27 17:55:15,840 - INFO - Successfully downloaded 2405.15430v1 (198KB)
+2025-08-27 17:55:17,311 - INFO - Successfully downloaded 2307.01452v2 (2199KB)
+2025-08-27 17:55:17,473 - INFO - Successfully downloaded 2210.00770v1 (1051KB)

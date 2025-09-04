@@ -1,0 +1,9 @@
+2025-09-01 18:29:55,360 - INFO - Starting Enhanced Research Assistant
+2025-09-01 18:31:57,750 - INFO - Searching arXiv: 'Fitness diet' (results 1-10)
+2025-09-01 18:31:58,149 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+diet&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 18:32:03,158 - INFO - Got first page: 100 of 90060 total results
+2025-09-01 18:32:03,176 - INFO - Found 10 papers (more available: True)
+2025-09-01 18:32:28,273 - INFO - Searching arXiv: 'Fitness diet' (results 11-20)
+2025-09-01 18:32:28,273 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+diet&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 18:32:29,573 - INFO - Got first page: 100 of 90060 total results
+2025-09-01 18:32:29,575 - INFO - Found 5 papers (more available: False)

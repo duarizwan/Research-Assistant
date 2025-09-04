@@ -1,0 +1,49 @@
+2025-09-01 18:31:37,929 - DEBUG - Using selector: SelectSelector
+2025-09-01 18:38:39,115 - INFO - Received message: fitness excercise, workflow_step: search
+2025-09-01 18:38:39,162 - INFO - New workflow search for: fitness excercise, load_more: False
+2025-09-01 18:38:39,329 - INFO - Searching arXiv: 'fitness excercise' (results 1-8)
+2025-09-01 18:38:39,593 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=fitness+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 18:38:39,744 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 18:38:43,451 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=fitness+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 53486
+2025-09-01 18:38:43,722 - INFO - Got first page: 100 of 89655 total results
+2025-09-01 18:38:43,725 - INFO - Found 8 papers (more available: True)
+2025-09-01 18:39:03,063 - INFO - Received message: fitness excercise, workflow_step: search
+2025-09-01 18:39:03,065 - INFO - New workflow search for: fitness excercise, load_more: True
+2025-09-01 18:39:03,065 - INFO - Searching arXiv: 'fitness excercise' (results 9-16)
+2025-09-01 18:39:03,066 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=fitness+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 18:39:03,070 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 18:39:04,026 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=fitness+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 53486
+2025-09-01 18:39:04,773 - INFO - Got first page: 100 of 89655 total results
+2025-09-01 18:39:04,778 - INFO - Found 5 papers (more available: False)
+2025-09-01 18:39:42,125 - INFO - Received message: download papers, workflow_step: download
+2025-09-01 18:39:42,126 - INFO - Starting download: 2 papers, field=fitness, topic=excercise, format=APA
+2025-09-01 18:39:42,129 - INFO - Starting download with references: 2 papers, format: APA
+2025-09-01 18:39:42,131 - INFO - Created download directory: E:\Next JS\researchbot\papers\fitness\excercise
+2025-09-01 18:39:42,135 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\fitness\excercise
+2025-09-01 18:39:42,164 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-01 18:39:42,166 - INFO - Download completed: 0 successful downloads
+2025-09-01 18:39:42,177 - INFO - Download with references completed successfully
+2025-09-01 18:46:46,460 - INFO - Received message: fitness diet, workflow_step: search
+2025-09-01 18:46:46,584 - INFO - New workflow search for: fitness diet, load_more: False
+2025-09-01 18:46:46,585 - INFO - Searching arXiv: 'fitness diet' (results 1-8)
+2025-09-01 18:46:46,879 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=fitness+diet&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 18:46:47,089 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 18:46:49,834 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=fitness+diet&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70584
+2025-09-01 18:46:50,337 - INFO - Got first page: 100 of 90060 total results
+2025-09-01 18:46:50,341 - INFO - Found 8 papers (more available: True)
+2025-09-01 18:47:00,705 - INFO - Received message: fitness diet, workflow_step: search
+2025-09-01 18:47:00,706 - INFO - New workflow search for: fitness diet, load_more: True
+2025-09-01 18:47:00,706 - INFO - Searching arXiv: 'fitness diet' (results 9-16)
+2025-09-01 18:47:00,707 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=fitness+diet&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 18:47:00,709 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 18:47:01,372 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=fitness+diet&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70584
+2025-09-01 18:47:01,875 - INFO - Got first page: 100 of 90060 total results
+2025-09-01 18:47:01,877 - INFO - Found 5 papers (more available: False)
+2025-09-01 18:47:29,846 - INFO - Received message: download papers, workflow_step: download
+2025-09-01 18:47:29,857 - INFO - Starting download: 2 papers, field=fitness, topic=diet, format=IEEE
+2025-09-01 18:47:29,867 - INFO - Starting download with references: 2 papers, format: IEEE
+2025-09-01 18:47:29,921 - INFO - Created download directory: E:\Next JS\researchbot\papers\fitness\diet
+2025-09-01 18:47:29,923 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\fitness\diet
+2025-09-01 18:47:30,060 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-01 18:47:30,064 - INFO - Download completed: 0 successful downloads
+2025-09-01 18:47:30,064 - INFO - Download with references completed successfully

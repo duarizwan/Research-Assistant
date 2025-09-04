@@ -1,0 +1,176 @@
+2025-08-31 19:27:09,406 - DEBUG - Using selector: SelectSelector
+2025-08-31 19:30:46,751 - INFO - Received message: comp sci undefined, workflow_step: search
+2025-08-31 19:30:46,805 - INFO - New workflow search for: comp sci undefined
+2025-08-31 19:30:46,821 - INFO - Searching arXiv: 'comp sci undefined' (results 1-8)
+2025-08-31 19:30:46,870 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=comp+sci+undefined&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 19:30:46,887 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 19:30:49,084 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=comp+sci+undefined&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 32950
+2025-08-31 19:30:49,790 - INFO - Got first page: 100 of 17995 total results
+2025-08-31 19:30:49,793 - INFO - Found 8 papers (more available: True)
+2025-08-31 19:43:08,162 - INFO - Received message: computer sci undefined, workflow_step: search
+2025-08-31 19:43:08,179 - INFO - New workflow search for: computer sci undefined
+2025-08-31 19:43:08,241 - INFO - Searching arXiv: 'computer sci undefined' (results 1-8)
+2025-08-31 19:43:08,242 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=computer+sci+undefined&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 19:43:08,382 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 19:43:20,822 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+sci+undefined&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 54401
+2025-08-31 19:43:23,835 - INFO - Got first page: 100 of 718530 total results
+2025-08-31 19:43:23,837 - INFO - Found 8 papers (more available: True)
+2025-08-31 19:47:39,617 - INFO - Received message: english undefined, workflow_step: search
+2025-08-31 19:47:39,662 - INFO - New workflow search for: english undefined
+2025-08-31 19:47:39,811 - INFO - Searching arXiv: 'english undefined' (results 1-8)
+2025-08-31 19:47:39,984 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=english+undefined&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 19:47:40,191 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 19:49:13,558 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=english+undefined&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 50144
+2025-08-31 19:49:14,431 - INFO - Got first page: 100 of 13633 total results
+2025-08-31 19:49:14,446 - INFO - Found 8 papers (more available: True)
+2025-08-31 19:49:14,545 - INFO - Received message: math undefined, workflow_step: search
+2025-08-31 19:49:14,733 - INFO - New workflow search for: math undefined
+2025-08-31 19:49:14,755 - INFO - Searching arXiv: 'math undefined' (results 1-8)
+2025-08-31 19:49:14,793 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=math+undefined&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 19:49:14,876 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 19:49:16,935 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=math+undefined&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 45750
+2025-08-31 19:49:17,245 - INFO - Got first page: 100 of 63416 total results
+2025-08-31 19:49:17,249 - INFO - Found 8 papers (more available: True)
+2025-08-31 20:27:32,711 - INFO - Received message: computer sci, workflow_step: None
+2025-08-31 20:28:01,347 - INFO - Received message: computer sci, workflow_step: None
+2025-08-31 20:34:47,337 - INFO - Received message: computer sci, workflow_step: None
+2025-08-31 20:35:08,431 - INFO - Received message: computer science, workflow_step: search
+2025-08-31 20:35:08,435 - INFO - New workflow search for: computer science
+2025-08-31 20:35:08,441 - INFO - Searching arXiv: 'computer science' (results 1-8)
+2025-08-31 20:35:08,494 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=computer+science&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:35:08,584 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 20:35:09,930 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+science&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 41588
+2025-08-31 20:35:10,720 - INFO - Got first page: 100 of 845800 total results
+2025-08-31 20:35:10,724 - INFO - Found 8 papers (more available: True)
+2025-08-31 20:36:23,944 - INFO - Received message: comp sci, workflow_step: None
+2025-08-31 20:36:33,934 - INFO - Received message: computer sci, workflow_step: search
+2025-08-31 20:36:33,934 - INFO - New workflow search for: computer sci
+2025-08-31 20:36:33,936 - INFO - Searching arXiv: 'computer sci' (results 1-8)
+2025-08-31 20:36:33,937 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=computer+sci&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:36:33,943 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 20:36:35,533 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+sci&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 51283
+2025-08-31 20:36:35,841 - INFO - Got first page: 100 of 718164 total results
+2025-08-31 20:36:35,842 - INFO - Found 8 papers (more available: True)
+2025-08-31 20:37:20,806 - INFO - Received message: download papers, workflow_step: download
+2025-08-31 20:37:20,807 - INFO - Starting download: 2 papers, field=comp sci, topic=computer sci, format=apa
+2025-08-31 20:37:20,844 - INFO - Starting download with references: 2 papers, format: apa
+2025-08-31 20:37:20,856 - INFO - Created download directory: E:\Next JS\researchbot\papers\comp_sci\computer_sci
+2025-08-31 20:37:20,866 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\comp_sci\computer_sci
+2025-08-31 20:37:20,884 - DEBUG - Loaded metadata for 7 papers
+2025-08-31 20:37:20,967 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-08-31 20:37:20,969 - INFO - Download completed: 0 successful downloads
+2025-08-31 20:37:20,970 - INFO - Download with references completed successfully
+2025-08-31 20:37:46,462 - INFO - Received message: yes, workflow_step: None
+2025-08-31 20:38:00,574 - INFO - Received message: ML, workflow_step: search
+2025-08-31 20:38:00,574 - INFO - New workflow search for: ML
+2025-08-31 20:38:00,575 - INFO - Searching arXiv: 'ML' (results 1-8)
+2025-08-31 20:38:00,575 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:38:00,578 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 20:38:17,059 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 503 126
+2025-08-31 20:38:17,065 - DEBUG - Got error (try 0): Page request resulted in HTTP 503 (https://export.arxiv.org/api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2025-08-31 20:38:17,068 - INFO - Sleeping: 2.993586 seconds
+2025-08-31 20:38:20,092 - INFO - Requesting page (first: True, try: 1): https://export.arxiv.org/api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:38:20,096 - DEBUG - Resetting dropped connection: export.arxiv.org
+2025-08-31 20:38:22,036 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 503 126
+2025-08-31 20:38:22,037 - DEBUG - Got error (try 1): Page request resulted in HTTP 503 (https://export.arxiv.org/api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2025-08-31 20:38:22,038 - INFO - Sleeping: 2.999501 seconds
+2025-08-31 20:38:25,038 - INFO - Requesting page (first: True, try: 2): https://export.arxiv.org/api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:38:25,041 - DEBUG - Resetting dropped connection: export.arxiv.org
+2025-08-31 20:38:26,331 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 503 126
+2025-08-31 20:38:26,334 - DEBUG - Got error (try 2): Page request resulted in HTTP 503 (https://export.arxiv.org/api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2025-08-31 20:38:26,335 - INFO - Sleeping: 2.998724 seconds
+2025-08-31 20:38:29,335 - INFO - Requesting page (first: True, try: 3): https://export.arxiv.org/api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:38:29,343 - DEBUG - Resetting dropped connection: export.arxiv.org
+2025-08-31 20:38:31,146 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 503 126
+2025-08-31 20:38:31,148 - DEBUG - Giving up (try 3): Page request resulted in HTTP 503 (https://export.arxiv.org/api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2025-08-31 20:38:31,149 - ERROR - Error searching arXiv: Page request resulted in HTTP 503 (https://export.arxiv.org/api/query?search_query=ML&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2025-08-31 20:38:42,759 - INFO - Received message: machine learning, workflow_step: None
+2025-08-31 20:38:42,760 - INFO - Searching for: yes machine learning
+2025-08-31 20:38:42,761 - INFO - Searching arXiv: 'yes machine learning' (results 1-8)
+2025-08-31 20:38:42,761 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:38:42,765 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 20:38:59,521 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 503 126
+2025-08-31 20:38:59,524 - DEBUG - Got error (try 0): Page request resulted in HTTP 503 (https://export.arxiv.org/api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2025-08-31 20:38:59,525 - INFO - Sleeping: 2.998708 seconds
+2025-08-31 20:39:02,525 - INFO - Requesting page (first: True, try: 1): https://export.arxiv.org/api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:39:02,529 - DEBUG - Resetting dropped connection: export.arxiv.org
+2025-08-31 20:39:03,820 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 503 126
+2025-08-31 20:39:03,822 - DEBUG - Got error (try 1): Page request resulted in HTTP 503 (https://export.arxiv.org/api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2025-08-31 20:39:03,823 - INFO - Sleeping: 2.999284 seconds
+2025-08-31 20:39:06,823 - INFO - Requesting page (first: True, try: 2): https://export.arxiv.org/api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:39:06,830 - DEBUG - Resetting dropped connection: export.arxiv.org
+2025-08-31 20:39:08,135 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 503 126
+2025-08-31 20:39:08,136 - DEBUG - Got error (try 2): Page request resulted in HTTP 503 (https://export.arxiv.org/api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2025-08-31 20:39:08,137 - INFO - Sleeping: 2.999345 seconds
+2025-08-31 20:39:11,137 - INFO - Requesting page (first: True, try: 3): https://export.arxiv.org/api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:39:11,140 - DEBUG - Resetting dropped connection: export.arxiv.org
+2025-08-31 20:39:12,403 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 503 126
+2025-08-31 20:39:12,406 - DEBUG - Giving up (try 3): Page request resulted in HTTP 503 (https://export.arxiv.org/api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2025-08-31 20:39:12,407 - ERROR - Error searching arXiv: Page request resulted in HTTP 503 (https://export.arxiv.org/api/query?search_query=yes+machine+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2025-08-31 20:39:13,676 - INFO - Received message: yes, workflow_step: None
+2025-08-31 20:39:19,436 - INFO - Received message: math, workflow_step: search
+2025-08-31 20:39:19,436 - INFO - New workflow search for: math
+2025-08-31 20:39:19,437 - INFO - Searching arXiv: 'math' (results 1-8)
+2025-08-31 20:39:19,438 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=math&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:39:19,441 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 20:39:20,261 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=math&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 39474
+2025-08-31 20:39:20,531 - INFO - Got first page: 100 of 62851 total results
+2025-08-31 20:39:20,533 - INFO - Found 8 papers (more available: True)
+2025-08-31 20:39:34,039 - INFO - Received message: download papers, workflow_step: download
+2025-08-31 20:39:34,040 - INFO - Starting download: 1 papers, field=yes, topic=math, format=apa
+2025-08-31 20:39:34,043 - INFO - Starting download with references: 1 papers, format: apa
+2025-08-31 20:39:34,044 - INFO - Created download directory: E:\Next JS\researchbot\papers\yes\math
+2025-08-31 20:39:34,045 - INFO - Downloading 1 papers to E:\Next JS\researchbot\papers\yes\math
+2025-08-31 20:39:34,047 - DEBUG - Loaded metadata for 7 papers
+2025-08-31 20:39:34,064 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-08-31 20:39:34,095 - INFO - Download completed: 0 successful downloads
+2025-08-31 20:39:34,096 - INFO - Download with references completed successfully
+2025-08-31 20:40:52,893 - INFO - Received message: math stats, workflow_step: search
+2025-08-31 20:40:52,894 - INFO - New workflow search for: math stats
+2025-08-31 20:40:52,895 - INFO - Searching arXiv: 'math stats' (results 1-8)
+2025-08-31 20:40:52,895 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=math+stats&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:40:52,900 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 20:40:54,731 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=math+stats&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 36156
+2025-08-31 20:40:54,967 - INFO - Got first page: 100 of 71176 total results
+2025-08-31 20:40:54,973 - INFO - Found 8 papers (more available: True)
+2025-08-31 20:43:06,477 - INFO - Received message: sure undefined, workflow_step: search
+2025-08-31 20:43:06,568 - INFO - New workflow search for: sure undefined
+2025-08-31 20:43:06,674 - INFO - Searching arXiv: 'sure undefined' (results 1-8)
+2025-08-31 20:43:06,735 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=sure+undefined&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:43:06,754 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 20:43:10,035 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=sure+undefined&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 42787
+2025-08-31 20:43:10,218 - INFO - Got first page: 100 of 6813 total results
+2025-08-31 20:43:10,220 - INFO - Found 8 papers (more available: True)
+2025-08-31 20:44:37,841 - INFO - Received message: comp sci LLM, workflow_step: search
+2025-08-31 20:44:37,842 - INFO - New workflow search for: comp sci LLM
+2025-08-31 20:44:37,842 - INFO - Searching arXiv: 'comp sci LLM' (results 1-8)
+2025-08-31 20:44:37,843 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=comp+sci+LLM&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:44:37,844 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 20:44:39,446 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=comp+sci+LLM&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 35054
+2025-08-31 20:44:39,747 - INFO - Got first page: 100 of 59381 total results
+2025-08-31 20:44:39,749 - INFO - Found 8 papers (more available: True)
+2025-08-31 20:45:07,358 - INFO - Received message: bio neuroscience, workflow_step: search
+2025-08-31 20:45:07,359 - INFO - New workflow search for: bio neuroscience
+2025-08-31 20:45:07,360 - INFO - Searching arXiv: 'bio neuroscience' (results 1-8)
+2025-08-31 20:45:07,361 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=bio+neuroscience&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:45:07,364 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 20:45:08,942 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=bio+neuroscience&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 66829
+2025-08-31 20:45:09,361 - INFO - Got first page: 100 of 7833 total results
+2025-08-31 20:45:09,366 - INFO - Found 8 papers (more available: True)
+2025-08-31 20:45:26,585 - INFO - Received message: download papers, workflow_step: download
+2025-08-31 20:45:26,586 - INFO - Starting download: 2 papers, field=bio, topic=neuroscience, format=none
+2025-08-31 20:45:26,587 - INFO - Starting download with references: 2 papers, format: none
+2025-08-31 20:45:26,589 - INFO - Created download directory: E:\Next JS\researchbot\papers\bio\neuroscience
+2025-08-31 20:45:26,590 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\bio\neuroscience
+2025-08-31 20:45:26,592 - DEBUG - Loaded metadata for 7 papers
+2025-08-31 20:45:26,600 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-08-31 20:45:26,602 - INFO - Download completed: 0 successful downloads
+2025-08-31 20:45:26,602 - INFO - Download with references completed successfully
+2025-08-31 20:49:33,367 - INFO - Received message: Mathematics topology, workflow_step: search
+2025-08-31 20:49:33,500 - INFO - New workflow search for: Mathematics topology
+2025-08-31 20:49:33,793 - INFO - Searching arXiv: 'Mathematics topology' (results 1-8)
+2025-08-31 20:49:34,091 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+topology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 20:49:34,355 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 20:49:37,905 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+topology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 30333
+2025-08-31 20:49:38,217 - INFO - Got first page: 100 of 326706 total results
+2025-08-31 20:49:38,221 - INFO - Found 8 papers (more available: True)

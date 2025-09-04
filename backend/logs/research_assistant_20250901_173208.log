@@ -1,0 +1,25 @@
+2025-09-01 17:32:08,938 - DEBUG - Using selector: SelectSelector
+2025-09-01 17:36:06,916 - INFO - Received message: Mathematics topology, workflow_step: search
+2025-09-01 17:36:06,961 - INFO - New workflow search for: Mathematics topology
+2025-09-01 17:36:06,962 - INFO - Searching arXiv: 'Mathematics topology' (results 1-8)
+2025-09-01 17:36:06,963 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+topology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 17:36:06,973 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 17:36:09,758 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+topology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 30341
+2025-09-01 17:36:10,075 - INFO - Got first page: 100 of 326798 total results
+2025-09-01 17:36:10,077 - INFO - Found 8 papers (more available: True)
+2025-09-01 17:36:50,401 - INFO - Received message: download papers, workflow_step: download
+2025-09-01 17:36:50,401 - INFO - Starting download: 1 papers, field=Mathematics, topic=topology, format=None
+2025-09-01 17:36:50,405 - INFO - Starting download with references: 1 papers, format: none
+2025-09-01 17:36:50,406 - INFO - Created download directory: E:\Next JS\researchbot\papers\Mathematics\topology
+2025-09-01 17:36:50,427 - INFO - Downloading 1 papers to E:\Next JS\researchbot\papers\Mathematics\topology
+2025-09-01 17:36:50,434 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-01 17:36:50,437 - INFO - Download completed: 0 successful downloads
+2025-09-01 17:36:50,438 - INFO - Download with references completed successfully
+2025-09-01 18:25:02,359 - INFO - Received message: management science Technical writing, workflow_step: search
+2025-09-01 18:25:02,433 - INFO - New workflow search for: management science Technical writing
+2025-09-01 18:25:02,574 - INFO - Searching arXiv: 'management science Technical writing' (results 1-8)
+2025-09-01 18:25:02,743 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=management+science+Technical+writing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 18:25:02,901 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 18:25:05,177 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=management+science+Technical+writing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 60009
+2025-09-01 18:25:06,239 - INFO - Got first page: 100 of 307069 total results
+2025-09-01 18:25:06,245 - INFO - Found 8 papers (more available: True)

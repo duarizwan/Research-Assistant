@@ -1,0 +1,9 @@
+2025-08-28 15:18:54,180 - DEBUG - Using selector: SelectSelector
+2025-08-28 15:22:53,421 - INFO - Received message: health care Cardio vascular diseases, workflow_step: search
+2025-08-28 15:22:53,468 - INFO - New workflow search for: health care Cardio vascular diseases
+2025-08-28 15:22:53,468 - INFO - Searching arXiv: 'health care Cardio vascular diseases' (results 1-8)
+2025-08-28 15:22:53,568 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=health+care+Cardio+vascular+diseases&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-28 15:22:53,682 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-28 15:22:55,877 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=health+care+Cardio+vascular+diseases&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 74151
+2025-08-28 15:22:56,412 - INFO - Got first page: 100 of 52323 total results
+2025-08-28 15:22:56,415 - INFO - Found 8 papers (more available: True)

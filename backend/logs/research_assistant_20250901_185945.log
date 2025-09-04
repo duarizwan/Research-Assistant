@@ -1,0 +1,9 @@
+2025-09-01 18:59:45,927 - DEBUG - Using selector: SelectSelector
+2025-09-01 19:03:22,744 - INFO - Received message: fitness excercise and diet plan for weight gain, workflow_step: search
+2025-09-01 19:03:22,883 - INFO - New workflow search for: fitness excercise and diet plan for weight gain
+2025-09-01 19:03:23,222 - INFO - Searching arXiv: 'fitness excercise and diet plan for weight gain' (results 1-8)
+2025-09-01 19:03:23,700 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=fitness+excercise+and+diet+plan+for+weight+gain&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 19:03:24,260 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 19:03:38,024 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=fitness+excercise+and+diet+plan+for+weight+gain&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 72328
+2025-09-01 19:03:41,288 - INFO - Got first page: 100 of 2792091 total results
+2025-09-01 19:03:41,620 - INFO - Found 8 papers (more available: True)

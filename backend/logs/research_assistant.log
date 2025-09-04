@@ -1,0 +1,4 @@
+2025-08-28 00:26:59,011 - __main__ - INFO - Enhanced Research Assistant starting up
+2025-08-28 00:26:59,011 - __main__ - WARNING - GENAI_API_KEY not found - AI summaries will not work
+2025-08-28 00:28:40,168 - __main__ - INFO - Enhanced Research Assistant starting up
+2025-08-28 00:28:40,168 - __main__ - WARNING - GENAI_API_KEY not found - AI summaries will not work

@@ -1,0 +1,9 @@
+2025-08-31 12:51:27,189 - DEBUG - Using selector: SelectSelector
+2025-08-31 12:52:44,528 - INFO - Received message: english grammar tenses, workflow_step: search
+2025-08-31 12:52:44,552 - INFO - New workflow search for: english grammar tenses
+2025-08-31 12:52:44,553 - INFO - Searching arXiv: 'english grammar tenses' (results 1-8)
+2025-08-31 12:52:44,555 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=english+grammar+tenses&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 12:52:44,567 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 12:52:47,291 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=english+grammar+tenses&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 54247
+2025-08-31 12:52:48,081 - INFO - Got first page: 100 of 16260 total results
+2025-08-31 12:52:48,083 - INFO - Found 8 papers (more available: True)

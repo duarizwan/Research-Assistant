@@ -1,0 +1,43 @@
+2025-08-28 03:46:09,443 - DEBUG - Using selector: SelectSelector
+2025-08-28 03:47:06,627 - INFO - Received message: Computer science
+2025-08-28 03:47:23,546 - INFO - Received message: computer science
+2025-08-28 03:47:36,863 - INFO - Received message: Artificial intelligence
+2025-08-28 03:47:36,864 - INFO - Searching for: computer science Artificial intelligence
+2025-08-28 03:47:36,864 - INFO - Searching arXiv: 'computer science Artificial intelligence' (results 1-8)
+2025-08-28 03:47:36,865 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=computer+science+Artificial+intelligence&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-28 03:47:36,871 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-28 03:47:38,455 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+science+Artificial+intelligence&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 4012
+2025-08-28 03:47:38,531 - INFO - Got first page: 10 of 923481 total results
+2025-08-28 03:47:38,537 - INFO - Sleeping: 2.952419 seconds
+2025-08-28 03:47:41,509 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=computer+science+Artificial+intelligence&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100
+2025-08-28 03:47:42,454 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+science+Artificial+intelligence&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100 HTTP/1.1" 200 44208
+2025-08-28 03:47:42,683 - INFO - Found 8 papers (more available: True)
+2025-08-28 03:48:18,984 - INFO - Received message: i want papers on LLM
+2025-08-28 03:48:29,618 - INFO - Received message: new search
+2025-08-28 03:48:35,478 - INFO - Received message: AI
+2025-08-28 03:48:43,197 - INFO - Received message: LLM
+2025-08-28 03:48:55,318 - INFO - Received message: LLM
+2025-08-28 03:48:55,319 - INFO - Searching for: LLM LLM
+2025-08-28 03:48:55,320 - INFO - Searching arXiv: 'LLM LLM' (results 1-8)
+2025-08-28 03:48:55,320 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=LLM+LLM&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-28 03:48:55,323 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-28 03:48:56,888 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=LLM+LLM&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 60906
+2025-08-28 03:48:57,154 - INFO - Got first page: 100 of 41817 total results
+2025-08-28 03:48:57,156 - INFO - Found 8 papers (more available: True)
+2025-08-28 03:49:20,547 - INFO - Received message: 10,2
+2025-08-28 03:49:35,329 - INFO - Received message: 10.2
+2025-08-28 03:50:11,335 - INFO - Received message: 10,2
+2025-08-28 03:50:21,082 - INFO - Received message: dowmload
+2025-08-28 03:50:55,875 - INFO - Received message: Download papers 10,2
+2025-08-28 03:50:55,876 - INFO - Starting background download of 1 papers
+2025-08-28 03:50:55,878 - INFO - Downloading 1 papers to papers\llm\llm
+2025-08-28 03:50:55,883 - DEBUG - Loaded metadata for 5 papers
+2025-08-28 03:50:55,887 - INFO - Starting download: 2406.10300v1
+2025-08-28 03:50:55,890 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-08-28 03:50:56,329 - DEBUG - http://arxiv.org:80 "GET /pdf/2406.10300v1 HTTP/1.1" 301 0
+2025-08-28 03:50:56,331 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-08-28 03:50:57,759 - DEBUG - https://arxiv.org:443 "GET /pdf/2406.10300v1 HTTP/1.1" 200 637051
+2025-08-28 03:50:58,643 - INFO - Successfully downloaded 2406.10300v1 (622KB)
+2025-08-28 03:50:58,649 - DEBUG - Saved metadata for 6 papers
+2025-08-28 03:50:58,654 - INFO - Background download completed successfully
+2025-08-28 03:51:08,510 - INFO - Received message: mo

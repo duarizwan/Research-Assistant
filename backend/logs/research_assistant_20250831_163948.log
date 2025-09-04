@@ -1,0 +1,45 @@
+2025-08-31 16:39:48,636 - DEBUG - Using selector: SelectSelector
+2025-08-31 16:41:59,289 - INFO - Received message: computer science LLMs, workflow_step: search
+2025-08-31 16:41:59,337 - INFO - New workflow search for: computer science LLMs
+2025-08-31 16:41:59,367 - INFO - Searching arXiv: 'computer science LLMs' (results 1-8)
+2025-08-31 16:41:59,371 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 16:41:59,386 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 16:42:05,926 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 2788
+2025-08-31 16:42:06,044 - INFO - Got first page: 3 of 856239 total results
+2025-08-31 16:42:06,046 - INFO - Sleeping: 2.934760 seconds
+2025-08-31 16:42:08,985 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=3&max_results=100
+2025-08-31 16:42:10,387 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=3&max_results=100 HTTP/1.1" 200 2104
+2025-08-31 16:42:10,397 - INFO - Sleeping: 2.990950 seconds
+2025-08-31 16:42:13,389 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100
+2025-08-31 16:42:15,000 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100 HTTP/1.1" 200 432
+2025-08-31 16:42:15,007 - DEBUG - Got error (try 0): Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100)
+2025-08-31 16:42:15,007 - INFO - Sleeping: 2.995669 seconds
+2025-08-31 16:42:18,004 - INFO - Requesting page (first: False, try: 1): https://export.arxiv.org/api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100
+2025-08-31 16:42:18,031 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100 HTTP/1.1" 200 432
+2025-08-31 16:42:18,035 - DEBUG - Got error (try 1): Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100)
+2025-08-31 16:42:18,036 - INFO - Sleeping: 2.996392 seconds
+2025-08-31 16:42:21,033 - INFO - Requesting page (first: False, try: 2): https://export.arxiv.org/api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100
+2025-08-31 16:42:21,941 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100 HTTP/1.1" 200 432
+2025-08-31 16:42:21,949 - DEBUG - Got error (try 2): Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100)
+2025-08-31 16:42:21,952 - INFO - Sleeping: 2.991260 seconds
+2025-08-31 16:42:24,945 - INFO - Requesting page (first: False, try: 3): https://export.arxiv.org/api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100
+2025-08-31 16:42:24,971 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100 HTTP/1.1" 200 432
+2025-08-31 16:42:24,975 - DEBUG - Giving up (try 3): Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100)
+2025-08-31 16:42:24,976 - ERROR - Error searching arXiv: Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=computer+science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100)
+2025-08-31 16:43:21,835 - INFO - Received message: Computer sci LLMs, workflow_step: search
+2025-08-31 16:43:21,851 - INFO - New workflow search for: Computer sci LLMs
+2025-08-31 16:43:21,854 - INFO - Searching arXiv: 'Computer sci LLMs' (results 1-8)
+2025-08-31 16:43:21,862 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Computer+sci+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 16:43:21,868 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 16:43:23,707 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Computer+sci+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 17825
+2025-08-31 16:43:23,829 - INFO - Got first page: 25 of 728923 total results
+2025-08-31 16:43:23,831 - INFO - Found 8 papers (more available: True)
+2025-08-31 16:43:42,806 - INFO - Received message: download papers, workflow_step: download
+2025-08-31 16:43:42,810 - INFO - Starting download: 2 papers, field=Computer sci, topic=LLMs, format=IEEE
+2025-08-31 16:43:42,836 - INFO - Starting download with references: 2 papers, format: IEEE
+2025-08-31 16:43:42,860 - INFO - Created download directory: E:\Next JS\researchbot\papers\Computer_sci\LLMs
+2025-08-31 16:43:42,862 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Computer_sci\LLMs
+2025-08-31 16:43:42,873 - DEBUG - Loaded metadata for 7 papers
+2025-08-31 16:43:42,876 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-08-31 16:43:42,877 - INFO - Download completed: 0 successful downloads
+2025-08-31 16:43:42,877 - INFO - Download with references completed successfully

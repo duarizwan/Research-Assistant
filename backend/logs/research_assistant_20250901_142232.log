@@ -1,0 +1,9 @@
+2025-09-01 14:22:32,378 - DEBUG - Using selector: SelectSelector
+2025-09-01 14:24:23,112 - INFO - Received message: Management science prfessional writing, workflow_step: search
+2025-09-01 14:24:23,116 - INFO - New workflow search for: Management science prfessional writing
+2025-09-01 14:24:23,120 - INFO - Searching arXiv: 'Management science prfessional writing' (results 1-8)
+2025-09-01 14:24:23,123 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Management+science+prfessional+writing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-01 14:24:23,138 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-01 14:24:26,111 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Management+science+prfessional+writing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 64843
+2025-09-01 14:24:26,494 - INFO - Got first page: 100 of 279615 total results
+2025-09-01 14:24:26,498 - INFO - Found 8 papers (more available: True)

@@ -1,0 +1,5 @@
+2025-08-28 00:51:10,018 - INFO - Starting Enhanced Research Assistant
+2025-08-28 00:51:24,410 - INFO - Searching arXiv: 'beauty makeup' (results 1-10)
+2025-08-28 00:51:24,411 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=beauty+makeup&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-28 00:51:26,661 - INFO - Got first page: 100 of 3229 total results
+2025-08-28 00:51:26,664 - INFO - Found 10 papers (more available: True)

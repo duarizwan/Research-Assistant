@@ -1,0 +1,33 @@
+2025-08-31 12:59:48,366 - DEBUG - Using selector: SelectSelector
+2025-08-31 13:00:45,757 - INFO - Received message: computer science nlp, workflow_step: search
+2025-08-31 13:00:45,799 - INFO - New workflow search for: computer science nlp
+2025-08-31 13:00:45,800 - INFO - Searching arXiv: 'computer science nlp' (results 1-8)
+2025-08-31 13:00:45,912 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=computer+science+nlp&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 13:00:46,066 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 13:00:51,300 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=computer+science+nlp&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 60574
+2025-08-31 13:00:52,243 - INFO - Got first page: 100 of 846966 total results
+2025-08-31 13:00:52,320 - INFO - Found 8 papers (more available: True)
+2025-08-31 13:08:15,156 - INFO - Received message: math trignometry, workflow_step: search
+2025-08-31 13:08:15,166 - INFO - New workflow search for: math trignometry
+2025-08-31 13:08:15,200 - INFO - Searching arXiv: 'math trignometry' (results 1-8)
+2025-08-31 13:08:15,295 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=math+trignometry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-08-31 13:08:15,363 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-08-31 13:08:18,579 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=math+trignometry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 39676
+2025-08-31 13:08:18,910 - INFO - Got first page: 100 of 62852 total results
+2025-08-31 13:08:18,913 - INFO - Found 8 papers (more available: True)
+2025-08-31 13:08:55,529 - INFO - Received message: download papers, workflow_step: download
+2025-08-31 13:08:55,529 - INFO - Starting download: 1 papers, field=math, topic=trignometry, format=IEEE
+2025-08-31 13:08:55,533 - INFO - Starting download with references: 1 papers, format: IEEE
+2025-08-31 13:08:55,539 - INFO - Created download directory: C:\Users\DANISH LAPTOP\Downloads\papers\math\trignometry
+2025-08-31 13:08:55,547 - INFO - Downloading 1 papers to C:\Users\DANISH LAPTOP\Downloads\papers\math\trignometry
+2025-08-31 13:08:55,586 - DEBUG - Loaded metadata for 6 papers
+2025-08-31 13:08:55,611 - INFO - Starting download: 1906.07050v1
+2025-08-31 13:08:55,625 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-08-31 13:08:55,926 - DEBUG - http://arxiv.org:80 "GET /pdf/1906.07050v1 HTTP/1.1" 301 0
+2025-08-31 13:08:55,928 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-08-31 13:08:58,199 - DEBUG - https://arxiv.org:443 "GET /pdf/1906.07050v1 HTTP/1.1" 200 140474
+2025-08-31 13:08:58,396 - INFO - Successfully downloaded 1906.07050v1 (137KB)
+2025-08-31 13:08:58,405 - DEBUG - Saved metadata for 7 papers
+2025-08-31 13:08:58,406 - INFO - Download completed: 1 successful downloads
+2025-08-31 13:08:58,407 - INFO - References saved to C:\Users\DANISH LAPTOP\Downloads\papers\math\trignometry\references_ieee.txt
+2025-08-31 13:08:58,411 - INFO - Download with references completed successfully
