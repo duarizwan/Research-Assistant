@@ -1,0 +1,8 @@
+2025-09-04 23:04:34,614 - INFO - Starting Enhanced Research Assistant
+2025-09-04 23:09:06,228 - INFO - Searching arXiv: 'Physics atoms' (results 1-10)
+2025-09-04 23:09:06,229 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Physics+atoms&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 23:09:07,659 - INFO - Got first page: 10 of 1030266 total results
+2025-09-04 23:09:07,662 - INFO - Sleeping: 2.951840 seconds
+2025-09-04 23:09:10,616 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=Physics+atoms&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100
+2025-09-04 23:09:11,886 - INFO - Found 10 papers (more available: True)
+2025-09-04 23:11:54,759 - INFO - Application terminated by user

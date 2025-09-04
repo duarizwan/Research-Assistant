@@ -1,0 +1,7 @@
+2025-09-04 23:12:04,054 - INFO - Starting Enhanced Research Assistant
+2025-09-04 23:12:24,583 - INFO - Searching arXiv: 'physics molecules' (results 1-10)
+2025-09-04 23:12:24,584 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=physics+molecules&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 23:12:25,849 - INFO - Got first page: 3 of 1010001 total results
+2025-09-04 23:12:25,850 - INFO - Sleeping: 2.979826 seconds
+2025-09-04 23:12:28,831 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=physics+molecules&id_list=&sortBy=relevance&sortOrder=descending&start=3&max_results=100
+2025-09-04 23:12:29,987 - INFO - Found 10 papers (more available: True)

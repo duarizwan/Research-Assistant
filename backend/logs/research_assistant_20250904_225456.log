@@ -1,0 +1,10 @@
+2025-09-04 22:54:56,066 - INFO - Starting Enhanced Research Assistant
+2025-09-04 22:55:13,467 - INFO - Searching arXiv: 'Computer Science Deeplearning' (results 1-10)
+2025-09-04 22:55:13,468 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Computer+Science+Deeplearning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 22:55:16,719 - INFO - Got first page: 100 of 847545 total results
+2025-09-04 22:55:16,721 - INFO - Found 10 papers (more available: True)
+2025-09-04 22:55:40,093 - INFO - Downloading 2 papers to papers\computer_science\deeplearning
+2025-09-04 22:55:40,095 - INFO - Starting download: 1611.01884v3
+2025-09-04 22:55:40,096 - INFO - Starting download: 2202.01197v4
+2025-09-04 22:55:43,399 - INFO - Successfully downloaded 1611.01884v3 (376KB)
+2025-09-04 22:56:41,244 - INFO - Successfully downloaded 2202.01197v4 (11627KB)

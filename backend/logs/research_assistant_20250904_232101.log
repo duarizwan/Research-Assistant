@@ -1,0 +1,52 @@
+2025-09-04 23:21:01,496 - DEBUG - Using selector: SelectSelector
+2025-09-04 23:21:21,582 - INFO - Received message: Mathematics optimization, workflow_step: search
+2025-09-04 23:21:21,582 - INFO - New workflow search for: Mathematics optimization
+2025-09-04 23:21:21,583 - INFO - Searching arXiv: 'Mathematics optimization' (results 1-8)
+2025-09-04 23:21:21,584 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+optimization&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 23:21:21,586 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 23:21:23,744 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+optimization&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 34609
+2025-09-04 23:21:24,153 - INFO - Got first page: 100 of 470521 total results
+2025-09-04 23:21:24,167 - INFO - Found 8 papers (more available: True)
+2025-09-04 23:21:49,676 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 23:21:49,679 - INFO - Starting download: 2 papers, field=Mathematics, topic=optimization
+2025-09-04 23:21:49,682 - INFO - Starting download: 2 papers
+2025-09-04 23:21:49,685 - INFO - Created download directory: E:\Next JS\researchbot\papers\Mathematics\optimization
+2025-09-04 23:21:49,687 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Mathematics\optimization
+2025-09-04 23:21:49,698 - DEBUG - Loaded metadata for 2 papers
+2025-09-04 23:21:49,713 - INFO - Starting download: 1906.09558v1
+2025-09-04 23:21:49,731 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-04 23:21:49,731 - INFO - Starting download: 2210.03813v1
+2025-09-04 23:21:49,751 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-04 23:21:50,165 - DEBUG - http://arxiv.org:80 "GET /pdf/1906.09558v1 HTTP/1.1" 301 0
+2025-09-04 23:21:50,165 - DEBUG - http://arxiv.org:80 "GET /pdf/2210.03813v1 HTTP/1.1" 301 0
+2025-09-04 23:21:50,168 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-04 23:21:50,168 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-04 23:21:54,651 - DEBUG - https://arxiv.org:443 "GET /pdf/1906.09558v1 HTTP/1.1" 500 141
+2025-09-04 23:21:54,651 - ERROR - HTTP error 500 for 1906.09558v1
+2025-09-04 23:21:54,666 - DEBUG - https://arxiv.org:443 "GET /pdf/2210.03813v1 HTTP/1.1" 200 369633
+2025-09-04 23:22:05,100 - INFO - Successfully downloaded 2210.03813v1 (360KB)
+2025-09-04 23:22:05,106 - DEBUG - Saved metadata for 4 papers
+2025-09-04 23:22:05,106 - INFO - Failed downloads: [('1906.09558v1', 'HTTP_500')]
+2025-09-04 23:22:05,107 - INFO - Download completed: 1 successful downloads
+2025-09-04 23:22:05,110 - WARNING - Could not generate AI summary for 2210.03813v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-04 23:22:05,113 - INFO - Download summary saved to E:\Next JS\researchbot\papers\Mathematics\optimization\download_summary.txt
+2025-09-04 23:22:05,114 - INFO - Download with references completed successfully
+2025-09-04 23:22:53,755 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 23:22:53,765 - INFO - Starting download: 2 papers, field=Mathematics, topic=optimization
+2025-09-04 23:22:53,768 - INFO - Starting download: 2 papers
+2025-09-04 23:22:53,770 - INFO - Created download directory: E:\Next JS\researchbot\papers\Mathematics\optimization
+2025-09-04 23:22:53,776 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Mathematics\optimization
+2025-09-04 23:22:53,807 - DEBUG - Loaded metadata for 4 papers
+2025-09-04 23:22:53,841 - INFO - Starting download: 1906.09558v1
+2025-09-04 23:22:53,856 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-04 23:22:53,857 - INFO - Starting download: 2210.03813v1
+2025-09-04 23:22:53,862 - INFO - Skipped existing file: 2210.03813v1
+2025-09-04 23:22:54,513 - DEBUG - http://arxiv.org:80 "GET /pdf/1906.09558v1 HTTP/1.1" 301 0
+2025-09-04 23:22:54,563 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-04 23:22:56,593 - DEBUG - https://arxiv.org:443 "GET /pdf/1906.09558v1 HTTP/1.1" 200 320045
+2025-09-04 23:23:06,258 - INFO - Successfully downloaded 1906.09558v1 (312KB)
+2025-09-04 23:23:06,263 - DEBUG - Saved metadata for 4 papers
+2025-09-04 23:23:06,264 - INFO - Download completed: 1 successful downloads
+2025-09-04 23:23:06,266 - WARNING - Could not generate AI summary for 1906.09558v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-04 23:23:06,267 - INFO - Download summary saved to E:\Next JS\researchbot\papers\Mathematics\optimization\download_summary.txt
+2025-09-04 23:23:06,268 - INFO - Download with references completed successfully

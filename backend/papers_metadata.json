@@ -1,0 +1,82 @@
+{
+  "1611.01884v3": {
+    "title": "AC-BLSTM: Asymmetric Convolutional Bidirectional LSTM Networks for Text Classification",
+    "authors": [
+      "Depeng Liang",
+      "Yongdong Zhang"
+    ],
+    "summary": "Recently deeplearning models have been shown to be capable of making\nremarkable performance in sentences and documents classification tasks. In this\nwork, we propose a novel framework called AC-BLSTM for modeling sentences and\ndocuments, which combines the asymmetric convolution neural network (ACNN) with\nthe Bidirectional Long Short-Term Memory network (BLSTM). Experiment results\ndemonstrate that our model achieves state-of-the-art results on five tasks,\nincluding sentiment analysis, question type classification, and subjectivity\nclassification. In order to further improve the performance of AC-BLSTM, we\npropose a semi-supervised learning framework called G-AC-BLSTM for text\nclassification by combining the generative model with AC-BLSTM.",
+    "pdf_url": "http://arxiv.org/pdf/1611.01884v3",
+    "published": "2016-11-07",
+    "version": "3",
+    "status": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "arxiv_id": "1611.01884v3",
+    "download_status": "success",
+    "download_path": "papers\\computer_science\\deeplearning\\1611.01884v3_AC-BLSTM__Asymmetric_Convolutional_Bidirectional_LSTM_Networks_for_Text_Classifi.pdf",
+    "download_timestamp": "2025-09-04T22:55:43.405393"
+  },
+  "2202.01197v4": {
+    "title": "VOS: Learning What You Don't Know by Virtual Outlier Synthesis",
+    "authors": [
+      "Xuefeng Du",
+      "Zhaoning Wang",
+      "Mu Cai",
+      "Yixuan Li"
+    ],
+    "summary": "Out-of-distribution (OOD) detection has received much attention lately due to\nits importance in the safe deployment of neural networks. One of the key\nchallenges is that models lack supervision signals from unknown data, and as a\nresult, can produce overconfident predictions on OOD data. Previous approaches\nrely on real outlier datasets for model regularization, which can be costly and\nsometimes infeasible to obtain in practice. In this paper, we present VOS, a\nnovel framework for OOD detection by adaptively synthesizing virtual outliers\nthat can meaningfully regularize the model's decision boundary during training.\nSpecifically, VOS samples virtual outliers from the low-likelihood region of\nthe class-conditional distribution estimated in the feature space. Alongside,\nwe introduce a novel unknown-aware training objective, which contrastively\nshapes the uncertainty space between the ID data and synthesized outlier data.\nVOS achieves competitive performance on both object detection and image\nclassification models, reducing the FPR95 by up to 9.36% compared to the\nprevious best method on object detectors. Code is available at\nhttps://github.com/deeplearning-wisc/vos.",
+    "pdf_url": "http://arxiv.org/pdf/2202.01197v4",
+    "published": "2022-02-02",
+    "version": "4",
+    "status": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "arxiv_id": "2202.01197v4",
+    "download_status": "success",
+    "download_path": "papers\\computer_science\\deeplearning\\2202.01197v4_VOS__Learning_What_You_Don_t_Know_by_Virtual_Outlier_Synthesis.pdf",
+    "download_timestamp": "2025-09-04T22:56:41.249077"
+  },
+  "1906.09558v1": {
+    "title": "New sharp necessary optimality conditions for mathematical programs with equilibrium constraints",
+    "authors": [
+      "Helmut Gfrerer",
+      "Jane J. Ye"
+    ],
+    "summary": "In this paper, we study the mathematical program with equilibrium constraints\n(MPEC) formulated as a mathematical program with a parametric generalized\nequation involving the regular normal cone. We derive a new necessary\noptimality condition which is sharper than the usual M-stationary condition and\nis applicable even when no constraint qualifications hold for the corresponding\nmathematical program with complementarity constraints (MPCC) reformulation.",
+    "pdf_url": "http://arxiv.org/pdf/1906.09558v1",
+    "published": "2019-06-23",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "math.OC"
+    ],
+    "arxiv_id": "1906.09558v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Mathematics\\optimization\\1906.09558v1_New_sharp_necessary_optimality_conditions_for_mathematical_programs_with_equilib.pdf",
+    "download_timestamp": "2025-09-04T23:23:06.261955"
+  },
+  "2210.03813v1": {
+    "title": "MOS: A Mathematical Optimization Service",
+    "authors": [
+      "James Hubert Merrick",
+      "Tomás Tinoco De Rubira"
+    ],
+    "summary": "We introduce MOS, a software application designed to facilitate the\ndeployment, integration, management, and analysis of mathematical optimization\nmodels. MOS approaches mathematical optimization at a higher level of\nabstraction than existing optimization modeling systems, enabling its use with\nall of them. The sole requirement to harness MOS is a simple annotation of the\ncode specifying the formulation of an optimization model. With this, the model\nbecomes accessible to humans through the automatic generation of a user\ninterface, and to machines through an associated API and client libraries. All\nthis is achieved while avoiding the ad hoc code typically required to obtain\nsuch features.",
+    "pdf_url": "http://arxiv.org/pdf/2210.03813v1",
+    "published": "2022-10-07",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "math.OC",
+      "cs.MS"
+    ],
+    "arxiv_id": "2210.03813v1",
+    "download_status": "skipped",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Mathematics\\optimization\\2210.03813v1_MOS__A_Mathematical_Optimization_Service.pdf",
+    "download_timestamp": "2025-09-04T23:22:53.863649"
+  }
+}

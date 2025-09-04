@@ -394,7 +394,7 @@ def get_file_size(url: str) -> Optional[int]:
         pass
     return None
 
-def download_single_paper_enhanced(pid: str, paper_info: dict, download_path: str, resume: bool = True) -> tuple:
+def download_single_paper_enhanced(pid: str, paper_info: dict, download_path: str, resume: bool = True, web_mode: bool = False) -> tuple:
     """Download a single paper with resume capability and better error handling."""
     pdf_url = paper_info.get('pdf_url') or f"https://arxiv.org/pdf/{pid}.pdf"
     safe_title = safe_filename(paper_info['title'])
@@ -408,18 +408,23 @@ def download_single_paper_enhanced(pid: str, paper_info: dict, download_path: st
     if os.path.exists(pdf_path):
         file_size = os.path.getsize(pdf_path)
         if file_size > 1024:  # More than 1KB, likely complete
-            choice = input(f"📄 File {pdf_filename} already exists ({file_size//1024}KB). (o)verwrite, (s)kip, or (r)ename? ").lower()
-            if choice == 's':
+            if web_mode:
+                # In web mode, skip existing files
                 logger.info(f"Skipped existing file: {pid}")
                 return pid, "skipped", pdf_path
-            elif choice == 'r':
-                counter = 1
-                base_name = f"{pid}_{safe_title}"
-                while os.path.exists(pdf_path):
-                    pdf_filename = f"{base_name}_({counter}).pdf"
-                    pdf_path = os.path.join(download_path, pdf_filename)
-                    temp_path = pdf_path + ".part"
-                    counter += 1
+            else:
+                choice = input(f"📄 File {pdf_filename} already exists ({file_size//1024}KB). (o)verwrite, (s)kip, or (r)ename? ").lower()
+                if choice == 's':
+                    logger.info(f"Skipped existing file: {pid}")
+                    return pid, "skipped", pdf_path
+                elif choice == 'r':
+                    counter = 1
+                    base_name = f"{pid}_{safe_title}"
+                    while os.path.exists(pdf_path):
+                        pdf_filename = f"{base_name}_({counter}).pdf"
+                        pdf_path = os.path.join(download_path, pdf_filename)
+                        temp_path = pdf_path + ".part"
+                        counter += 1
     
     # Handle resumable download
     resume_header = {}
@@ -428,9 +433,11 @@ def download_single_paper_enhanced(pid: str, paper_info: dict, download_path: st
         start_pos = os.path.getsize(temp_path)
         resume_header = {'Range': f'bytes={start_pos}-'}
         logger.debug(f"Resuming download from byte {start_pos}")
-        print(f"⏯️  Resuming download of {pid} from {start_pos} bytes...")
+        if not web_mode:
+            print(f"⏯️  Resuming download of {pid} from {start_pos} bytes...")
     else:
-        print(f"⬇️  Downloading {pid}...")
+        if not web_mode:
+            print(f"⬇️  Downloading {pid}...")
     
     try:
         response = requests.get(pdf_url, stream=True, headers=resume_header, timeout=30)
@@ -445,7 +452,7 @@ def download_single_paper_enhanced(pid: str, paper_info: dict, download_path: st
                         downloaded += len(chunk)
                         
                         # Simple progress indicator
-                        if downloaded % (1024 * 100) == 0:  # Every 100KB
+                        if downloaded % (1024 * 100) == 0 and not web_mode:  # Every 100KB
                             print(f"   📥 {downloaded // 1024}KB downloaded...")
             
             # Verify download and rename

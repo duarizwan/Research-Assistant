@@ -1,0 +1,101 @@
+2025-09-04 22:43:34,613 - DEBUG - Using selector: SelectSelector
+2025-09-04 22:45:15,059 - INFO - Received message: Biology  molecular biology, workflow_step: search
+2025-09-04 22:45:15,161 - INFO - New workflow search for: Biology  molecular biology
+2025-09-04 22:45:15,162 - INFO - Searching arXiv: 'Biology  molecular biology' (results 1-8)
+2025-09-04 22:45:15,443 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology++molecular+biology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 22:45:15,602 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 22:45:17,848 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology++molecular+biology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 53037
+2025-09-04 22:45:19,067 - INFO - Got first page: 100 of 80667 total results
+2025-09-04 22:45:19,074 - INFO - Found 8 papers (more available: True)
+2025-09-04 22:45:42,815 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 22:45:42,816 - INFO - Starting download: 4 papers, field=Biology, topic= molecular biology
+2025-09-04 22:45:42,822 - INFO - Starting download: 4 papers
+2025-09-04 22:45:42,841 - INFO - Created download directory: E:\Next JS\researchbot\papers\Biology\molecular_biology
+2025-09-04 22:45:42,862 - INFO - Downloading 4 papers to E:\Next JS\researchbot\papers\Biology\molecular_biology
+2025-09-04 22:45:42,912 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 22:45:42,913 - INFO - Download completed: 0 successful downloads
+2025-09-04 22:45:42,913 - INFO - Download with references completed successfully
+2025-09-04 22:50:34,502 - INFO - Received message: Chemistry biochemistry, workflow_step: search
+2025-09-04 22:50:34,560 - INFO - New workflow search for: Chemistry biochemistry
+2025-09-04 22:50:34,829 - INFO - Searching arXiv: 'Chemistry biochemistry' (results 1-8)
+2025-09-04 22:50:35,140 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+biochemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 22:50:35,397 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 22:50:37,671 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+biochemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 75135
+2025-09-04 22:50:38,573 - INFO - Got first page: 100 of 15516 total results
+2025-09-04 22:50:38,578 - INFO - Found 8 papers (more available: True)
+2025-09-04 22:51:04,837 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 22:51:04,838 - INFO - Starting download: 6 papers, field=Chemistry, topic=biochemistry
+2025-09-04 22:51:04,840 - INFO - Starting download: 6 papers
+2025-09-04 22:51:04,842 - INFO - Created download directory: E:\Next JS\researchbot\papers\Chemistry\biochemistry
+2025-09-04 22:51:04,843 - INFO - Downloading 6 papers to E:\Next JS\researchbot\papers\Chemistry\biochemistry
+2025-09-04 22:51:04,894 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 22:51:04,895 - INFO - Download completed: 0 successful downloads
+2025-09-04 22:51:04,899 - INFO - Download with references completed successfully
+2025-09-04 22:51:12,677 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 22:51:12,693 - INFO - Starting download: 6 papers, field=Chemistry, topic=biochemistry
+2025-09-04 22:51:12,739 - INFO - Starting download: 6 papers
+2025-09-04 22:51:12,746 - INFO - Created download directory: E:\Next JS\researchbot\papers\Chemistry\biochemistry
+2025-09-04 22:51:12,747 - INFO - Downloading 6 papers to E:\Next JS\researchbot\papers\Chemistry\biochemistry
+2025-09-04 22:51:12,765 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 22:51:12,766 - INFO - Download completed: 0 successful downloads
+2025-09-04 22:51:12,767 - INFO - Download with references completed successfully
+2025-09-04 22:57:18,187 - INFO - Received message: Computer Science Deep learning, workflow_step: search
+2025-09-04 22:57:18,208 - INFO - New workflow search for: Computer Science Deep learning
+2025-09-04 22:57:18,314 - INFO - Searching arXiv: 'Computer Science Deep learning' (results 1-8)
+2025-09-04 22:57:18,501 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Computer+Science+Deep+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 22:57:18,702 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 22:57:21,196 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Computer+Science+Deep+learning&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 59150
+2025-09-04 22:57:22,191 - INFO - Got first page: 100 of 1044439 total results
+2025-09-04 22:57:22,193 - INFO - Found 8 papers (more available: True)
+2025-09-04 23:00:46,834 - INFO - Received message: History Roman empire, workflow_step: search
+2025-09-04 23:00:46,844 - INFO - New workflow search for: History Roman empire
+2025-09-04 23:00:46,845 - INFO - Searching arXiv: 'History Roman empire' (results 1-8)
+2025-09-04 23:00:46,846 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=History+Roman+empire&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 23:00:46,892 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 23:00:49,588 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=History+Roman+empire&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 49731
+2025-09-04 23:00:49,839 - INFO - Got first page: 100 of 124106 total results
+2025-09-04 23:00:49,844 - INFO - Found 8 papers (more available: True)
+2025-09-04 23:01:18,726 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 23:01:18,727 - INFO - Starting download: 1 papers, field=History, topic=Roman empire
+2025-09-04 23:01:18,731 - INFO - Starting download: 1 papers
+2025-09-04 23:01:18,733 - INFO - Created download directory: E:\Next JS\researchbot\papers\History\Roman_empire
+2025-09-04 23:01:18,741 - INFO - Downloading 1 papers to E:\Next JS\researchbot\papers\History\Roman_empire
+2025-09-04 23:01:18,755 - DEBUG - Loaded metadata for 2 papers
+2025-09-04 23:01:18,780 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 23:01:18,781 - INFO - Download completed: 0 successful downloads
+2025-09-04 23:01:18,782 - INFO - Download with references completed successfully
+2025-09-04 23:15:07,257 - INFO - Received message: media science film making, workflow_step: search
+2025-09-04 23:15:07,333 - INFO - New workflow search for: media science film making
+2025-09-04 23:15:07,334 - INFO - Searching arXiv: 'media science film making' (results 1-8)
+2025-09-04 23:15:07,335 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=media+science+film+making&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 23:15:07,505 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 23:15:09,889 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=media+science+film+making&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 61361
+2025-09-04 23:15:10,501 - INFO - Got first page: 100 of 453422 total results
+2025-09-04 23:15:10,503 - INFO - Found 8 papers (more available: True)
+2025-09-04 23:15:36,002 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 23:15:36,004 - INFO - Starting download: 1 papers, field=media science, topic=film making
+2025-09-04 23:15:36,007 - INFO - Starting download: 1 papers
+2025-09-04 23:15:36,021 - INFO - Created download directory: E:\Next JS\researchbot\papers\media_science\film_making
+2025-09-04 23:15:36,023 - INFO - Downloading 1 papers to E:\Next JS\researchbot\papers\media_science\film_making
+2025-09-04 23:15:36,026 - DEBUG - Loaded metadata for 2 papers
+2025-09-04 23:15:36,119 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 23:15:36,134 - INFO - Download completed: 0 successful downloads
+2025-09-04 23:15:36,173 - INFO - Download with references completed successfully
+2025-09-04 23:16:26,174 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 23:16:26,175 - INFO - Starting download: 1 papers, field=media science, topic=film making
+2025-09-04 23:16:26,179 - INFO - Starting download: 1 papers
+2025-09-04 23:16:26,215 - INFO - Created download directory: E:\Next JS\researchbot\papers\media_science\film_making
+2025-09-04 23:16:26,218 - INFO - Downloading 1 papers to E:\Next JS\researchbot\papers\media_science\film_making
+2025-09-04 23:16:26,227 - DEBUG - Loaded metadata for 2 papers
+2025-09-04 23:16:26,240 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 23:16:26,257 - INFO - Download completed: 0 successful downloads
+2025-09-04 23:16:26,258 - INFO - Download with references completed successfully
+2025-09-04 23:16:46,425 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 23:16:46,427 - INFO - Starting download: 1 papers, field=media science, topic=film making
+2025-09-04 23:16:46,430 - INFO - Starting download: 1 papers
+2025-09-04 23:16:46,431 - INFO - Created download directory: E:\Next JS\researchbot\papers\media_science\film_making
+2025-09-04 23:16:46,463 - INFO - Downloading 1 papers to E:\Next JS\researchbot\papers\media_science\film_making
+2025-09-04 23:16:46,472 - DEBUG - Loaded metadata for 2 papers
+2025-09-04 23:16:46,504 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 23:16:46,506 - INFO - Download completed: 0 successful downloads
+2025-09-04 23:16:46,511 - INFO - Download with references completed successfully

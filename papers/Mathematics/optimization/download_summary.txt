@@ -1,0 +1,15 @@
+📑 Paper Details and AI-Generated Summaries
+================================================================================
+
+🔹 New sharp necessary optimality conditions for mathematical programs with equilibrium constraints
+📅 Published: 2019-06-23 | Version: 1 | Status: preprint
+👥 Authors: Helmut Gfrerer, Jane J. Ye
+🏷️ Categories: math.OC
+📄 Local file: 1906.09558v1_New_sharp_necessary_optimality_conditions_for_mathematical_programs_with_equilib.pdf
+🔗 ArXiv URL: http://arxiv.org/pdf/1906.09558v1
+📝 Abstract: In this paper, we study the mathematical program with equilibrium constraints
+(MPEC) formulated as a mathematical program with a parametric generalized
+equation involving the regular normal cone. We derive a new necessary
+optimality condition which is sharper than the usual M-stationary condition an...
+--------------------------------------------------------------------------------
+

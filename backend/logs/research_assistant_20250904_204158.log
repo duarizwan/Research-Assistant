@@ -138,3 +138,67 @@
 2025-09-04 21:44:08,726 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
 2025-09-04 21:44:08,731 - INFO - Download completed: 0 successful downloads
 2025-09-04 21:44:08,732 - INFO - Download with references completed successfully
+2025-09-04 22:27:30,468 - INFO - Received message: Mathematics topology, workflow_step: search
+2025-09-04 22:27:30,698 - INFO - New workflow search for: Mathematics topology
+2025-09-04 22:27:30,951 - INFO - Searching arXiv: 'Mathematics topology' (results 1-8)
+2025-09-04 22:27:31,134 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+topology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 22:27:31,291 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 22:27:33,587 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+topology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 30342
+2025-09-04 22:27:33,965 - INFO - Got first page: 100 of 327133 total results
+2025-09-04 22:27:33,967 - INFO - Found 8 papers (more available: True)
+2025-09-04 22:28:02,568 - INFO - Received message: sDVdEwx dcvCDvd, workflow_step: search
+2025-09-04 22:28:02,569 - INFO - New workflow search for: sDVdEwx dcvCDvd
+2025-09-04 22:28:02,575 - INFO - Searching arXiv: 'sDVdEwx dcvCDvd' (results 1-8)
+2025-09-04 22:28:02,576 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=sDVdEwx+dcvCDvd&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 22:28:02,583 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 22:28:03,724 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=sDVdEwx+dcvCDvd&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 416
+2025-09-04 22:28:03,742 - INFO - Got empty first page; stopping generation
+2025-09-04 22:28:03,742 - INFO - Found 0 papers (more available: False)
+2025-09-04 22:28:44,642 - INFO - Received message: Media science Journalism , workflow_step: search
+2025-09-04 22:28:44,643 - INFO - New workflow search for: Media science Journalism 
+2025-09-04 22:28:44,644 - INFO - Searching arXiv: 'Media science Journalism ' (results 1-8)
+2025-09-04 22:28:44,644 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Media+science+Journalism+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 22:28:44,648 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 22:28:46,362 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Media+science+Journalism+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 60281
+2025-09-04 22:28:46,758 - INFO - Got first page: 100 of 369775 total results
+2025-09-04 22:28:46,763 - INFO - Found 8 papers (more available: True)
+2025-09-04 22:37:58,259 - INFO - Received message: Fitness Diet plan, workflow_step: search
+2025-09-04 22:37:58,266 - INFO - New workflow search for: Fitness Diet plan
+2025-09-04 22:37:58,268 - INFO - Searching arXiv: 'Fitness Diet plan' (results 1-8)
+2025-09-04 22:37:58,273 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+Diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 22:37:58,284 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 22:38:03,134 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+Diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 69572
+2025-09-04 22:38:04,385 - INFO - Got first page: 100 of 127960 total results
+2025-09-04 22:38:04,390 - INFO - Found 8 papers (more available: True)
+2025-09-04 22:38:48,256 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 22:38:48,295 - INFO - Starting download: 2 papers, field=Fitness, topic=Diet plan
+2025-09-04 22:38:48,343 - INFO - Starting download: 2 papers
+2025-09-04 22:38:48,345 - INFO - Created download directory: E:\Next JS\researchbot\papers\Fitness\Diet_plan
+2025-09-04 22:38:48,348 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Fitness\Diet_plan
+2025-09-04 22:38:48,579 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 22:38:48,743 - INFO - Download completed: 0 successful downloads
+2025-09-04 22:38:48,830 - INFO - Download with references completed successfully
+2025-09-04 22:39:47,490 - INFO - Received message: Physics astrophysics, workflow_step: search
+2025-09-04 22:39:47,497 - INFO - New workflow search for: Physics astrophysics
+2025-09-04 22:39:47,506 - INFO - Searching arXiv: 'Physics astrophysics' (results 1-8)
+2025-09-04 22:39:47,516 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-04 22:39:47,525 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-04 22:39:51,809 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 33942
+2025-09-04 22:39:52,371 - INFO - Got first page: 100 of 1254899 total results
+2025-09-04 22:39:52,378 - INFO - Found 8 papers (more available: True)
+2025-09-04 22:40:24,865 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 22:40:24,942 - INFO - Starting download: 5 papers, field=Physics, topic=astrophysics
+2025-09-04 22:40:25,083 - INFO - Starting download: 5 papers
+2025-09-04 22:40:25,207 - INFO - Created download directory: E:\Next JS\researchbot\papers\Physics\astrophysics
+2025-09-04 22:40:25,709 - INFO - Downloading 5 papers to E:\Next JS\researchbot\papers\Physics\astrophysics
+2025-09-04 22:40:26,554 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 22:40:26,738 - INFO - Download completed: 0 successful downloads
+2025-09-04 22:40:26,878 - INFO - Download with references completed successfully
+2025-09-04 22:40:42,182 - INFO - Received message: download papers, workflow_step: download
+2025-09-04 22:40:42,214 - INFO - Starting download: 5 papers, field=Physics, topic=astrophysics
+2025-09-04 22:40:42,272 - INFO - Starting download: 5 papers
+2025-09-04 22:40:42,292 - INFO - Created download directory: E:\Next JS\researchbot\papers\Physics\astrophysics
+2025-09-04 22:40:42,345 - INFO - Downloading 5 papers to E:\Next JS\researchbot\papers\Physics\astrophysics
+2025-09-04 22:40:42,431 - ERROR - Error in download_papers_to_path: download_single_paper_enhanced() takes from 3 to 4 positional arguments but 5 were given
+2025-09-04 22:40:42,433 - INFO - Download completed: 0 successful downloads
+2025-09-04 22:40:42,437 - INFO - Download with references completed successfully
