@@ -1,0 +1,21 @@
+2025-09-05 11:07:08,114 - DEBUG - Using selector: SelectSelector
+2025-09-05 11:07:46,600 - INFO - Received message: Economics Macro Economics, workflow_step: search
+2025-09-05 11:07:46,605 - INFO - New workflow search for: Economics Macro Economics
+2025-09-05 11:07:46,606 - INFO - Searching arXiv: 'Economics Macro Economics' (results 1-10)
+2025-09-05 11:07:46,608 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Economics+Macro+Economics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:07:46,635 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:07:49,888 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Economics+Macro+Economics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 57216
+2025-09-05 11:07:50,183 - INFO - Got first page: 100 of 32784 total results
+2025-09-05 11:07:50,185 - INFO - Found 10 papers (more available: True)
+2025-09-05 11:08:07,654 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 11:08:07,654 - ERROR - Load more error: 'str' object has no attribute 'trim'
+2025-09-05 11:08:47,511 - INFO - Received message: Mathematics algebra, workflow_step: search
+2025-09-05 11:08:47,529 - INFO - New workflow search for: Mathematics algebra
+2025-09-05 11:08:47,571 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-10)
+2025-09-05 11:08:47,572 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:08:47,575 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:08:54,731 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25460
+2025-09-05 11:08:55,998 - INFO - Got first page: 100 of 361355 total results
+2025-09-05 11:08:56,008 - INFO - Found 10 papers (more available: True)
+2025-09-05 11:09:01,516 - INFO - Received message: y, workflow_step: load_more
+2025-09-05 11:09:01,517 - ERROR - Load more error: 'str' object has no attribute 'trim'

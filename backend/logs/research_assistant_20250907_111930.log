@@ -1,0 +1,12 @@
+2025-09-07 11:19:30,844 - DEBUG - Using selector: SelectSelector
+2025-09-07 11:24:10,024 - INFO - Received message: perfect, workflow_step: greeting
+2025-09-07 11:24:19,853 - INFO - Received message: Biology, workflow_step: greeting
+2025-09-07 11:24:32,293 - INFO - Received message: ecology, workflow_step: greeting
+2025-09-07 11:24:32,297 - INFO - Searching for: Biology ecology
+2025-09-07 11:24:32,305 - INFO - Searching arXiv: 'Biology ecology' (results 1-8)
+2025-09-07 11:24:32,356 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+ecology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 11:24:32,479 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 11:24:35,400 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+ecology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 51539
+2025-09-07 11:24:36,121 - INFO - Got first page: 100 of 17062 total results
+2025-09-07 11:24:36,193 - INFO - Found 8 papers (more available: True)
+2025-09-07 11:24:49,560 - INFO - Received message: yes, workflow_step: load_more

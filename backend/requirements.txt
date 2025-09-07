@@ -11,4 +11,4 @@ EOF
 
 # .\venv\Scripts\Activate.ps1
 # source venv/bin/activate  # If using virtual environment
-# python main.py
+#  dev

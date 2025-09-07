@@ -48,6 +48,7 @@ class ChatMessage(BaseModel):
     paper_ids: Optional[List[str]] = None
     field: Optional[str] = None
     topic: Optional[str] = None
+    max_results: Optional[int] = 10
 
 class Paper(BaseModel):
     id: str
@@ -75,6 +76,8 @@ class ConversationState:
         self.awaiting_field = False
         self.awaiting_topic = False
         self.conversation_history = []
+        self.global_paper_map = {}  # Maps sequential numbers to paper IDs
+        self.next_serial_number = 1  # Tracks the next available serial number
 
 # Session management (in production, use Redis or similar)
 sessions: Dict[str, ConversationState] = {}
@@ -107,7 +110,11 @@ async def chat_endpoint(message: ChatMessage, background_tasks: BackgroundTasks)
         
         # Handle different workflow steps
         if message.workflow_step == "search":
-            response = await handle_paper_search(message.message, session)
+            max_results = message.max_results or 10
+            response = await handle_paper_search(message.message, session, max_results)
+        elif message.workflow_step == "load_more":
+            max_results = message.max_results or 5
+            response = await handle_load_more_papers(message.message, session, max_results)
         elif message.workflow_step == "download":
             response = await handle_download_request(message, session, background_tasks)
         else:
@@ -342,12 +349,12 @@ def parse_paper_selection(user_message: str, papers_dict: dict) -> List[str]:
     
     return selected[:5]  # Limit to 5 papers
 
-async def handle_paper_search(query: str, session: ConversationState) -> ChatResponse:
-    """Handle paper search for the new workflow"""
+async def handle_paper_search(query: str, session: ConversationState, max_results: int = 10) -> ChatResponse:
+    """Handle paper search for the new workflow with sequential numbering"""
     try:
-        logger.info(f"New workflow search for: {query}")
+        logger.info(f"New workflow search for: {query} (max_results: {max_results})")
         
-        papers_info, has_more = search_papers(query, max_results=8)
+        papers_info, has_more = search_papers(query, max_results=max_results)
         
         if not papers_info:
             return ChatResponse(
@@ -356,11 +363,16 @@ async def handle_paper_search(query: str, session: ConversationState) -> ChatRes
             )
         
         # Store papers for potential download
-        session.current_papers = papers_info
+        session.current_papers.update(papers_info)
         
-        # Convert to Paper objects
+        # Add papers to global map with sequential numbering
         papers_list = []
         for pid, info in papers_info.items():
+            # Assign sequential number
+            serial_number = session.next_serial_number
+            session.global_paper_map[serial_number] = pid
+            session.next_serial_number += 1
+            
             papers_list.append(Paper(
                 id=pid,
                 title=info['title'],
@@ -373,8 +385,15 @@ async def handle_paper_search(query: str, session: ConversationState) -> ChatRes
                 categories=info.get('categories', [])[:2]
             ))
         
+        # Determine the range of serial numbers
+        start_num = session.next_serial_number - len(papers_list)
+        end_num = session.next_serial_number - 1
+        
+        response_text = f"Found {len(papers_list)} research papers! Here are papers {start_num}-{end_num}:\n\n"
+        response_text += "Selected Papers:"
+        
         return ChatResponse(
-            response=f"Found {len(papers_list)} papers!",
+            response=response_text,
             papers=papers_list,
             action_type="search"
         )
@@ -383,6 +402,110 @@ async def handle_paper_search(query: str, session: ConversationState) -> ChatRes
         logger.error(f"Paper search error: {e}")
         return ChatResponse(
             response=f"Error searching for papers: {str(e)}",
+            action_type="error"
+        )
+
+async def handle_load_more_papers(query: str, session: ConversationState, max_results: int = 5) -> ChatResponse:
+    """Handle loading more papers with sequential numbering by searching for additional papers"""
+    try:
+        logger.info(f"Searching for more papers on: {query} (max_results: {max_results})")
+        
+        # Try multiple search strategies to find new papers
+        search_attempts = [
+            query,  # Original query
+            f"{query} recent",  # Add recent keyword
+            f"{query} 2024",  # Add current year
+            f"{query} 2023",  # Add previous year
+            f"{query} latest",  # Add latest keyword
+        ]
+        
+        new_papers = {}
+        search_used = query
+        
+        # Try each search strategy until we find new papers
+        for search_query in search_attempts:
+            logger.info(f"Trying search: {search_query}")
+            papers_info, has_more = search_papers(search_query, max_results=max_results)
+            
+            if papers_info:
+                # Filter out papers that are already loaded to avoid duplicates
+                for pid, info in papers_info.items():
+                    if pid not in session.current_papers:
+                        new_papers[pid] = info
+                
+                if new_papers:
+                    search_used = search_query
+                    logger.info(f"Found {len(new_papers)} new papers using search: {search_query}")
+                    break
+        
+        # If still no new papers, try broader searches
+        if not new_papers:
+            broader_searches = [
+                f"{query.split()[0]} {query.split()[-1]}",  # First and last word
+                query.split()[0],  # Just the field
+                query.split()[-1],  # Just the topic
+            ]
+            
+            for search_query in broader_searches:
+                logger.info(f"Trying broader search: {search_query}")
+                papers_info, has_more = search_papers(search_query, max_results=max_results)
+                
+                if papers_info:
+                    for pid, info in papers_info.items():
+                        if pid not in session.current_papers:
+                            new_papers[pid] = info
+                    
+                    if new_papers:
+                        search_used = search_query
+                        logger.info(f"Found {len(new_papers)} new papers using broader search: {search_query}")
+                        break
+        
+        if not new_papers:
+            return ChatResponse(
+                response="No more relevant papers available on arXiv for this topic. All available papers have been loaded. You can now proceed to download selection or search for a different topic.",
+                action_type="search"
+            )
+        
+        # Store new papers for potential download
+        session.current_papers.update(new_papers)
+        
+        # Add papers to global map with sequential numbering
+        papers_list = []
+        for pid, info in new_papers.items():
+            # Assign sequential number
+            serial_number = session.next_serial_number
+            session.global_paper_map[serial_number] = pid
+            session.next_serial_number += 1
+            
+            papers_list.append(Paper(
+                id=pid,
+                title=info['title'],
+                authors=info['authors'][:3],
+                summary=info['summary'][:200] + "..." if len(info['summary']) > 200 else info['summary'],
+                pdf_url=info['pdf_url'],
+                published=info['published'],
+                version=info['version'],
+                status=info['status'],
+                categories=info.get('categories', [])[:2]
+            ))
+        
+        # Determine the range of serial numbers
+        start_num = session.next_serial_number - len(papers_list)
+        end_num = session.next_serial_number - 1
+        
+        response_text = f"Found {len(papers_list)} additional papers on the same topic! Here are papers {start_num}-{end_num}:\n\n"
+        response_text += "Selected Papers:"
+        
+        return ChatResponse(
+            response=response_text,
+            papers=papers_list,
+            action_type="search"
+        )
+        
+    except Exception as e:
+        logger.error(f"Load more papers error: {e}")
+        return ChatResponse(
+            response=f"Error searching for more papers: {str(e)}",
             action_type="error"
         )
 

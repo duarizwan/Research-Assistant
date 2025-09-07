@@ -1,0 +1,36 @@
+2025-09-07 12:52:28,365 - DEBUG - Using selector: SelectSelector
+2025-09-07 12:55:05,746 - INFO - Received message: Physics astrophysics, workflow_step: search
+2025-09-07 12:55:05,748 - INFO - New workflow search for: Physics astrophysics (max_results: 10)
+2025-09-07 12:55:05,749 - INFO - Searching arXiv: 'Physics astrophysics' (results 1-10)
+2025-09-07 12:55:05,750 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:55:05,755 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:55:08,530 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 34198
+2025-09-07 12:55:08,783 - INFO - Got first page: 100 of 1255233 total results
+2025-09-07 12:55:08,789 - INFO - Found 10 papers (more available: True)
+2025-09-07 12:55:19,936 - INFO - Received message: load more papers about Physics astrophysics, workflow_step: load_more
+2025-09-07 12:55:19,943 - INFO - Loading more papers for: load more papers about Physics astrophysics (max_results: 5)
+2025-09-07 12:55:19,944 - INFO - Searching arXiv: 'load more papers about Physics astrophysics' (results 11-15)
+2025-09-07 12:55:19,945 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=load+more+papers+about+Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:55:19,950 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:55:21,947 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=load+more+papers+about+Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 65457
+2025-09-07 12:55:22,398 - INFO - Got first page: 100 of 1989726 total results
+2025-09-07 12:55:22,400 - INFO - Found 0 papers (more available: False)
+2025-09-07 12:55:56,819 - INFO - Received message: Computer Science artificial intelligence, workflow_step: search
+2025-09-07 12:55:56,820 - INFO - New workflow search for: Computer Science artificial intelligence (max_results: 10)
+2025-09-07 12:55:56,820 - INFO - Searching arXiv: 'Computer Science artificial intelligence' (results 1-10)
+2025-09-07 12:55:56,821 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Computer+Science+artificial+intelligence&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:55:56,824 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:55:57,922 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Computer+Science+artificial+intelligence&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 4010
+2025-09-07 12:55:57,992 - INFO - Got first page: 10 of 926892 total results
+2025-09-07 12:55:57,997 - INFO - Sleeping: 2.928851 seconds
+2025-09-07 12:56:00,934 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=Computer+Science+artificial+intelligence&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100
+2025-09-07 12:56:01,983 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Computer+Science+artificial+intelligence&id_list=&sortBy=relevance&sortOrder=descending&start=10&max_results=100 HTTP/1.1" 200 38367
+2025-09-07 12:56:02,171 - INFO - Found 10 papers (more available: True)
+2025-09-07 12:56:06,489 - INFO - Received message: load more papers about Computer Science artificial intelligence, workflow_step: load_more
+2025-09-07 12:56:06,489 - INFO - Loading more papers for: load more papers about Computer Science artificial intelligence (max_results: 5)
+2025-09-07 12:56:06,491 - INFO - Searching arXiv: 'load more papers about Computer Science artificial intelligence' (results 21-25)
+2025-09-07 12:56:06,492 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=load+more+papers+about+Computer+Science+artificial+intelligence&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:56:06,495 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:56:08,128 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=load+more+papers+about+Computer+Science+artificial+intelligence&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 58108
+2025-09-07 12:56:08,586 - INFO - Got first page: 100 of 1596559 total results
+2025-09-07 12:56:08,589 - INFO - Found 0 papers (more available: False)

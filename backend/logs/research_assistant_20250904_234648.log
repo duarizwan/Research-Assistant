@@ -1,0 +1,41 @@
+2025-09-04 23:46:48,100 - DEBUG - Using selector: SelectSelector
+2025-09-05 10:32:54,676 - INFO - Received message: Englich narrative essay, workflow_step: search
+2025-09-05 10:32:54,742 - INFO - New workflow search for: Englich narrative essay
+2025-09-05 10:32:54,807 - INFO - Searching arXiv: 'Englich narrative essay' (results 1-10)
+2025-09-05 10:32:54,959 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Englich+narrative+essay&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 10:32:55,111 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 10:32:57,459 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Englich+narrative+essay&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 60766
+2025-09-05 10:32:58,375 - INFO - Got first page: 100 of 5407 total results
+2025-09-05 10:32:58,383 - INFO - Found 10 papers (more available: True)
+2025-09-05 10:43:58,773 - INFO - Received message: math topology, workflow_step: search
+2025-09-05 10:43:58,780 - INFO - New workflow search for: math topology
+2025-09-05 10:43:58,781 - INFO - Searching arXiv: 'math topology' (results 1-10)
+2025-09-05 10:43:58,791 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=math+topology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 10:43:58,801 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 10:44:01,530 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=math+topology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 24979
+2025-09-05 10:44:01,911 - INFO - Got first page: 100 of 201228 total results
+2025-09-05 10:44:01,913 - INFO - Found 10 papers (more available: True)
+2025-09-05 10:44:26,847 - INFO - Received message: download papers, workflow_step: download
+2025-09-05 10:44:26,850 - INFO - Starting download: 2 papers, field=math, topic=topology
+2025-09-05 10:44:26,959 - INFO - Starting download: 2 papers
+2025-09-05 10:44:27,059 - INFO - Created download directory: E:\Next JS\researchbot\papers\math\topology
+2025-09-05 10:44:27,122 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\math\topology
+2025-09-05 10:44:27,168 - DEBUG - Loaded metadata for 8 papers
+2025-09-05 10:44:27,294 - INFO - Starting download: math/0502469v1
+2025-09-05 10:44:27,312 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 10:44:27,315 - INFO - Starting download: 0912.0198v1
+2025-09-05 10:44:27,349 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 10:44:27,942 - DEBUG - http://arxiv.org:80 "GET /pdf/math/0502469v1 HTTP/1.1" 301 0
+2025-09-05 10:44:27,949 - DEBUG - http://arxiv.org:80 "GET /pdf/0912.0198v1 HTTP/1.1" 301 0
+2025-09-05 10:44:27,965 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 10:44:27,989 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 10:44:29,586 - DEBUG - https://arxiv.org:443 "GET /pdf/math/0502469v1 HTTP/1.1" 200 84521
+2025-09-05 10:44:29,588 - ERROR - Unexpected error downloading math/0502469v1: [Errno 2] No such file or directory: 'E:\\Next JS\\researchbot\\papers\\math\\topology\\math/0502469v1_Circle_bundles_over_4-manifolds.pdf.part'
+2025-09-05 10:44:29,857 - DEBUG - https://arxiv.org:443 "GET /pdf/0912.0198v1 HTTP/1.1" 200 138152
+2025-09-05 10:44:30,559 - INFO - Successfully downloaded 0912.0198v1 (134KB)
+2025-09-05 10:44:30,575 - DEBUG - Saved metadata for 10 papers
+2025-09-05 10:44:30,575 - INFO - Failed downloads: [('math/0502469v1', "error: [Errno 2] No such file or directory: 'E:\\\\Next JS\\\\researchbot\\\\papers\\\\math\\\\topology\\\\math/0502469v1_Circle_bundles_over_4-manifolds.pdf.part'")]
+2025-09-05 10:44:30,578 - INFO - Download completed: 1 successful downloads
+2025-09-05 10:44:30,589 - WARNING - Could not generate AI summary for 0912.0198v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-05 10:44:30,594 - INFO - Download summary saved to E:\Next JS\researchbot\papers\math\topology\download_summary.txt
+2025-09-05 10:44:30,595 - INFO - Download with references completed successfully

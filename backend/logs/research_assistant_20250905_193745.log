@@ -1,0 +1,48 @@
+2025-09-05 19:37:45,298 - DEBUG - Using selector: SelectSelector
+2025-09-05 19:39:02,699 - INFO - Received message: Fitness Diet plan, workflow_step: search
+2025-09-05 19:39:02,922 - INFO - New workflow search for: Fitness Diet plan
+2025-09-05 19:39:03,338 - INFO - Searching arXiv: 'Fitness Diet plan' (results 1-10)
+2025-09-05 19:39:03,767 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+Diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 19:39:04,103 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 19:39:15,424 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+Diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 69566
+2025-09-05 19:39:19,441 - INFO - Got first page: 100 of 128012 total results
+2025-09-05 19:39:20,114 - INFO - Found 10 papers (more available: True)
+2025-09-05 19:40:10,137 - INFO - Received message: Fitness  diet and excercise, workflow_step: search
+2025-09-05 19:40:10,330 - INFO - New workflow search for: Fitness  diet and excercise
+2025-09-05 19:40:10,336 - INFO - Searching arXiv: 'Fitness  diet and excercise' (results 1-10)
+2025-09-05 19:40:10,685 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness++diet+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 19:40:10,935 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 19:40:24,029 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness++diet+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 18432
+2025-09-05 19:40:24,459 - INFO - Got first page: 25 of 2751228 total results
+2025-09-05 19:40:24,496 - INFO - Found 10 papers (more available: True)
+2025-09-05 19:40:46,391 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 19:40:46,446 - INFO - Searching arXiv: 'Fitness  diet and excercise' (results 1-15)
+2025-09-05 19:40:46,554 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness++diet+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 19:40:46,788 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 19:40:55,094 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness++diet+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 18432
+2025-09-05 19:40:56,358 - INFO - Got first page: 25 of 2751228 total results
+2025-09-05 19:40:56,708 - INFO - Found 15 papers (more available: True)
+2025-09-05 19:43:30,590 - INFO - Received message: cat:math AND all:statistics, workflow_step: search
+2025-09-05 19:43:30,624 - INFO - New workflow search for: cat:math AND all:statistics
+2025-09-05 19:43:30,700 - INFO - Searching arXiv: 'cat:math AND all:statistics' (results 1-10)
+2025-09-05 19:43:30,887 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=cat%3Amath+AND+all%3Astatistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 19:43:31,073 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 19:43:36,186 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=cat%3Amath+AND+all%3Astatistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 433
+2025-09-05 19:43:36,219 - INFO - Got empty first page; stopping generation
+2025-09-05 19:43:36,284 - INFO - Found 0 papers (more available: False)
+2025-09-05 19:44:59,525 - INFO - Received message: cat:q-bio AND all:genetics, workflow_step: search
+2025-09-05 19:44:59,610 - INFO - New workflow search for: cat:q-bio AND all:genetics
+2025-09-05 19:44:59,736 - INFO - Searching arXiv: 'cat:q-bio AND all:genetics' (results 1-10)
+2025-09-05 19:44:59,883 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=cat%3Aq-bio+AND+all%3Agenetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 19:45:00,009 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 19:45:05,264 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=cat%3Aq-bio+AND+all%3Agenetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 49175
+2025-09-05 19:45:05,863 - INFO - Got first page: 100 of 103 total results
+2025-09-05 19:45:05,867 - INFO - Found 10 papers (more available: True)
+2025-09-05 19:45:26,636 - INFO - Received message: cat:math AND all:optimization, workflow_step: search
+2025-09-05 19:45:26,637 - INFO - New workflow search for: cat:math AND all:optimization
+2025-09-05 19:45:26,637 - INFO - Searching arXiv: 'cat:math AND all:optimization' (results 1-10)
+2025-09-05 19:45:26,638 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=cat%3Amath+AND+all%3Aoptimization&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 19:45:26,641 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 19:45:28,764 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=cat%3Amath+AND+all%3Aoptimization&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 435
+2025-09-05 19:45:28,767 - INFO - Got empty first page; stopping generation
+2025-09-05 19:45:28,768 - INFO - Found 0 papers (more available: False)

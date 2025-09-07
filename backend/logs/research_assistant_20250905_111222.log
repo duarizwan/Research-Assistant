@@ -1,0 +1,53 @@
+2025-09-05 11:12:22,399 - DEBUG - Using selector: SelectSelector
+2025-09-05 11:13:59,446 - INFO - Received message: Chemistry organic , workflow_step: search
+2025-09-05 11:13:59,570 - INFO - New workflow search for: Chemistry organic 
+2025-09-05 11:13:59,690 - INFO - Searching arXiv: 'Chemistry organic ' (results 1-10)
+2025-09-05 11:13:59,750 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+organic+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:13:59,822 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:14:02,931 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+organic+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 64342
+2025-09-05 11:14:03,871 - INFO - Got first page: 100 of 57075 total results
+2025-09-05 11:14:03,877 - INFO - Found 10 papers (more available: True)
+2025-09-05 11:14:08,228 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 11:14:08,231 - INFO - Searching arXiv: 'Chemistry organic ' (results 1-15)
+2025-09-05 11:14:08,232 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+organic+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:14:08,235 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:14:09,285 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+organic+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 64342
+2025-09-05 11:14:09,986 - INFO - Got first page: 100 of 57075 total results
+2025-09-05 11:14:09,989 - INFO - Found 15 papers (more available: True)
+2025-09-05 11:14:25,847 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 11:14:25,851 - INFO - Searching arXiv: 'Chemistry organic ' (results 1-20)
+2025-09-05 11:14:25,852 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+organic+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:14:25,888 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:14:27,329 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+organic+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 64342
+2025-09-05 11:14:27,697 - INFO - Got first page: 100 of 57075 total results
+2025-09-05 11:14:27,700 - INFO - Found 20 papers (more available: True)
+2025-09-05 11:23:59,936 - INFO - Received message: sports running, workflow_step: search
+2025-09-05 11:23:59,974 - INFO - New workflow search for: sports running
+2025-09-05 11:23:59,989 - INFO - Searching arXiv: 'sports running' (results 1-10)
+2025-09-05 11:24:00,090 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=sports+running&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:24:00,272 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:24:16,485 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=sports+running&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 65861
+2025-09-05 11:24:21,943 - INFO - Got first page: 100 of 58331 total results
+2025-09-05 11:24:21,957 - INFO - Found 10 papers (more available: True)
+2025-09-05 11:24:37,434 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 11:24:37,438 - INFO - Searching arXiv: 'sports running' (results 1-15)
+2025-09-05 11:24:37,439 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=sports+running&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:24:37,441 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:24:39,021 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=sports+running&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 65861
+2025-09-05 11:24:39,587 - INFO - Got first page: 100 of 58331 total results
+2025-09-05 11:24:39,590 - INFO - Found 15 papers (more available: True)
+2025-09-05 11:25:59,837 - INFO - Received message: Biology neuroscience, workflow_step: search
+2025-09-05 11:25:59,852 - INFO - New workflow search for: Biology neuroscience
+2025-09-05 11:25:59,853 - INFO - Searching arXiv: 'Biology neuroscience' (results 1-10)
+2025-09-05 11:25:59,854 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+neuroscience&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:25:59,871 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:26:04,004 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+neuroscience&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 60570
+2025-09-05 11:26:04,406 - INFO - Got first page: 100 of 16807 total results
+2025-09-05 11:26:04,409 - INFO - Found 10 papers (more available: True)
+2025-09-05 11:26:09,173 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 11:26:09,173 - INFO - Searching arXiv: 'Biology neuroscience' (results 1-15)
+2025-09-05 11:26:09,174 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+neuroscience&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:26:09,178 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:26:10,788 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+neuroscience&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 60570
+2025-09-05 11:26:11,099 - INFO - Got first page: 100 of 16807 total results
+2025-09-05 11:26:11,101 - INFO - Found 15 papers (more available: True)

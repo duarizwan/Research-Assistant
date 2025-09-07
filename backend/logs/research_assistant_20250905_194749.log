@@ -1,0 +1,135 @@
+2025-09-05 19:47:49,679 - DEBUG - Using selector: SelectSelector
+2025-09-05 19:50:12,195 - INFO - Received message: cat:math AND all:algebra, workflow_step: search
+2025-09-05 19:50:12,278 - INFO - New workflow search for: cat:math AND all:algebra
+2025-09-05 19:50:12,328 - INFO - Searching arXiv: 'cat:math AND all:algebra' (results 1-10)
+2025-09-05 19:50:12,333 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=cat%3Amath+AND+all%3Aalgebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 19:50:12,351 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 19:50:13,641 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=cat%3Amath+AND+all%3Aalgebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 432
+2025-09-05 19:50:13,727 - INFO - Got empty first page; stopping generation
+2025-09-05 19:50:13,727 - INFO - Found 0 papers (more available: False)
+2025-09-05 19:55:13,001 - INFO - Received message: cat:math AND all:algebra, workflow_step: search
+2025-09-05 19:55:13,188 - INFO - New workflow search for: cat:math AND all:algebra
+2025-09-05 19:55:13,188 - INFO - Searching arXiv: 'cat:math AND all:algebra' (results 1-10)
+2025-09-05 19:55:13,606 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=cat%3Amath+AND+all%3Aalgebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 19:55:13,962 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 19:55:15,764 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=cat%3Amath+AND+all%3Aalgebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 432
+2025-09-05 19:55:15,772 - INFO - Got empty first page; stopping generation
+2025-09-05 19:55:15,773 - INFO - Found 0 papers (more available: False)
+2025-09-05 19:59:27,146 - INFO - Received message: cat:math AND all:algebra, workflow_step: search
+2025-09-05 19:59:27,157 - INFO - New workflow search for: cat:math AND all:algebra
+2025-09-05 19:59:27,159 - INFO - Searching arXiv: 'cat:math AND all:algebra' (results 1-10)
+2025-09-05 19:59:27,164 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=cat%3Amath+AND+all%3Aalgebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 19:59:27,212 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 19:59:28,903 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=cat%3Amath+AND+all%3Aalgebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 432
+2025-09-05 19:59:28,908 - INFO - Got empty first page; stopping generation
+2025-09-05 19:59:28,908 - INFO - Found 0 papers (more available: False)
+2025-09-05 20:01:47,595 - INFO - Received message: Mathematics algebra, workflow_step: search
+2025-09-05 20:01:47,615 - INFO - New workflow search for: Mathematics algebra
+2025-09-05 20:01:47,726 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-10)
+2025-09-05 20:01:48,056 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 20:01:48,406 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 20:02:07,077 - DEBUG - Got error (try 0): ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-09-05 20:02:07,081 - INFO - Requesting page (first: True, try: 1): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 20:02:07,084 - DEBUG - Starting new HTTPS connection (2): export.arxiv.org:443
+2025-09-05 20:02:24,225 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25460
+2025-09-05 20:02:24,998 - INFO - Got first page: 100 of 361355 total results
+2025-09-05 20:02:25,057 - INFO - Found 10 papers (more available: True)
+2025-09-05 22:04:22,600 - INFO - Received message: Mathematics optimization, workflow_step: search
+2025-09-05 22:04:23,218 - INFO - New workflow search for: Mathematics optimization
+2025-09-05 22:04:23,728 - INFO - Searching arXiv: 'Mathematics optimization' (results 1-10)
+2025-09-05 22:04:24,281 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+optimization&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 22:04:24,878 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 22:04:29,458 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+optimization&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 34625
+2025-09-05 22:04:29,944 - INFO - Got first page: 100 of 470708 total results
+2025-09-05 22:04:29,953 - INFO - Found 10 papers (more available: True)
+2025-09-05 22:04:33,832 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 22:04:33,837 - INFO - Searching arXiv: 'Mathematics optimization' (results 1-15)
+2025-09-05 22:04:33,838 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+optimization&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 22:04:33,850 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 22:04:35,155 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+optimization&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 34625
+2025-09-05 22:04:35,693 - INFO - Got first page: 100 of 470708 total results
+2025-09-05 22:04:35,700 - INFO - Found 15 papers (more available: True)
+2025-09-05 22:14:09,318 - INFO - Received message: Mathematics algebra, workflow_step: search
+2025-09-05 22:14:09,387 - INFO - New workflow search for: Mathematics algebra
+2025-09-05 22:14:09,566 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-10)
+2025-09-05 22:14:10,197 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 22:14:10,686 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 22:14:13,948 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25460
+2025-09-05 22:14:14,557 - INFO - Got first page: 100 of 361355 total results
+2025-09-05 22:14:14,631 - INFO - Found 10 papers (more available: True)
+2025-09-05 22:14:19,683 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 22:14:19,689 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-15)
+2025-09-05 22:14:19,691 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 22:14:19,695 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 22:14:20,648 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25460
+2025-09-05 22:14:21,488 - INFO - Got first page: 100 of 361355 total results
+2025-09-05 22:14:21,498 - INFO - Found 15 papers (more available: True)
+2025-09-05 22:14:28,160 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 22:14:28,161 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-20)
+2025-09-05 22:14:28,161 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 22:14:28,164 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 22:14:30,515 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25460
+2025-09-05 22:14:30,805 - INFO - Got first page: 100 of 361355 total results
+2025-09-05 22:14:30,810 - INFO - Found 20 papers (more available: True)
+2025-09-05 22:16:59,433 - INFO - Received message: download papers, workflow_step: download
+2025-09-05 22:16:59,446 - INFO - Starting download: 2 papers, field=Mathematics, topic=algebra
+2025-09-05 22:16:59,505 - INFO - Starting download: 2 papers
+2025-09-05 22:16:59,515 - INFO - Created download directory: E:\Next JS\researchbot\papers\Mathematics\algebra
+2025-09-05 22:16:59,542 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Mathematics\algebra
+2025-09-05 22:16:59,575 - DEBUG - Loaded metadata for 17 papers
+2025-09-05 22:16:59,982 - INFO - Starting download: 2408.00412v2
+2025-09-05 22:17:00,496 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 22:17:00,533 - INFO - Starting download: 1304.2510v1
+2025-09-05 22:17:00,685 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 22:17:00,990 - DEBUG - http://arxiv.org:80 "GET /pdf/2408.00412v2 HTTP/1.1" 301 0
+2025-09-05 22:17:00,997 - DEBUG - http://arxiv.org:80 "GET /pdf/1304.2510v1 HTTP/1.1" 301 0
+2025-09-05 22:17:01,021 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 22:17:01,022 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 22:17:03,061 - DEBUG - https://arxiv.org:443 "GET /pdf/1304.2510v1 HTTP/1.1" 200 258347
+2025-09-05 22:17:03,160 - DEBUG - https://arxiv.org:443 "GET /pdf/2408.00412v2 HTTP/1.1" 200 601678
+2025-09-05 22:17:04,301 - INFO - Successfully downloaded 1304.2510v1 (252KB)
+2025-09-05 22:17:04,824 - INFO - Successfully downloaded 2408.00412v2 (587KB)
+2025-09-05 22:17:05,035 - DEBUG - Saved metadata for 19 papers
+2025-09-05 22:17:05,153 - INFO - Download completed: 2 successful downloads
+2025-09-05 22:17:05,186 - WARNING - Could not generate AI summary for 2408.00412v2: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-05 22:17:05,190 - WARNING - Could not generate AI summary for 1304.2510v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-05 22:17:05,192 - INFO - Download summary saved to E:\Next JS\researchbot\papers\Mathematics\algebra\download_summary.txt
+2025-09-05 22:17:05,194 - INFO - Download with references completed successfully
+2025-09-05 22:28:39,272 - INFO - Received message: Fitness Diet and excercise, workflow_step: search
+2025-09-05 22:28:39,387 - INFO - New workflow search for: Fitness Diet and excercise
+2025-09-05 22:28:39,580 - INFO - Searching arXiv: 'Fitness Diet and excercise' (results 1-10)
+2025-09-05 22:28:39,996 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+Diet+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 22:28:40,594 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 22:28:45,076 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+Diet+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70594
+2025-09-05 22:28:45,857 - INFO - Got first page: 100 of 2751228 total results
+2025-09-05 22:28:45,892 - INFO - Found 10 papers (more available: True)
+2025-09-05 22:28:56,261 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 22:28:56,312 - INFO - Searching arXiv: 'Fitness Diet and excercise' (results 1-15)
+2025-09-05 22:28:56,330 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+Diet+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 22:28:56,544 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 22:28:58,042 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+Diet+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70594
+2025-09-05 22:28:58,791 - INFO - Got first page: 100 of 2751228 total results
+2025-09-05 22:28:58,797 - INFO - Found 15 papers (more available: True)
+2025-09-05 22:30:12,777 - INFO - Received message: download papers, workflow_step: download
+2025-09-05 22:30:12,783 - INFO - Starting download: 3 papers, field=Fitness, topic=Diet and excercise
+2025-09-05 22:30:12,804 - INFO - Starting download: 3 papers
+2025-09-05 22:30:12,821 - INFO - Created download directory: E:\Next JS\researchbot\papers\Fitness\Diet_and_excercise
+2025-09-05 22:30:12,827 - INFO - Downloading 3 papers to E:\Next JS\researchbot\papers\Fitness\Diet_and_excercise
+2025-09-05 22:30:12,834 - DEBUG - Loaded metadata for 19 papers
+2025-09-05 22:30:12,888 - INFO - Starting download: 2312.11767v1
+2025-09-05 22:30:12,902 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 22:30:12,902 - INFO - Starting download: 2506.22965v1
+2025-09-05 22:30:12,957 - INFO - Starting download: 2409.20508v1
+2025-09-05 22:30:12,961 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 22:30:13,027 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 22:30:13,331 - DEBUG - http://arxiv.org:80 "GET /pdf/2409.20508v1 HTTP/1.1" 301 0
+2025-09-05 22:30:13,331 - DEBUG - http://arxiv.org:80 "GET /pdf/2312.11767v1 HTTP/1.1" 301 0
+2025-09-05 22:30:13,352 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 22:30:13,361 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 22:30:16,022 - DEBUG - https://arxiv.org:443 "GET /pdf/2312.11767v1 HTTP/1.1" 200 1143516
+2025-09-05 22:30:16,764 - DEBUG - https://arxiv.org:443 "GET /pdf/2409.20508v1 HTTP/1.1" 200 15692335
+2025-09-05 22:30:18,386 - DEBUG - http://arxiv.org:80 "GET /pdf/2506.22965v1 HTTP/1.1" 301 0
+2025-09-05 22:30:18,458 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 22:30:20,809 - DEBUG - https://arxiv.org:443 "GET /pdf/2506.22965v1 HTTP/1.1" 200 423118
+2025-09-05 22:30:30,382 - INFO - Successfully downloaded 2506.22965v1 (413KB)
+2025-09-05 22:30:50,603 - INFO - Successfully downloaded 2312.11767v1 (1116KB)

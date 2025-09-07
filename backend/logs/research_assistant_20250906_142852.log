@@ -1,0 +1,9 @@
+2025-09-06 14:28:52,452 - DEBUG - Using selector: SelectSelector
+2025-09-06 14:29:39,368 - INFO - Received message: Finance Accountings, workflow_step: search
+2025-09-06 14:29:39,661 - INFO - New workflow search for: Finance Accountings
+2025-09-06 14:29:39,947 - INFO - Searching arXiv: 'Finance Accountings' (results 1-10)
+2025-09-06 14:29:40,197 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Finance+Accountings&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-06 14:29:40,285 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-06 14:29:42,664 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Finance+Accountings&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 52355
+2025-09-06 14:29:44,090 - INFO - Got first page: 100 of 141963 total results
+2025-09-06 14:29:44,156 - INFO - Found 10 papers (more available: True)

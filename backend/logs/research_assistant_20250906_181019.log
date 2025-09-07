@@ -1,0 +1,11 @@
+2025-09-06 18:10:19,369 - DEBUG - Using selector: SelectSelector
+2025-09-06 18:11:59,144 - INFO - Received message: perfect, workflow_step: greeting
+2025-09-06 18:12:06,210 - INFO - Received message: Mathematics, workflow_step: greeting
+2025-09-06 18:12:23,813 - INFO - Received message: perfect, workflow_step: greeting
+2025-09-06 18:12:23,813 - INFO - Searching for: Mathematics perfect
+2025-09-06 18:12:23,814 - INFO - Searching arXiv: 'Mathematics perfect' (results 1-10)
+2025-09-06 18:12:23,815 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+perfect&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-06 18:12:23,822 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-06 18:12:25,781 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+perfect&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 38042
+2025-09-06 18:12:26,135 - INFO - Got first page: 100 of 218115 total results
+2025-09-06 18:12:26,137 - INFO - Found 10 papers (more available: True)

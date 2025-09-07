@@ -1,0 +1,95 @@
+2025-09-07 12:58:32,684 - DEBUG - Using selector: SelectSelector
+2025-09-07 12:59:19,655 - INFO - Received message: Chemistry organic chemistry, workflow_step: search
+2025-09-07 12:59:19,661 - INFO - New workflow search for: Chemistry organic chemistry (max_results: 10)
+2025-09-07 12:59:19,666 - INFO - Searching arXiv: 'Chemistry organic chemistry' (results 1-10)
+2025-09-07 12:59:19,671 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+organic+chemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:59:19,687 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:59:22,276 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+organic+chemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 65760
+2025-09-07 12:59:22,525 - INFO - Got first page: 100 of 57076 total results
+2025-09-07 12:59:22,528 - INFO - Found 10 papers (more available: True)
+2025-09-07 12:59:26,995 - INFO - Received message: Chemistry organic chemistry, workflow_step: load_more
+2025-09-07 12:59:26,996 - INFO - Searching for more papers on: Chemistry organic chemistry (max_results: 5)
+2025-09-07 12:59:26,996 - INFO - Searching arXiv: 'Chemistry organic chemistry' (results 1-5)
+2025-09-07 12:59:26,997 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+organic+chemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:59:26,999 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:59:27,573 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+organic+chemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 65760
+2025-09-07 12:59:28,159 - INFO - Got first page: 100 of 57076 total results
+2025-09-07 12:59:28,161 - INFO - Found 5 papers (more available: True)
+2025-09-07 12:59:28,165 - INFO - Searching arXiv: 'Chemistry organic chemistry recent' (results 1-5)
+2025-09-07 12:59:28,167 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+organic+chemistry+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:59:28,170 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:59:30,061 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+organic+chemistry+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 64391
+2025-09-07 12:59:30,838 - INFO - Got first page: 100 of 419046 total results
+2025-09-07 12:59:30,841 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:00:10,383 - INFO - Received message: Biology genetics, workflow_step: search
+2025-09-07 13:00:10,384 - INFO - New workflow search for: Biology genetics (max_results: 10)
+2025-09-07 13:00:10,385 - INFO - Searching arXiv: 'Biology genetics' (results 1-10)
+2025-09-07 13:00:10,386 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:00:10,391 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:00:12,659 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 48572
+2025-09-07 13:00:13,013 - INFO - Got first page: 100 of 23055 total results
+2025-09-07 13:00:13,015 - INFO - Found 10 papers (more available: True)
+2025-09-07 13:00:21,772 - INFO - Received message: Biology genetics, workflow_step: load_more
+2025-09-07 13:00:21,775 - INFO - Searching for more papers on: Biology genetics (max_results: 5)
+2025-09-07 13:00:21,775 - INFO - Searching arXiv: 'Biology genetics' (results 1-5)
+2025-09-07 13:00:21,776 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:00:21,779 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:00:22,364 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 48572
+2025-09-07 13:00:22,835 - INFO - Got first page: 100 of 23055 total results
+2025-09-07 13:00:22,837 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:00:22,840 - INFO - Searching arXiv: 'Biology genetics recent' (results 1-5)
+2025-09-07 13:00:22,840 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+genetics+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:00:22,845 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:00:24,441 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+genetics+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 55233
+2025-09-07 13:00:24,848 - INFO - Got first page: 100 of 389792 total results
+2025-09-07 13:00:24,850 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:00:29,108 - INFO - Received message: Biology genetics, workflow_step: load_more
+2025-09-07 13:00:29,109 - INFO - Searching for more papers on: Biology genetics (max_results: 5)
+2025-09-07 13:00:29,110 - INFO - Searching arXiv: 'Biology genetics' (results 1-5)
+2025-09-07 13:00:29,110 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:00:29,113 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:00:29,711 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 48572
+2025-09-07 13:00:30,140 - INFO - Got first page: 100 of 23055 total results
+2025-09-07 13:00:30,141 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:00:30,144 - INFO - Searching arXiv: 'Biology genetics recent' (results 1-5)
+2025-09-07 13:00:30,144 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+genetics+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:00:30,147 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:00:30,783 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+genetics+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 55233
+2025-09-07 13:00:31,213 - INFO - Got first page: 100 of 389792 total results
+2025-09-07 13:00:31,215 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:00:59,433 - INFO - Received message: Mathematics algebra, workflow_step: search
+2025-09-07 13:00:59,433 - INFO - New workflow search for: Mathematics algebra (max_results: 10)
+2025-09-07 13:00:59,434 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-10)
+2025-09-07 13:00:59,435 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:00:59,437 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:01:00,154 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25468
+2025-09-07 13:01:00,535 - INFO - Got first page: 100 of 361360 total results
+2025-09-07 13:01:00,538 - INFO - Found 10 papers (more available: True)
+2025-09-07 13:01:06,001 - INFO - Received message: Mathematics algebra, workflow_step: load_more
+2025-09-07 13:01:06,002 - INFO - Searching for more papers on: Mathematics algebra (max_results: 5)
+2025-09-07 13:01:06,003 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-5)
+2025-09-07 13:01:06,003 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:01:06,006 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:01:06,680 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25468
+2025-09-07 13:01:06,929 - INFO - Got first page: 100 of 361360 total results
+2025-09-07 13:01:06,931 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:01:06,935 - INFO - Searching arXiv: 'Mathematics algebra recent' (results 1-5)
+2025-09-07 13:01:06,936 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:01:06,943 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:01:08,775 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 31518
+2025-09-07 13:01:09,229 - INFO - Got first page: 100 of 699018 total results
+2025-09-07 13:01:09,231 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:01:12,223 - INFO - Received message: Mathematics algebra, workflow_step: load_more
+2025-09-07 13:01:12,224 - INFO - Searching for more papers on: Mathematics algebra (max_results: 5)
+2025-09-07 13:01:12,225 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-5)
+2025-09-07 13:01:12,226 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:01:12,229 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:01:12,922 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25468
+2025-09-07 13:01:13,251 - INFO - Got first page: 100 of 361360 total results
+2025-09-07 13:01:13,253 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:01:13,255 - INFO - Searching arXiv: 'Mathematics algebra recent' (results 1-5)
+2025-09-07 13:01:13,256 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:01:13,258 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:01:13,947 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 31518
+2025-09-07 13:01:14,161 - INFO - Got first page: 100 of 699018 total results
+2025-09-07 13:01:14,163 - INFO - Found 5 papers (more available: True)

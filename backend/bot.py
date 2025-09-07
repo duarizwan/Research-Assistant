@@ -139,13 +139,32 @@ def get_valid_field_input() -> str:
 
 def get_valid_topic_input(field: str) -> str:
     """Get valid topic input from user with validation."""
+    # Check if field has suggestions
+    suggestions = {
+        "computer science": ["machine learning", "artificial intelligence", "neural networks", "deep learning", "computer vision", "natural language processing"],
+        "physics": ["quantum mechanics", "relativity", "particle physics", "condensed matter", "astrophysics", "thermodynamics"],
+        "biology": ["genetics", "evolution", "molecular biology", "cell biology", "neuroscience", "bioinformatics"],
+        "mathematics": ["algebra", "calculus", "statistics", "topology", "number theory", "optimization"],
+        "chemistry": ["organic chemistry", "inorganic chemistry", "physical chemistry", "biochemistry", "materials science"]
+    }
+    
+    field_lower = field.lower()
+    has_suggestions = any(key in field_lower or any(word in field_lower for word in key.split()) for key in suggestions.keys())
+    
     while True:
-        topic = input(f"👉 Enter a topic within '{field}' (or 'help' for suggestions): ").strip()
+        if has_suggestions:
+            topic = input(f"👉 Enter a topic within '{field}' (or 'help' for suggestions): ").strip()
+        else:
+            topic = input(f"👉 Enter a topic within '{field}': ").strip()
+            
         if topic.lower() in ['quit', 'exit', 'q']:
             return topic
         
-        if topic.lower() == 'help':
+        if topic.lower() == 'help' and has_suggestions:
             show_topic_suggestions(field)
+            continue
+        elif topic.lower() == 'help' and not has_suggestions:
+            print(f"💡 Enter a specific topic within '{field}' (e.g., deep learning, quantum computing, gene therapy, etc.)")
             continue
             
         if validate_input_field(topic):
@@ -156,7 +175,7 @@ def get_valid_topic_input(field: str) -> str:
             print("   Examples: neural networks, deep learning, natural language processing")
 
 def show_topic_suggestions(field: str):
-    """Show topic suggestions based on field."""
+    """Show topic suggestions based on field - only for specific categories."""
     suggestions = {
         "computer science": ["machine learning", "artificial intelligence", "neural networks", "deep learning", "computer vision", "natural language processing"],
         "physics": ["quantum mechanics", "relativity", "particle physics", "condensed matter", "astrophysics", "thermodynamics"],
@@ -165,13 +184,15 @@ def show_topic_suggestions(field: str):
         "chemistry": ["organic chemistry", "inorganic chemistry", "physical chemistry", "biochemistry", "materials science"]
     }
     
+    # Only show suggestions for specific fields
     field_lower = field.lower()
     for key, topics in suggestions.items():
         if key in field_lower or any(word in field_lower for word in key.split()):
             print(f"💡 Suggested topics for {field}: {', '.join(topics)}")
             return
     
-    print("💡 Try specific topics like: deep learning, quantum computing, gene therapy, etc.")
+    # No suggestions for other fields
+    print(f"💡 Enter a specific topic within '{field}' (e.g., deep learning, quantum computing, gene therapy, etc.)")
 
 # -------------------------------
 # Metadata Management

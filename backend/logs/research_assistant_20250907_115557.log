@@ -1,0 +1,154 @@
+2025-09-07 11:55:57,561 - DEBUG - Using selector: SelectSelector
+2025-09-07 12:01:25,061 - INFO - Received message: Fitness Diet , workflow_step: search
+2025-09-07 12:01:25,113 - INFO - New workflow search for: Fitness Diet 
+2025-09-07 12:01:25,115 - INFO - Searching arXiv: 'Fitness Diet ' (results 1-8)
+2025-09-07 12:01:25,227 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+Diet+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:01:25,251 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:01:27,325 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+Diet+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70595
+2025-09-07 12:01:27,999 - INFO - Got first page: 100 of 90166 total results
+2025-09-07 12:01:28,009 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:01:33,329 - INFO - Received message: yes, workflow_step: load_more
+2025-09-07 12:10:13,468 - INFO - Received message: Fitness diet plan, workflow_step: search
+2025-09-07 12:10:13,484 - INFO - New workflow search for: Fitness diet plan
+2025-09-07 12:10:13,485 - INFO - Searching arXiv: 'Fitness diet plan' (results 1-8)
+2025-09-07 12:10:13,487 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:10:13,546 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:10:17,557 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 69547
+2025-09-07 12:10:17,881 - INFO - Got first page: 100 of 128012 total results
+2025-09-07 12:10:17,885 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:10:21,751 - INFO - Received message: Fitness diet plan, workflow_step: load_more
+2025-09-07 12:14:46,750 - INFO - Received message: fitness diet plan, workflow_step: search
+2025-09-07 12:14:46,763 - INFO - New workflow search for: fitness diet plan
+2025-09-07 12:14:46,774 - INFO - Searching arXiv: 'fitness diet plan' (results 1-8)
+2025-09-07 12:14:46,779 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=fitness+diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:14:46,784 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:14:49,503 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=fitness+diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 69547
+2025-09-07 12:14:49,820 - INFO - Got first page: 100 of 128012 total results
+2025-09-07 12:14:49,822 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:14:52,829 - INFO - Received message: fitness diet plan, workflow_step: load_more
+2025-09-07 12:14:52,830 - INFO - Searching for: Fitness diet plan fitness diet plan
+2025-09-07 12:14:52,833 - INFO - Searching arXiv: 'Fitness diet plan fitness diet plan' (results 1-8)
+2025-09-07 12:14:52,834 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+diet+plan+fitness+diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:14:52,837 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:14:54,402 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+diet+plan+fitness+diet+plan&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 69552
+2025-09-07 12:14:54,861 - INFO - Got first page: 100 of 128012 total results
+2025-09-07 12:14:54,864 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:14:58,296 - INFO - Received message: fitness diet plan, workflow_step: load_more
+2025-09-07 12:16:14,892 - INFO - Received message: finance accountings , workflow_step: search
+2025-09-07 12:16:14,892 - INFO - New workflow search for: finance accountings 
+2025-09-07 12:16:14,893 - INFO - Searching arXiv: 'finance accountings ' (results 1-8)
+2025-09-07 12:16:14,894 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=finance+accountings+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:16:14,896 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:16:16,572 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=finance+accountings+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 52362
+2025-09-07 12:16:16,990 - INFO - Got first page: 100 of 141963 total results
+2025-09-07 12:16:16,992 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:16:20,418 - INFO - Received message: finance accountings , workflow_step: load_more
+2025-09-07 12:17:02,585 - INFO - Received message: finance accounts, workflow_step: search
+2025-09-07 12:17:02,585 - INFO - New workflow search for: finance accounts
+2025-09-07 12:17:02,585 - INFO - Searching arXiv: 'finance accounts' (results 1-8)
+2025-09-07 12:17:02,586 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=finance+accounts&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:17:02,588 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:17:04,082 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=finance+accounts&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 52359
+2025-09-07 12:17:04,501 - INFO - Got first page: 100 of 141963 total results
+2025-09-07 12:17:04,505 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:17:06,563 - INFO - Received message: finance accounts, workflow_step: load_more
+2025-09-07 12:21:57,695 - INFO - Received message: finance accounts, workflow_step: search
+2025-09-07 12:21:57,696 - INFO - New workflow search for: finance accounts
+2025-09-07 12:21:57,696 - INFO - Searching arXiv: 'finance accounts' (results 1-8)
+2025-09-07 12:21:57,697 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=finance+accounts&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:21:57,699 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:21:58,475 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=finance+accounts&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 52359
+2025-09-07 12:21:58,949 - INFO - Got first page: 100 of 141963 total results
+2025-09-07 12:21:58,959 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:22:02,238 - INFO - Received message: finance accounts, workflow_step: load_more
+2025-09-07 12:22:44,697 - INFO - Received message: finance accounts, workflow_step: search
+2025-09-07 12:22:44,698 - INFO - New workflow search for: finance accounts
+2025-09-07 12:22:44,699 - INFO - Searching arXiv: 'finance accounts' (results 1-8)
+2025-09-07 12:22:44,700 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=finance+accounts&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:22:44,703 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:22:45,422 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=finance+accounts&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 52359
+2025-09-07 12:22:45,863 - INFO - Got first page: 100 of 141963 total results
+2025-09-07 12:22:45,865 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:22:48,620 - INFO - Received message: y, workflow_step: load_more
+2025-09-07 12:26:39,102 - INFO - Received message: fitness diet, workflow_step: search
+2025-09-07 12:26:39,155 - INFO - New workflow search for: fitness diet
+2025-09-07 12:26:39,298 - INFO - Searching arXiv: 'fitness diet' (results 1-8)
+2025-09-07 12:26:39,530 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=fitness+diet&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:26:39,763 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:26:42,440 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=fitness+diet&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70591
+2025-09-07 12:26:42,799 - INFO - Got first page: 100 of 90166 total results
+2025-09-07 12:26:42,803 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:26:46,203 - INFO - Received message: yes, workflow_step: load_more
+2025-09-07 12:31:01,152 - INFO - Received message: Chemistry biochemistry, workflow_step: search
+2025-09-07 12:31:01,213 - INFO - New workflow search for: Chemistry biochemistry
+2025-09-07 12:31:01,473 - INFO - Searching arXiv: 'Chemistry biochemistry' (results 1-8)
+2025-09-07 12:31:01,792 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+biochemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:31:02,016 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:31:04,479 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+biochemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 75155
+2025-09-07 12:31:04,817 - INFO - Got first page: 100 of 15525 total results
+2025-09-07 12:31:04,819 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:31:08,718 - INFO - Received message: Chemistry biochemistry, workflow_step: load_more
+2025-09-07 12:33:49,027 - INFO - Received message: Mathematics algebra, workflow_step: search
+2025-09-07 12:33:49,041 - INFO - New workflow search for: Mathematics algebra
+2025-09-07 12:33:49,042 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-8)
+2025-09-07 12:33:49,043 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:33:49,072 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:33:52,418 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25468
+2025-09-07 12:33:52,698 - INFO - Got first page: 100 of 361360 total results
+2025-09-07 12:33:52,712 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:33:57,352 - INFO - Received message: load more papers about Mathematics algebra, workflow_step: search
+2025-09-07 12:33:57,353 - INFO - New workflow search for: load more papers about Mathematics algebra
+2025-09-07 12:33:57,353 - INFO - Searching arXiv: 'load more papers about Mathematics algebra' (results 1-8)
+2025-09-07 12:33:57,354 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=load+more+papers+about+Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:33:57,358 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:33:59,073 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=load+more+papers+about+Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 53663
+2025-09-07 12:33:59,592 - INFO - Got first page: 100 of 1342584 total results
+2025-09-07 12:33:59,595 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:34:13,696 - INFO - Received message: load more papers about Mathematics algebra, workflow_step: search
+2025-09-07 12:34:13,697 - INFO - New workflow search for: load more papers about Mathematics algebra
+2025-09-07 12:34:13,698 - INFO - Searching arXiv: 'load more papers about Mathematics algebra' (results 1-8)
+2025-09-07 12:34:13,698 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=load+more+papers+about+Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:34:13,701 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:34:14,735 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=load+more+papers+about+Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 53663
+2025-09-07 12:34:15,424 - INFO - Got first page: 100 of 1342584 total results
+2025-09-07 12:34:15,427 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:38:49,536 - INFO - Received message: Computer Science nlp, workflow_step: search
+2025-09-07 12:38:49,568 - INFO - New workflow search for: Computer Science nlp
+2025-09-07 12:38:49,836 - INFO - Searching arXiv: 'Computer Science nlp' (results 1-8)
+2025-09-07 12:38:50,179 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Computer+Science+nlp&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:38:50,414 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:38:52,812 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Computer+Science+nlp&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 60569
+2025-09-07 12:38:53,681 - INFO - Got first page: 100 of 849057 total results
+2025-09-07 12:38:53,683 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:39:04,104 - INFO - Received message: load more papers about Computer Science nlp, workflow_step: search
+2025-09-07 12:39:04,106 - INFO - New workflow search for: load more papers about Computer Science nlp
+2025-09-07 12:39:04,106 - INFO - Searching arXiv: 'load more papers about Computer Science nlp' (results 1-8)
+2025-09-07 12:39:04,107 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=load+more+papers+about+Computer+Science+nlp&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:39:04,109 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:39:06,076 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=load+more+papers+about+Computer+Science+nlp&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 60895
+2025-09-07 12:39:06,932 - INFO - Got first page: 100 of 1563986 total results
+2025-09-07 12:39:06,958 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:41:30,958 - INFO - Received message: media science journalism, workflow_step: search
+2025-09-07 12:41:30,960 - INFO - New workflow search for: media science journalism
+2025-09-07 12:41:30,971 - INFO - Searching arXiv: 'media science journalism' (results 1-8)
+2025-09-07 12:41:30,976 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=media+science+journalism&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:41:31,038 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:41:34,555 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=media+science+journalism&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 60272
+2025-09-07 12:41:35,158 - INFO - Got first page: 100 of 369881 total results
+2025-09-07 12:41:35,259 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:41:42,450 - INFO - Received message: load more papers about media science journalism, workflow_step: search
+2025-09-07 12:41:42,452 - INFO - New workflow search for: load more papers about media science journalism
+2025-09-07 12:41:42,452 - INFO - Searching arXiv: 'load more papers about media science journalism' (results 1-8)
+2025-09-07 12:41:42,453 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=load+more+papers+about+media+science+journalism&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:41:42,456 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:41:44,174 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=load+more+papers+about+media+science+journalism&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 65825
+2025-09-07 12:41:44,786 - INFO - Got first page: 100 of 1339467 total results
+2025-09-07 12:41:44,793 - INFO - Found 8 papers (more available: True)
+2025-09-07 12:43:23,846 - INFO - Received message: Chemistry catalysis, workflow_step: search
+2025-09-07 12:43:23,848 - INFO - New workflow search for: Chemistry catalysis
+2025-09-07 12:43:23,849 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-8)
+2025-09-07 12:43:23,850 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 12:43:23,854 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 12:43:25,962 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63837
+2025-09-07 12:43:26,404 - INFO - Got first page: 100 of 16681 total results
+2025-09-07 12:43:26,407 - INFO - Found 8 papers (more available: True)

@@ -1,0 +1,46 @@
+2025-09-05 11:29:08,171 - DEBUG - Using selector: SelectSelector
+2025-09-05 11:29:26,466 - INFO - Received message: Physics quantum mechanics, workflow_step: search
+2025-09-05 11:29:26,502 - INFO - New workflow search for: Physics quantum mechanics
+2025-09-05 11:29:26,545 - INFO - Searching arXiv: 'Physics quantum mechanics' (results 1-10)
+2025-09-05 11:29:26,565 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Physics+quantum+mechanics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:29:26,609 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:29:30,290 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Physics+quantum+mechanics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25555
+2025-09-05 11:29:30,629 - INFO - Got first page: 100 of 1234013 total results
+2025-09-05 11:29:30,631 - INFO - Found 10 papers (more available: True)
+2025-09-05 11:30:01,055 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 11:30:01,120 - INFO - Searching arXiv: 'Physics quantum mechanics' (results 1-15)
+2025-09-05 11:30:01,121 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Physics+quantum+mechanics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:30:01,124 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:30:02,413 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Physics+quantum+mechanics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25555
+2025-09-05 11:30:02,649 - INFO - Got first page: 100 of 1234013 total results
+2025-09-05 11:30:02,651 - INFO - Found 15 papers (more available: True)
+2025-09-05 11:30:48,399 - INFO - Received message: Physics astrophysics, workflow_step: search
+2025-09-05 11:30:48,400 - INFO - New workflow search for: Physics astrophysics
+2025-09-05 11:30:48,401 - INFO - Searching arXiv: 'Physics astrophysics' (results 1-10)
+2025-09-05 11:30:48,402 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:30:48,405 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:30:50,440 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 34208
+2025-09-05 11:30:51,076 - INFO - Got first page: 100 of 1255233 total results
+2025-09-05 11:30:51,084 - INFO - Found 10 papers (more available: True)
+2025-09-05 11:31:03,704 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 11:31:03,706 - INFO - Searching arXiv: 'Physics astrophysics' (results 1-15)
+2025-09-05 11:31:03,707 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:31:03,709 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:31:04,782 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Physics+astrophysics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 34208
+2025-09-05 11:31:05,173 - INFO - Got first page: 100 of 1255233 total results
+2025-09-05 11:31:05,178 - INFO - Found 15 papers (more available: True)
+2025-09-05 11:35:01,706 - INFO - Received message: Chemistry biochemistry, workflow_step: search
+2025-09-05 11:35:01,707 - INFO - New workflow search for: Chemistry biochemistry
+2025-09-05 11:35:01,708 - INFO - Searching arXiv: 'Chemistry biochemistry' (results 1-10)
+2025-09-05 11:35:01,709 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+biochemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:35:01,713 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:35:04,419 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+biochemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 75121
+2025-09-05 11:35:04,989 - INFO - Got first page: 100 of 15525 total results
+2025-09-05 11:35:04,992 - INFO - Found 10 papers (more available: True)
+2025-09-05 11:35:15,778 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 11:35:15,779 - INFO - Searching arXiv: 'Chemistry biochemistry' (results 1-15)
+2025-09-05 11:35:15,780 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+biochemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:35:15,782 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:35:16,425 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+biochemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 75121
+2025-09-05 11:35:16,919 - INFO - Got first page: 100 of 15525 total results
+2025-09-05 11:35:16,921 - INFO - Found 15 papers (more available: True)

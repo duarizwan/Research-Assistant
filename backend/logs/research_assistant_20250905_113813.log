@@ -1,0 +1,252 @@
+2025-09-05 11:38:13,835 - DEBUG - Using selector: SelectSelector
+2025-09-05 11:39:07,011 - INFO - Received message: Chemistry catalysis, workflow_step: search
+2025-09-05 11:39:07,012 - INFO - New workflow search for: Chemistry catalysis
+2025-09-05 11:39:07,012 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-10)
+2025-09-05 11:39:07,013 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:39:07,017 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:39:10,136 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63838
+2025-09-05 11:39:10,666 - INFO - Got first page: 100 of 16681 total results
+2025-09-05 11:39:10,691 - INFO - Found 10 papers (more available: True)
+2025-09-05 11:39:16,661 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 11:39:16,662 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-15)
+2025-09-05 11:39:16,663 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:39:16,667 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:39:17,476 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63838
+2025-09-05 11:39:18,000 - INFO - Got first page: 100 of 16681 total results
+2025-09-05 11:39:18,007 - INFO - Found 15 papers (more available: True)
+2025-09-05 11:39:46,807 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 11:39:46,807 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-20)
+2025-09-05 11:39:46,808 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 11:39:46,810 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 11:39:47,780 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63838
+2025-09-05 11:39:48,219 - INFO - Got first page: 100 of 16681 total results
+2025-09-05 11:39:48,223 - INFO - Found 20 papers (more available: True)
+2025-09-05 12:04:11,423 - INFO - Received message: Biology genetics, workflow_step: search
+2025-09-05 12:04:11,493 - INFO - New workflow search for: Biology genetics
+2025-09-05 12:04:11,522 - INFO - Searching arXiv: 'Biology genetics' (results 1-10)
+2025-09-05 12:04:11,578 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:04:11,652 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:04:14,879 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 48599
+2025-09-05 12:04:15,484 - INFO - Got first page: 100 of 23055 total results
+2025-09-05 12:04:15,489 - INFO - Found 10 papers (more available: True)
+2025-09-05 12:04:23,267 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 12:04:23,269 - INFO - Searching arXiv: 'Biology genetics' (results 1-15)
+2025-09-05 12:04:23,270 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:04:23,274 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:04:24,206 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 48599
+2025-09-05 12:04:24,734 - INFO - Got first page: 100 of 23055 total results
+2025-09-05 12:04:24,738 - INFO - Found 15 papers (more available: True)
+2025-09-05 12:04:29,270 - INFO - Received message: yes, workflow_step: load_more
+2025-09-05 12:04:29,278 - INFO - Searching arXiv: 'Biology genetics' (results 1-20)
+2025-09-05 12:04:29,281 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:04:29,289 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:04:30,232 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Biology+genetics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 48599
+2025-09-05 12:04:30,673 - INFO - Got first page: 100 of 23055 total results
+2025-09-05 12:04:30,679 - INFO - Found 20 papers (more available: True)
+2025-09-05 12:07:27,064 - INFO - Received message: genetics gene therapy, workflow_step: search
+2025-09-05 12:07:27,066 - INFO - New workflow search for: genetics gene therapy
+2025-09-05 12:07:27,067 - INFO - Searching arXiv: 'genetics gene therapy' (results 1-10)
+2025-09-05 12:07:27,069 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=genetics+gene+therapy&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:07:27,072 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:07:30,105 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=genetics+gene+therapy&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 65507
+2025-09-05 12:07:30,569 - INFO - Got first page: 100 of 21251 total results
+2025-09-05 12:07:30,572 - INFO - Found 10 papers (more available: True)
+2025-09-05 12:07:34,848 - INFO - Received message: y, workflow_step: load_more
+2025-09-05 12:07:34,849 - INFO - Searching arXiv: 'genetics gene therapy' (results 1-15)
+2025-09-05 12:07:34,850 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=genetics+gene+therapy&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:07:34,854 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:08:16,367 - ERROR - Error searching arXiv: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=None)
+2025-09-05 12:08:34,364 - INFO - Received message: Computer Science natural language processing, workflow_step: search
+2025-09-05 12:08:34,365 - INFO - New workflow search for: Computer Science natural language processing
+2025-09-05 12:08:34,366 - INFO - Searching arXiv: 'Computer Science natural language processing' (results 1-10)
+2025-09-05 12:08:34,366 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Computer+Science+natural+language+processing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:08:34,371 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:08:36,431 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Computer+Science+natural+language+processing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 15858
+2025-09-05 12:08:36,569 - INFO - Got first page: 30 of 1259121 total results
+2025-09-05 12:08:36,572 - INFO - Found 10 papers (more available: True)
+2025-09-05 12:08:39,743 - INFO - Received message: y, workflow_step: load_more
+2025-09-05 12:08:39,747 - INFO - Searching arXiv: 'Computer Science natural language processing' (results 1-15)
+2025-09-05 12:08:39,748 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Computer+Science+natural+language+processing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:08:39,752 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:08:41,243 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Computer+Science+natural+language+processing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 15858
+2025-09-05 12:08:41,374 - INFO - Got first page: 30 of 1259121 total results
+2025-09-05 12:08:41,377 - INFO - Found 15 papers (more available: True)
+2025-09-05 12:08:45,328 - INFO - Received message: y, workflow_step: load_more
+2025-09-05 12:08:45,330 - INFO - Searching arXiv: 'Computer Science natural language processing' (results 1-20)
+2025-09-05 12:08:45,331 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Computer+Science+natural+language+processing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:08:45,334 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:08:45,949 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Computer+Science+natural+language+processing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 15858
+2025-09-05 12:08:46,089 - INFO - Got first page: 30 of 1259121 total results
+2025-09-05 12:08:46,092 - INFO - Found 20 papers (more available: True)
+2025-09-05 12:08:49,352 - INFO - Received message: y, workflow_step: load_more
+2025-09-05 12:08:49,353 - INFO - Searching arXiv: 'Computer Science natural language processing' (results 1-25)
+2025-09-05 12:08:49,354 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Computer+Science+natural+language+processing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:08:49,358 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:08:51,432 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Computer+Science+natural+language+processing&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 15858
+2025-09-05 12:08:51,579 - INFO - Got first page: 30 of 1259121 total results
+2025-09-05 12:08:51,582 - INFO - Found 25 papers (more available: True)
+2025-09-05 12:10:09,514 - INFO - Received message: Chemistry materials , workflow_step: search
+2025-09-05 12:10:09,515 - INFO - New workflow search for: Chemistry materials 
+2025-09-05 12:10:09,515 - INFO - Searching arXiv: 'Chemistry materials ' (results 1-10)
+2025-09-05 12:10:09,516 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+materials+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:10:09,519 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:10:11,426 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+materials+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 56249
+2025-09-05 12:10:12,095 - INFO - Got first page: 100 of 203828 total results
+2025-09-05 12:10:12,097 - INFO - Found 10 papers (more available: True)
+2025-09-05 12:10:20,271 - INFO - Received message: y, workflow_step: load_more
+2025-09-05 12:10:20,273 - INFO - Searching arXiv: 'Chemistry materials ' (results 1-15)
+2025-09-05 12:10:20,274 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+materials+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:10:20,276 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:10:21,780 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+materials+&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 56249
+2025-09-05 12:10:23,042 - INFO - Got first page: 100 of 203828 total results
+2025-09-05 12:10:23,046 - INFO - Found 15 papers (more available: True)
+2025-09-05 12:18:07,162 - INFO - Received message: Chemistry catalysis, workflow_step: search
+2025-09-05 12:18:07,179 - INFO - New workflow search for: Chemistry catalysis
+2025-09-05 12:18:07,180 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-10)
+2025-09-05 12:18:07,196 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:18:07,201 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:18:09,416 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63838
+2025-09-05 12:18:09,672 - INFO - Got first page: 100 of 16681 total results
+2025-09-05 12:18:09,675 - INFO - Found 10 papers (more available: True)
+2025-09-05 12:18:34,553 - INFO - Received message: y, workflow_step: load_more
+2025-09-05 12:18:34,553 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-15)
+2025-09-05 12:18:34,554 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:18:34,556 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:18:35,186 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63838
+2025-09-05 12:18:35,608 - INFO - Got first page: 100 of 16681 total results
+2025-09-05 12:18:35,611 - INFO - Found 15 papers (more available: True)
+2025-09-05 12:18:40,646 - INFO - Received message: y, workflow_step: load_more
+2025-09-05 12:18:40,647 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-20)
+2025-09-05 12:18:40,647 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:18:40,651 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:18:41,449 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63838
+2025-09-05 12:18:41,902 - INFO - Got first page: 100 of 16681 total results
+2025-09-05 12:18:41,906 - INFO - Found 20 papers (more available: True)
+2025-09-05 12:18:57,802 - INFO - Received message: y, workflow_step: load_more
+2025-09-05 12:18:57,803 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-25)
+2025-09-05 12:18:57,803 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:18:57,806 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:18:59,132 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63838
+2025-09-05 12:18:59,806 - INFO - Got first page: 100 of 16681 total results
+2025-09-05 12:18:59,811 - INFO - Found 25 papers (more available: True)
+2025-09-05 12:21:23,522 - INFO - Received message: download papers, workflow_step: download
+2025-09-05 12:21:23,524 - INFO - Starting download: 4 papers, field=Chemistry, topic=catalysis
+2025-09-05 12:21:23,538 - INFO - Starting download: 4 papers
+2025-09-05 12:21:23,542 - INFO - Created download directory: E:\Next JS\researchbot\papers\Chemistry\catalysis
+2025-09-05 12:21:23,570 - INFO - Downloading 4 papers to E:\Next JS\researchbot\papers\Chemistry\catalysis
+2025-09-05 12:21:23,694 - DEBUG - Loaded metadata for 10 papers
+2025-09-05 12:21:23,721 - INFO - Starting download: 2305.19545v1
+2025-09-05 12:21:23,757 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 12:21:23,766 - INFO - Starting download: 1706.04090v1
+2025-09-05 12:21:23,770 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 12:21:23,788 - INFO - Starting download: 1808.10402v3
+2025-09-05 12:21:23,793 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 12:21:24,150 - DEBUG - http://arxiv.org:80 "GET /pdf/1706.04090v1 HTTP/1.1" 301 0
+2025-09-05 12:21:24,151 - DEBUG - http://arxiv.org:80 "GET /pdf/2305.19545v1 HTTP/1.1" 301 0
+2025-09-05 12:21:24,152 - DEBUG - http://arxiv.org:80 "GET /pdf/1808.10402v3 HTTP/1.1" 301 0
+2025-09-05 12:21:24,201 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 12:21:24,431 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 12:21:24,508 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 12:21:26,811 - DEBUG - https://arxiv.org:443 "GET /pdf/2305.19545v1 HTTP/1.1" 200 4065828
+2025-09-05 12:21:27,058 - DEBUG - https://arxiv.org:443 "GET /pdf/1808.10402v3 HTTP/1.1" 200 4716421
+2025-09-05 12:21:27,159 - DEBUG - https://arxiv.org:443 "GET /pdf/1706.04090v1 HTTP/1.1" 200 4487712
+2025-09-05 12:21:31,985 - INFO - Successfully downloaded 2305.19545v1 (3970KB)
+2025-09-05 12:21:32,009 - INFO - Starting download: 1904.02561v1
+2025-09-05 12:21:32,015 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 12:21:32,213 - DEBUG - http://arxiv.org:80 "GET /pdf/1904.02561v1 HTTP/1.1" 301 0
+2025-09-05 12:21:32,224 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 12:21:33,490 - DEBUG - https://arxiv.org:443 "GET /pdf/1904.02561v1 HTTP/1.1" 200 2815898
+2025-09-05 12:21:37,173 - INFO - Successfully downloaded 1904.02561v1 (2749KB)
+2025-09-05 12:21:43,366 - INFO - Successfully downloaded 1808.10402v3 (4605KB)
+2025-09-05 12:21:48,793 - INFO - Successfully downloaded 1706.04090v1 (4382KB)
+2025-09-05 12:21:48,804 - DEBUG - Saved metadata for 14 papers
+2025-09-05 12:21:48,805 - INFO - Download completed: 4 successful downloads
+2025-09-05 12:21:48,813 - WARNING - Could not generate AI summary for 2305.19545v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-05 12:21:48,817 - WARNING - Could not generate AI summary for 1706.04090v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-05 12:21:48,820 - WARNING - Could not generate AI summary for 1808.10402v3: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-05 12:21:48,821 - WARNING - Could not generate AI summary for 1904.02561v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-05 12:21:48,822 - INFO - Download summary saved to E:\Next JS\researchbot\papers\Chemistry\catalysis\download_summary.txt
+2025-09-05 12:21:48,824 - INFO - Download with references completed successfully
+2025-09-05 12:28:10,472 - INFO - Received message: Mathematics statistics, workflow_step: search
+2025-09-05 12:28:10,525 - INFO - New workflow search for: Mathematics statistics
+2025-09-05 12:28:10,526 - INFO - Searching arXiv: 'Mathematics statistics' (results 1-10)
+2025-09-05 12:28:10,528 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:28:10,533 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:28:13,354 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 3034
+2025-09-05 12:28:13,417 - INFO - Got first page: 8 of 413755 total results
+2025-09-05 12:28:13,421 - INFO - Sleeping: 2.938783 seconds
+2025-09-05 12:28:16,364 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=8&max_results=100
+2025-09-05 12:28:17,352 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=8&max_results=100 HTTP/1.1" 200 24229
+2025-09-05 12:28:17,552 - INFO - Found 10 papers (more available: True)
+2025-09-05 12:28:22,018 - INFO - Received message: y, workflow_step: load_more
+2025-09-05 12:28:22,019 - INFO - Searching arXiv: 'Mathematics statistics' (results 1-15)
+2025-09-05 12:28:22,020 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:28:22,023 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:28:22,648 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 3034
+2025-09-05 12:28:22,664 - INFO - Got first page: 8 of 413755 total results
+2025-09-05 12:28:22,666 - INFO - Sleeping: 2.983391 seconds
+2025-09-05 12:28:25,650 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=8&max_results=100
+2025-09-05 12:28:26,042 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=8&max_results=100 HTTP/1.1" 200 24229
+2025-09-05 12:28:26,480 - INFO - Found 15 papers (more available: True)
+2025-09-05 12:28:30,001 - INFO - Received message: y, workflow_step: load_more
+2025-09-05 12:28:30,021 - INFO - Searching arXiv: 'Mathematics statistics' (results 1-20)
+2025-09-05 12:28:30,028 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:28:30,038 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:28:33,036 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 3034
+2025-09-05 12:28:33,060 - INFO - Got first page: 8 of 413755 total results
+2025-09-05 12:28:33,062 - INFO - Sleeping: 2.978912 seconds
+2025-09-05 12:28:36,042 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=8&max_results=100
+2025-09-05 12:28:36,202 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+statistics&id_list=&sortBy=relevance&sortOrder=descending&start=8&max_results=100 HTTP/1.1" 200 24229
+2025-09-05 12:28:36,428 - INFO - Found 20 papers (more available: True)
+2025-09-05 12:29:09,953 - INFO - Received message: download papers, workflow_step: download
+2025-09-05 12:29:09,963 - INFO - Starting download: 2 papers, field=Mathematics, topic=statistics
+2025-09-05 12:29:09,992 - INFO - Starting download: 2 papers
+2025-09-05 12:29:10,021 - INFO - Created download directory: E:\Next JS\researchbot\papers\Mathematics\statistics
+2025-09-05 12:29:10,031 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Mathematics\statistics
+2025-09-05 12:29:10,033 - DEBUG - Loaded metadata for 14 papers
+2025-09-05 12:29:10,037 - INFO - Starting download: 1206.4230v1
+2025-09-05 12:29:10,043 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 12:29:10,048 - INFO - Starting download: 1703.09634v1
+2025-09-05 12:29:10,196 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 12:29:10,477 - DEBUG - http://arxiv.org:80 "GET /pdf/1703.09634v1 HTTP/1.1" 301 0
+2025-09-05 12:29:10,478 - DEBUG - http://arxiv.org:80 "GET /pdf/1206.4230v1 HTTP/1.1" 301 0
+2025-09-05 12:29:10,515 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 12:29:10,701 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 12:29:12,771 - DEBUG - https://arxiv.org:443 "GET /pdf/1703.09634v1 HTTP/1.1" 200 180176
+2025-09-05 12:29:13,016 - DEBUG - https://arxiv.org:443 "GET /pdf/1206.4230v1 HTTP/1.1" 200 202196
+2025-09-05 12:29:13,057 - INFO - Successfully downloaded 1703.09634v1 (175KB)
+2025-09-05 12:29:13,335 - INFO - Successfully downloaded 1206.4230v1 (197KB)
+2025-09-05 12:29:13,347 - DEBUG - Saved metadata for 16 papers
+2025-09-05 12:29:13,348 - INFO - Download completed: 2 successful downloads
+2025-09-05 12:29:13,351 - WARNING - Could not generate AI summary for 1206.4230v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-05 12:29:13,361 - WARNING - Could not generate AI summary for 1703.09634v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-05 12:29:13,369 - INFO - Download summary saved to E:\Next JS\researchbot\papers\Mathematics\statistics\download_summary.txt
+2025-09-05 12:29:13,371 - INFO - Download with references completed successfully
+2025-09-05 12:45:24,770 - INFO - Received message: Chemistry catalysis, workflow_step: search
+2025-09-05 12:45:24,792 - INFO - New workflow search for: Chemistry catalysis
+2025-09-05 12:45:24,794 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-10)
+2025-09-05 12:45:24,827 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-05 12:45:24,835 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-05 12:45:27,650 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 3775
+2025-09-05 12:45:27,717 - INFO - Got first page: 5 of 16681 total results
+2025-09-05 12:45:27,721 - INFO - Sleeping: 2.931940 seconds
+2025-09-05 12:45:30,655 - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100
+2025-09-05 12:45:31,906 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=5&max_results=100 HTTP/1.1" 200 64968
+2025-09-05 12:45:32,308 - INFO - Found 10 papers (more available: True)
+2025-09-05 12:45:55,466 - INFO - Received message: download papers, workflow_step: download
+2025-09-05 12:45:55,467 - INFO - Starting download: 1 papers, field=Chemistry, topic=catalysis
+2025-09-05 12:45:55,469 - INFO - Starting download: 1 papers
+2025-09-05 12:45:55,470 - INFO - Created download directory: E:\Next JS\researchbot\papers\Chemistry\catalysis
+2025-09-05 12:45:55,471 - INFO - Downloading 1 papers to E:\Next JS\researchbot\papers\Chemistry\catalysis
+2025-09-05 12:45:55,497 - DEBUG - Loaded metadata for 16 papers
+2025-09-05 12:45:55,516 - INFO - Starting download: 1304.8100v1
+2025-09-05 12:45:55,553 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-05 12:45:55,789 - DEBUG - http://arxiv.org:80 "GET /pdf/1304.8100v1 HTTP/1.1" 301 0
+2025-09-05 12:45:55,807 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-05 12:45:58,201 - DEBUG - https://arxiv.org:443 "GET /pdf/1304.8100v1 HTTP/1.1" 200 5983158
+2025-09-05 12:46:02,726 - INFO - Successfully downloaded 1304.8100v1 (5842KB)
+2025-09-05 12:46:02,733 - DEBUG - Saved metadata for 17 papers
+2025-09-05 12:46:02,733 - INFO - Download completed: 1 successful downloads
+2025-09-05 12:46:02,736 - WARNING - Could not generate AI summary for 1304.8100v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-05 12:46:02,738 - INFO - Download summary saved to E:\Next JS\researchbot\papers\Chemistry\catalysis\download_summary.txt
+2025-09-05 12:46:02,739 - INFO - Download with references completed successfully
