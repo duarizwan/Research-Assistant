@@ -78,5 +78,270 @@
     "download_status": "skipped",
     "download_path": "E:\\Next JS\\researchbot\\papers\\Mathematics\\optimization\\2210.03813v1_MOS__A_Mathematical_Optimization_Service.pdf",
     "download_timestamp": "2025-09-04T23:22:53.863649"
+  },
+  "1803.04409v1": {
+    "title": "On analysis in differential algebras and modules",
+    "authors": [
+      "Victor Zharinov"
+    ],
+    "summary": "A short introduction to the mathematical methods and technics of differential\nalgebras and modules adapted to the problems of mathematical and theoretical\nphysics is presented.",
+    "pdf_url": "http://arxiv.org/pdf/1803.04409v1",
+    "published": "2018-03-11",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "math.RA",
+      "math-ph",
+      "math.MP"
+    ],
+    "arxiv_id": "1803.04409v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Mathematics\\algebra\\1803.04409v1_On_analysis_in_differential_algebras_and_modules.pdf",
+    "download_timestamp": "2025-09-07T13:10:34.271748"
+  },
+  "2307.04502v1": {
+    "title": "Modular Completely Dirichlet forms as Squares of Derivations",
+    "authors": [
+      "Melchior Wirth"
+    ],
+    "summary": "We prove that certain closable derivations on the GNS Hilbert space\nassociated with a non-tracial weight on a von Neumann algebra give rise to\nGNS-symmetric semigroups of contractive completely positive maps on the von\nNeumann algebra.",
+    "pdf_url": "http://arxiv.org/pdf/2307.04502v1",
+    "published": "2023-07-10",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "math.OA",
+      "math-ph",
+      "math.FA",
+      "math.MP",
+      "quant-ph"
+    ],
+    "arxiv_id": "2307.04502v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Mathematics\\algebra\\2307.04502v1_Modular_Completely_Dirichlet_forms_as_Squares_of_Derivations.pdf",
+    "download_timestamp": "2025-09-07T13:10:34.407684"
+  },
+  "1503.00614v1": {
+    "title": "Algebras Satisfying Triality and S_4-symmetry",
+    "authors": [
+      "Noriaki Kamiya",
+      "Susumu Okubo"
+    ],
+    "summary": "We give a review of recent works for non-associative algebras, especially Lie\nalgebras satisfying the triality relation. They are also intimately related to\nS_4 (symmetric group of 4-objects) symmetry of the Lie algebras.",
+    "pdf_url": "http://arxiv.org/pdf/1503.00614v1",
+    "published": "2015-03-02",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "math-ph",
+      "math.MP",
+      "math.RA",
+      "math.RT"
+    ],
+    "arxiv_id": "1503.00614v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Mathematics\\algebra\\1503.00614v1_Algebras_Satisfying_Triality_and_S_4-symmetry.pdf",
+    "download_timestamp": "2025-09-07T13:10:34.747050"
+  },
+  "1505.03795v1": {
+    "title": "Fast and numerically stable circle fit",
+    "authors": [
+      "Houssam Abdul-Rahman",
+      "Nikolai Chernov"
+    ],
+    "summary": "We develop a new algorithm for fitting circles that does not have drawbacks\ncommonly found in existing circle fits. Our fit achieves ultimate accuracy (to\nmachine precision), avoids divergence, and is numerically stable even when\nfitting circles get arbitrary large. Lastly, our algorithm takes less than 10\niterations to converge, on average.",
+    "pdf_url": "http://arxiv.org/pdf/1505.03795v1",
+    "published": "2015-05-14",
+    "version": "1",
+    "status": "archived",
+    "categories": [
+      "cs.CV"
+    ],
+    "arxiv_id": "1505.03795v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Fitness\\Diet_plan_and_excercise\\1505.03795v1_Fast_and_numerically_stable_circle_fit.pdf",
+    "download_timestamp": "2025-09-07T14:21:01.380487"
+  },
+  "1803.04915v2": {
+    "title": "Nutritionally recommended food for semi- to strict vegetarian diets based on large-scale nutrient composition data",
+    "authors": [
+      "Seunghyeon Kim",
+      "Michael F. Fenech",
+      "Pan-Jun Kim"
+    ],
+    "summary": "Diet design for vegetarian health is challenging due to the limited food\nrepertoire of vegetarians. This challenge can be partially overcome by\nquantitative, data-driven approaches that utilise massive nutritional\ninformation collected for many different foods. Based on large-scale data of\nfoods' nutrient compositions, the recent concept of nutritional fitness helps\nquantify a nutrient balance within each food with regard to satisfying daily\nnutritional requirements. Nutritional fitness offers prioritisation of\nrecommended foods using the foods' occurrence in nutritionally adequate food\ncombinations. Here, we systematically identify nutritionally recommendable\nfoods for semi- to strict vegetarian diets through the computation of\nnutritional fitness. Along with commonly recommendable foods across different\ndiets, our analysis reveals favourable foods specific to each diet, such as\nimmature lima beans for a vegan diet as an amino acid and choline source, and\nmushrooms for ovo-lacto vegetarian and vegan diets as a vitamin D source.\nFurthermore, we find that selenium and other essential micronutrients can be\nsubject to deficiency in plant-based diets, and suggest nutritionally-desirable\ndietary patterns. We extend our analysis to two hypothetical scenarios of\nhighly personalised, plant-based methionine-restricted diets. Our\nnutrient-profiling approach may provide a useful guide for designing different\ntypes of personalised vegetarian diets.",
+    "pdf_url": "http://arxiv.org/pdf/1803.04915v2",
+    "published": "2018-03-12",
+    "version": "2",
+    "status": "archived",
+    "categories": [
+      "q-bio.OT",
+      "cs.SI",
+      "physics.soc-ph"
+    ],
+    "arxiv_id": "1803.04915v2",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Fitness\\Diet_plan_and_excercise\\1803.04915v2_Nutritionally_recommended_food_for_semi-_to_strict_vegetarian_diets_based_on_lar.pdf",
+    "download_timestamp": "2025-09-07T14:21:03.378496"
+  },
+  "2208.08579v2": {
+    "title": "DIET: Conditional independence testing with marginal dependence measures of residual information",
+    "authors": [
+      "Mukund Sudarshan",
+      "Aahlad Manas Puli",
+      "Wesley Tansey",
+      "Rajesh Ranganath"
+    ],
+    "summary": "Conditional randomization tests (CRTs) assess whether a variable $x$ is\npredictive of another variable $y$, having observed covariates $z$. CRTs\nrequire fitting a large number of predictive models, which is often\ncomputationally intractable. Existing solutions to reduce the cost of CRTs\ntypically split the dataset into a train and test portion, or rely on\nheuristics for interactions, both of which lead to a loss in power. We propose\nthe decoupled independence test (DIET), an algorithm that avoids both of these\nissues by leveraging marginal independence statistics to test conditional\nindependence relationships. DIET tests the marginal independence of two random\nvariables: $F(x \\mid z)$ and $F(y \\mid z)$ where $F(\\cdot \\mid z)$ is a\nconditional cumulative distribution function (CDF). These variables are termed\n\"information residuals.\" We give sufficient conditions for DIET to achieve\nfinite sample type-1 error control and power greater than the type-1 error\nrate. We then prove that when using the mutual information between the\ninformation residuals as a test statistic, DIET yields the most powerful\nconditionally valid test. Finally, we show DIET achieves higher power than\nother tractable CRTs on several synthetic and real benchmarks.",
+    "pdf_url": "http://arxiv.org/pdf/2208.08579v2",
+    "published": "2022-08-18",
+    "version": "2",
+    "status": "preprint",
+    "categories": [
+      "stat.ME",
+      "cs.LG",
+      "stat.ML"
+    ],
+    "arxiv_id": "2208.08579v2",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Fitness\\Diet_plan_and_excercise\\2208.08579v2_DIET__Conditional_independence_testing_with_marginal_dependence_measures_of_resi.pdf",
+    "download_timestamp": "2025-09-07T14:21:13.398094"
+  },
+  "2402.01687v2": {
+    "title": "\"Which LLM should I use?\": Evaluating LLMs for tasks performed by Undergraduate Computer Science Students",
+    "authors": [
+      "Vibhor Agarwal",
+      "Madhav Krishan Garg",
+      "Sahiti Dharmavaram",
+      "Dhruv Kumar"
+    ],
+    "summary": "This study evaluates the effectiveness of various large language models\n(LLMs) in performing tasks common among undergraduate computer science\nstudents. Although a number of research studies in the computing education\ncommunity have explored the possibility of using LLMs for a variety of tasks,\nthere is a lack of comprehensive research comparing different LLMs and\nevaluating which LLMs are most effective for different tasks. Our research\nsystematically assesses some of the publicly available LLMs such as Google\nBard, ChatGPT(3.5), GitHub Copilot Chat, and Microsoft Copilot across diverse\ntasks commonly encountered by undergraduate computer science students in India.\nThese tasks include code explanation and documentation, solving class\nassignments, technical interview preparation, learning new concepts and\nframeworks, and email writing. Evaluation for these tasks was carried out by\npre-final year and final year undergraduate computer science students and\nprovides insights into the models' strengths and limitations. This study aims\nto guide students as well as instructors in selecting suitable LLMs for any\nspecific task and offers valuable insights on how LLMs can be used\nconstructively by students and instructors.",
+    "pdf_url": "http://arxiv.org/pdf/2402.01687v2",
+    "published": "2024-01-22",
+    "version": "2",
+    "status": "preprint",
+    "categories": [
+      "cs.CY",
+      "cs.HC",
+      "cs.LG"
+    ],
+    "arxiv_id": "2402.01687v2",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Computer_Science\\LLMs\\2402.01687v2_Which_LLM_should_I_use__Evaluating_LLMs_for_tasks_performed_by_Undergraduate_Co.pdf",
+    "download_timestamp": "2025-09-07T14:22:52.040692"
+  },
+  "2410.23426v1": {
+    "title": "Social Science Meets LLMs: How Reliable Are Large Language Models in Social Simulations?",
+    "authors": [
+      "Yue Huang",
+      "Zhengqing Yuan",
+      "Yujun Zhou",
+      "Kehan Guo",
+      "Xiangqi Wang",
+      "Haomin Zhuang",
+      "Weixiang Sun",
+      "Lichao Sun",
+      "Jindong Wang",
+      "Yanfang Ye",
+      "Xiangliang Zhang"
+    ],
+    "summary": "Large Language Models (LLMs) are increasingly employed for simulations,\nenabling applications in role-playing agents and Computational Social Science\n(CSS). However, the reliability of these simulations is under-explored, which\nraises concerns about the trustworthiness of LLMs in these applications. In\nthis paper, we aim to answer ``How reliable is LLM-based simulation?'' To\naddress this, we introduce TrustSim, an evaluation dataset covering 10\nCSS-related topics, to systematically investigate the reliability of the LLM\nsimulation. We conducted experiments on 14 LLMs and found that inconsistencies\npersist in the LLM-based simulated roles. In addition, the consistency level of\nLLMs does not strongly correlate with their general performance. To enhance the\nreliability of LLMs in simulation, we proposed Adaptive Learning Rate Based\nORPO (AdaORPO), a reinforcement learning-based algorithm to improve the\nreliability in simulation across 7 LLMs. Our research provides a foundation for\nfuture studies to explore more robust and trustworthy LLM-based simulations.",
+    "pdf_url": "http://arxiv.org/pdf/2410.23426v1",
+    "published": "2024-10-30",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "arxiv_id": "2410.23426v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Computer_Science\\LLMs\\2410.23426v1_Social_Science_Meets_LLMs__How_Reliable_Are_Large_Language_Models_in_Social_Simu.pdf",
+    "download_timestamp": "2025-09-07T14:23:11.625442"
+  },
+  "cond-mat/0603063v1": {
+    "title": "Recent progress with large-scale ab initio calculations: the CONQUEST code",
+    "authors": [
+      "D. R. Bowler",
+      "R. Choudhury",
+      "M. J. Gillan",
+      "T. Miyazaki"
+    ],
+    "summary": "While the success of density functional theory (DFT) has led to its use in a\nwide variety of fields such as physics, chemistry, materials science and\nbiochemistry, it has long been recognised that conventional methods are very\ninefficient for large complex systems, because the memory requirements scale as\n$N^2$ and the cpu requirements as $N^3$ (where $N$ is the number of atoms). The\nprinciples necessary to develop methods with linear scaling of the cpu and\nmemory requirements with system size ($\\mathcal{O}(N)$ methods) have been\nestablished for more than ten years, but only recently have practical codes\nshowing this scaling for DFT started to appear. We report recent progress in\nthe development of the \\textsc{Conquest} code, which performs $\\mathcal{O}(N)$\nDFT calculations on parallel computers, and has a demonstrated ability to\nhandle systems of over 10,000 atoms. The code can be run at different levels of\nprecision, ranging from empirical tight-binding, through \\textit{ab initio}\ntight-binding, to full \\textit{ab initio}, and techniques for calculating ionic\nforces in a consistent way at all levels of precision will be presented.\nIllustrations are given of practical \\textsc{Conquest} calculations in the\nstrained Ge/Si(001) system.",
+    "pdf_url": "http://arxiv.org/pdf/cond-mat/0603063v1",
+    "published": "2006-03-03",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "arxiv_id": "cond-mat/0603063v1",
+    "download_status": "error: [Errno 2] No such file or directory: 'E:\\\\Next JS\\\\researchbot\\\\papers\\\\Chemistry\\\\biochemistry\\\\cond-mat/0603063v1_Recent_progress_with_large-scale_ab_initio_calculations__the_CONQUEST_code.pdf.part'",
+    "download_path": null,
+    "download_timestamp": "2025-09-07T14:57:09.018404"
+  },
+  "1905.12712v1": {
+    "title": "Path-Augmented Graph Transformer Network",
+    "authors": [
+      "Benson Chen",
+      "Regina Barzilay",
+      "Tommi Jaakkola"
+    ],
+    "summary": "Much of the recent work on learning molecular representations has been based\non Graph Convolution Networks (GCN). These models rely on local aggregation\noperations and can therefore miss higher-order graph properties. To remedy\nthis, we propose Path-Augmented Graph Transformer Networks (PAGTN) that are\nexplicitly built on longer-range dependencies in graph-structured data.\nSpecifically, we use path features in molecular graphs to create global\nattention layers. We compare our PAGTN model against the GCN model and show\nthat our model consistently outperforms GCNs on molecular property prediction\ndatasets including quantum chemistry (QM7, QM8, QM9), physical chemistry (ESOL,\nLipophilictiy) and biochemistry (BACE, BBBP).",
+    "pdf_url": "http://arxiv.org/pdf/1905.12712v1",
+    "published": "2019-05-29",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "arxiv_id": "1905.12712v1",
+    "download_status": "skipped",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Chemistry\\biochemistry\\1905.12712v1_Path-Augmented_Graph_Transformer_Network.pdf",
+    "download_timestamp": "2025-09-07T14:57:07.649137"
+  },
+  "2402.09391v4": {
+    "title": "LlaSMol: Advancing Large Language Models for Chemistry with a Large-Scale, Comprehensive, High-Quality Instruction Tuning Dataset",
+    "authors": [
+      "Botao Yu",
+      "Frazier N. Baker",
+      "Ziqi Chen",
+      "Xia Ning",
+      "Huan Sun"
+    ],
+    "summary": "Chemistry plays a crucial role in many domains, such as drug discovery and\nmaterial science. While large language models (LLMs) such as GPT-4 exhibit\nremarkable capabilities on natural language processing tasks, existing research\nindicates that their performance on chemistry tasks is discouragingly low. In\nthis paper, however, we demonstrate that our developed LLMs can achieve very\nstrong results on a comprehensive set of chemistry tasks, outperforming the\nmost advanced GPT-4 and Claude 3 Opus by a substantial margin. To accomplish\nthis, we propose SMolInstruct, a large-scale, comprehensive, and high-quality\ndataset for instruction tuning. It contains 14 selected chemistry tasks and\nover three million samples, laying a solid foundation for training and\nevaluating LLMs for chemistry. Using SMolInstruct, we fine-tune a set of\nopen-source LLMs, among which, we find that Mistral serves as the best base\nmodel for chemistry tasks. Our analysis further demonstrates the critical role\nof the proposed dataset in driving the performance improvements.",
+    "pdf_url": "http://arxiv.org/pdf/2402.09391v4",
+    "published": "2024-02-14",
+    "version": "4",
+    "status": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.CE",
+      "cs.CL"
+    ],
+    "arxiv_id": "2402.09391v4",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Chemistry\\materials\\2402.09391v4_LlaSMol__Advancing_Large_Language_Models_for_Chemistry_with_a_Large-Scale__Compr.pdf",
+    "download_timestamp": "2025-09-07T15:02:32.719533"
+  },
+  "2303.10111v2": {
+    "title": "Theory and modeling of light-matter interactions in chemistry: current and future",
+    "authors": [
+      "Braden M. Weight",
+      "Xinyang Li",
+      "Yu Zhang"
+    ],
+    "summary": "Light-matter interaction not only plays an instrumental role in\ncharacterizing materials' properties via various spectroscopic techniques but\nalso provides a general strategy to manipulate material properties via the\ndesign of novel nanostructures. This perspective summarizes recent theoretical\nadvances in modeling light-matter interactions in chemistry, mainly focusing on\nplasmon and polariton chemistry. The former utilizes the highly localized\nphoton, plasmonic hot electrons, and local heat to drive chemical reactions. In\ncontrast, polariton chemistry modifies the potential energy curvatures of bare\nelectronic systems, and hence their chemistry, via forming light-matter hybrid\nstates, so-called polaritons. The perspective starts with the basic background\nof light-matter interactions, molecular quantum electrodynamics theory, and the\nchallenges of modeling light-matter interactions in chemistry. Then, the recent\nadvances in modeling plasmon and polariton chemistry are described, and future\ndirections toward multiscale simulations of light-matter interaction-mediated\nchemistry are discussed.",
+    "pdf_url": "http://arxiv.org/pdf/2303.10111v2",
+    "published": "2023-03-17",
+    "version": "2",
+    "status": "preprint",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "arxiv_id": "2303.10111v2",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Chemistry\\materials\\2303.10111v2_Theory_and_modeling_of_light-matter_interactions_in_chemistry__current_and_futur.pdf",
+    "download_timestamp": "2025-09-07T15:03:27.965737"
   }
 }

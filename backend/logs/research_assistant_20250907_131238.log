@@ -1,0 +1,9 @@
+2025-09-07 13:12:38,622 - DEBUG - Using selector: SelectSelector
+2025-09-07 14:04:26,774 - INFO - Received message: Chemistry inorganic, workflow_step: search
+2025-09-07 14:04:26,791 - INFO - New workflow search for: Chemistry inorganic (max_results: 10)
+2025-09-07 14:04:26,793 - INFO - Searching arXiv: 'Chemistry inorganic' (results 1-10)
+2025-09-07 14:04:26,808 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+inorganic&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:04:26,842 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:04:30,144 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+inorganic&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 67000
+2025-09-07 14:04:30,722 - INFO - Got first page: 100 of 16871 total results
+2025-09-07 14:04:30,730 - INFO - Found 10 papers (more available: True)

@@ -1,0 +1,66 @@
+2025-09-07 14:34:25,938 - DEBUG - Using selector: SelectSelector
+2025-09-07 14:36:40,270 - INFO - Received message: Mathematics topology, workflow_step: search
+2025-09-07 14:36:40,279 - INFO - New workflow search for: Mathematics topology (max_results: 10)
+2025-09-07 14:36:40,290 - INFO - Searching arXiv: 'Mathematics topology' (results 1-10)
+2025-09-07 14:36:40,309 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+topology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:36:40,327 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:36:43,348 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+topology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 30329
+2025-09-07 14:36:44,151 - INFO - Got first page: 100 of 327237 total results
+2025-09-07 14:36:44,199 - INFO - Found 10 papers (more available: True)
+2025-09-07 14:37:33,643 - INFO - Received message: Computer Science computer vision, workflow_step: search
+2025-09-07 14:37:33,646 - INFO - New workflow search for: Computer Science computer vision (max_results: 10)
+2025-09-07 14:37:33,648 - INFO - Searching arXiv: 'Computer Science computer vision' (results 1-10)
+2025-09-07 14:37:33,649 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Computer+Science+computer+vision&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:37:33,658 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:37:34,974 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Computer+Science+computer+vision&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 14281
+2025-09-07 14:37:35,106 - INFO - Got first page: 25 of 853492 total results
+2025-09-07 14:37:35,114 - INFO - Found 10 papers (more available: True)
+2025-09-07 14:38:33,941 - INFO - Received message: Chemistry catalysis, workflow_step: search
+2025-09-07 14:38:33,942 - INFO - New workflow search for: Chemistry catalysis (max_results: 10)
+2025-09-07 14:38:33,942 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-10)
+2025-09-07 14:38:33,943 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:38:33,945 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:38:35,686 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63837
+2025-09-07 14:38:36,171 - INFO - Got first page: 100 of 16681 total results
+2025-09-07 14:38:36,174 - INFO - Found 10 papers (more available: True)
+2025-09-07 14:38:40,044 - INFO - Received message: Chemistry catalysis, workflow_step: load_more
+2025-09-07 14:38:40,045 - INFO - Searching for more papers on: Chemistry catalysis (max_results: 5)
+2025-09-07 14:38:40,046 - INFO - Trying search: Chemistry catalysis
+2025-09-07 14:38:40,046 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-5)
+2025-09-07 14:38:40,048 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:38:40,090 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:38:40,762 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63837
+2025-09-07 14:38:41,246 - INFO - Got first page: 100 of 16681 total results
+2025-09-07 14:38:41,248 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:38:41,251 - INFO - Trying search: Chemistry catalysis recent
+2025-09-07 14:38:41,251 - INFO - Searching arXiv: 'Chemistry catalysis recent' (results 1-5)
+2025-09-07 14:38:41,252 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:38:41,254 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:38:42,741 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 16995
+2025-09-07 14:38:42,932 - INFO - Got first page: 25 of 384392 total results
+2025-09-07 14:38:42,944 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:38:42,956 - INFO - Found 2 new papers using search: Chemistry catalysis recent
+2025-09-07 14:38:54,038 - INFO - Received message: Chemistry catalysis, workflow_step: load_more
+2025-09-07 14:38:54,039 - INFO - Searching for more papers on: Chemistry catalysis (max_results: 5)
+2025-09-07 14:38:54,039 - INFO - Trying search: Chemistry catalysis
+2025-09-07 14:38:54,039 - INFO - Searching arXiv: 'Chemistry catalysis' (results 1-5)
+2025-09-07 14:38:54,041 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:38:54,043 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:38:54,708 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63837
+2025-09-07 14:38:55,195 - INFO - Got first page: 100 of 16681 total results
+2025-09-07 14:38:55,197 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:38:55,201 - INFO - Trying search: Chemistry catalysis recent
+2025-09-07 14:38:55,201 - INFO - Searching arXiv: 'Chemistry catalysis recent' (results 1-5)
+2025-09-07 14:38:55,202 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:38:55,205 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:38:55,935 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 16995
+2025-09-07 14:38:56,056 - INFO - Got first page: 25 of 384392 total results
+2025-09-07 14:38:56,058 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:38:56,060 - INFO - Trying search: Chemistry catalysis 2024
+2025-09-07 14:38:56,060 - INFO - Searching arXiv: 'Chemistry catalysis 2024' (results 1-5)
+2025-09-07 14:38:56,061 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+catalysis+2024&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:38:56,062 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:38:57,483 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+catalysis+2024&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63417
+2025-09-07 14:38:57,863 - INFO - Got first page: 100 of 332992 total results
+2025-09-07 14:38:57,867 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:38:57,880 - INFO - Found 4 new papers using search: Chemistry catalysis 2024

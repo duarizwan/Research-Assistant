@@ -1,0 +1,177 @@
+2025-09-07 14:08:50,160 - DEBUG - Using selector: SelectSelector
+2025-09-07 14:16:35,800 - INFO - Received message: Fitness Diet plan and excercise, workflow_step: search
+2025-09-07 14:16:35,920 - INFO - New workflow search for: Fitness Diet plan and excercise (max_results: 10)
+2025-09-07 14:16:35,929 - INFO - Searching arXiv: 'Fitness Diet plan and excercise' (results 1-10)
+2025-09-07 14:16:35,931 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+Diet+plan+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:16:36,169 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:16:41,511 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+Diet+plan+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70903
+2025-09-07 14:16:42,859 - INFO - Got first page: 100 of 2751393 total results
+2025-09-07 14:16:42,871 - INFO - Found 10 papers (more available: True)
+2025-09-07 14:16:53,397 - INFO - Received message: Fitness Diet plan and excercise, workflow_step: load_more
+2025-09-07 14:16:53,435 - INFO - Searching for more papers on: Fitness Diet plan and excercise (max_results: 5)
+2025-09-07 14:16:53,556 - INFO - Trying search: Fitness Diet plan and excercise
+2025-09-07 14:16:53,687 - INFO - Searching arXiv: 'Fitness Diet plan and excercise' (results 1-5)
+2025-09-07 14:16:53,806 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+Diet+plan+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:16:53,914 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:16:57,042 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+Diet+plan+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70903
+2025-09-07 14:16:58,128 - INFO - Got first page: 100 of 2751393 total results
+2025-09-07 14:16:58,141 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:16:58,190 - INFO - Trying search: Fitness Diet plan and excercise recent
+2025-09-07 14:16:58,246 - INFO - Searching arXiv: 'Fitness Diet plan and excercise recent' (results 1-5)
+2025-09-07 14:16:58,257 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+Diet+plan+and+excercise+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:16:58,282 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:17:01,642 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+Diet+plan+and+excercise+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70804
+2025-09-07 14:17:03,007 - INFO - Got first page: 100 of 2756041 total results
+2025-09-07 14:17:03,023 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:17:03,091 - INFO - Trying search: Fitness Diet plan and excercise 2024
+2025-09-07 14:17:03,104 - INFO - Searching arXiv: 'Fitness Diet plan and excercise 2024' (results 1-5)
+2025-09-07 14:17:03,120 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+Diet+plan+and+excercise+2024&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:17:03,141 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:17:06,828 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+Diet+plan+and+excercise+2024&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 69934
+2025-09-07 14:17:07,919 - INFO - Got first page: 100 of 2755930 total results
+2025-09-07 14:17:07,938 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:17:07,954 - INFO - Trying search: Fitness Diet plan and excercise 2023
+2025-09-07 14:17:07,969 - INFO - Searching arXiv: 'Fitness Diet plan and excercise 2023' (results 1-5)
+2025-09-07 14:17:07,971 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+Diet+plan+and+excercise+2023&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:17:07,988 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:17:12,298 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+Diet+plan+and+excercise+2023&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70392
+2025-09-07 14:17:13,281 - INFO - Got first page: 100 of 2755762 total results
+2025-09-07 14:17:13,298 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:17:13,324 - INFO - Trying search: Fitness Diet plan and excercise latest
+2025-09-07 14:17:13,337 - INFO - Searching arXiv: 'Fitness Diet plan and excercise latest' (results 1-5)
+2025-09-07 14:17:13,339 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+Diet+plan+and+excercise+latest&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:17:13,348 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:17:16,883 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+Diet+plan+and+excercise+latest&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 68687
+2025-09-07 14:17:18,137 - INFO - Got first page: 100 of 2751542 total results
+2025-09-07 14:17:18,155 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:17:18,225 - INFO - Trying broader search: Fitness excercise
+2025-09-07 14:17:18,252 - INFO - Searching arXiv: 'Fitness excercise' (results 1-5)
+2025-09-07 14:17:18,253 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:17:18,302 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:17:22,506 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 53465
+2025-09-07 14:17:23,753 - INFO - Got first page: 100 of 89761 total results
+2025-09-07 14:17:23,760 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:17:23,763 - INFO - Found 5 new papers using broader search: Fitness excercise
+2025-09-07 14:18:44,861 - INFO - Received message: Fitness  Diet plan and excercise, workflow_step: search
+2025-09-07 14:18:44,890 - INFO - New workflow search for: Fitness  Diet plan and excercise (max_results: 10)
+2025-09-07 14:18:44,927 - INFO - Searching arXiv: 'Fitness  Diet plan and excercise' (results 1-10)
+2025-09-07 14:18:45,008 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness++Diet+plan+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:18:45,153 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:18:48,919 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness++Diet+plan+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70906
+2025-09-07 14:18:49,970 - INFO - Got first page: 100 of 2751393 total results
+2025-09-07 14:18:50,059 - INFO - Found 10 papers (more available: True)
+2025-09-07 14:18:59,851 - INFO - Received message: Fitness  Diet plan and excercise, workflow_step: load_more
+2025-09-07 14:18:59,869 - INFO - Searching for more papers on: Fitness  Diet plan and excercise (max_results: 5)
+2025-09-07 14:18:59,870 - INFO - Trying search: Fitness  Diet plan and excercise
+2025-09-07 14:18:59,968 - INFO - Searching arXiv: 'Fitness  Diet plan and excercise' (results 1-5)
+2025-09-07 14:18:59,969 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness++Diet+plan+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:19:00,141 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:19:02,734 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness++Diet+plan+and+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70906
+2025-09-07 14:19:04,277 - INFO - Got first page: 100 of 2751393 total results
+2025-09-07 14:19:04,282 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:19:04,292 - INFO - Trying search: Fitness  Diet plan and excercise recent
+2025-09-07 14:19:04,300 - INFO - Searching arXiv: 'Fitness  Diet plan and excercise recent' (results 1-5)
+2025-09-07 14:19:04,313 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness++Diet+plan+and+excercise+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:19:04,319 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:19:07,838 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness++Diet+plan+and+excercise+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70806
+2025-09-07 14:19:08,839 - INFO - Got first page: 100 of 2756041 total results
+2025-09-07 14:19:08,875 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:19:08,935 - INFO - Trying search: Fitness  Diet plan and excercise 2024
+2025-09-07 14:19:08,963 - INFO - Searching arXiv: 'Fitness  Diet plan and excercise 2024' (results 1-5)
+2025-09-07 14:19:08,994 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness++Diet+plan+and+excercise+2024&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:19:09,026 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:19:12,051 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness++Diet+plan+and+excercise+2024&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 69938
+2025-09-07 14:19:14,160 - INFO - Got first page: 100 of 2755930 total results
+2025-09-07 14:19:14,198 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:19:14,238 - INFO - Trying search: Fitness  Diet plan and excercise 2023
+2025-09-07 14:19:14,284 - INFO - Searching arXiv: 'Fitness  Diet plan and excercise 2023' (results 1-5)
+2025-09-07 14:19:14,316 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness++Diet+plan+and+excercise+2023&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:19:14,334 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:19:17,718 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness++Diet+plan+and+excercise+2023&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 70394
+2025-09-07 14:19:19,056 - INFO - Got first page: 100 of 2755762 total results
+2025-09-07 14:19:19,083 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:19:19,159 - INFO - Trying search: Fitness  Diet plan and excercise latest
+2025-09-07 14:19:19,243 - INFO - Searching arXiv: 'Fitness  Diet plan and excercise latest' (results 1-5)
+2025-09-07 14:19:19,414 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness++Diet+plan+and+excercise+latest&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:19:19,500 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:19:23,199 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness++Diet+plan+and+excercise+latest&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 68690
+2025-09-07 14:19:25,086 - INFO - Got first page: 100 of 2751542 total results
+2025-09-07 14:19:25,142 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:19:25,341 - INFO - Trying broader search: Fitness excercise
+2025-09-07 14:19:25,591 - INFO - Searching arXiv: 'Fitness excercise' (results 1-5)
+2025-09-07 14:19:25,692 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:19:25,707 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:19:28,085 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness+excercise&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 53465
+2025-09-07 14:19:29,166 - INFO - Got first page: 100 of 89761 total results
+2025-09-07 14:19:29,204 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:19:29,247 - INFO - Trying broader search: Fitness
+2025-09-07 14:19:29,251 - INFO - Searching arXiv: 'Fitness' (results 1-5)
+2025-09-07 14:19:29,261 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Fitness&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:19:29,312 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:19:33,365 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Fitness&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 51075
+2025-09-07 14:19:34,123 - INFO - Got first page: 100 of 89752 total results
+2025-09-07 14:19:34,138 - INFO - Found 5 papers (more available: True)
+2025-09-07 14:19:34,174 - INFO - Found 5 new papers using broader search: Fitness
+2025-09-07 14:20:25,933 - INFO - Received message: download papers, workflow_step: download
+2025-09-07 14:20:26,029 - INFO - Starting download: 3 papers, field=Fitness , topic=Diet plan and excercise
+2025-09-07 14:20:35,588 - DEBUG - Successfully generated summary for Nutritionally recommended food...
+2025-09-07 14:20:43,181 - DEBUG - Successfully generated summary for DIET: Conditional independence...
+2025-09-07 14:20:50,903 - DEBUG - Successfully generated summary for Fast and numerically stable ci...
+2025-09-07 14:20:51,893 - INFO - Starting download: 3 papers
+2025-09-07 14:20:51,988 - INFO - Created download directory: E:\Next JS\researchbot\papers\Fitness\Diet_plan_and_excercise
+2025-09-07 14:20:52,005 - INFO - Downloading 3 papers to E:\Next JS\researchbot\papers\Fitness\Diet_plan_and_excercise
+2025-09-07 14:20:52,261 - DEBUG - Loaded metadata for 7 papers
+2025-09-07 14:20:52,595 - INFO - Starting download: 1803.04915v2
+2025-09-07 14:20:52,646 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-07 14:20:52,649 - INFO - Starting download: 2208.08579v2
+2025-09-07 14:20:52,748 - INFO - Starting download: 1505.03795v1
+2025-09-07 14:20:52,772 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-07 14:20:52,822 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-07 14:20:52,962 - DEBUG - http://arxiv.org:80 "GET /pdf/1803.04915v2 HTTP/1.1" 301 0
+2025-09-07 14:20:53,008 - DEBUG - http://arxiv.org:80 "GET /pdf/2208.08579v2 HTTP/1.1" 301 0
+2025-09-07 14:20:53,240 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-07 14:20:53,268 - DEBUG - http://arxiv.org:80 "GET /pdf/1505.03795v1 HTTP/1.1" 301 0
+2025-09-07 14:20:53,309 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-07 14:20:53,407 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-07 14:20:57,034 - DEBUG - https://arxiv.org:443 "GET /pdf/1803.04915v2 HTTP/1.1" 200 1058593
+2025-09-07 14:20:57,598 - DEBUG - https://arxiv.org:443 "GET /pdf/2208.08579v2 HTTP/1.1" 200 1070954
+2025-09-07 14:20:57,786 - DEBUG - https://arxiv.org:443 "GET /pdf/1505.03795v1 HTTP/1.1" 200 168062
+2025-09-07 14:21:01,365 - INFO - Successfully downloaded 1505.03795v1 (164KB)
+2025-09-07 14:21:03,123 - INFO - Successfully downloaded 1803.04915v2 (1033KB)
+2025-09-07 14:21:13,368 - INFO - Successfully downloaded 2208.08579v2 (1045KB)
+2025-09-07 14:21:13,407 - DEBUG - Saved metadata for 10 papers
+2025-09-07 14:21:13,413 - INFO - Download completed: 3 successful downloads
+2025-09-07 14:21:13,460 - INFO - Download summary saved to E:\Next JS\researchbot\papers\Fitness\Diet_plan_and_excercise\download_summary.txt
+2025-09-07 14:21:13,493 - INFO - Download with references completed successfully
+2025-09-07 14:21:53,280 - INFO - Received message: Computer Science LLMs, workflow_step: search
+2025-09-07 14:21:53,479 - INFO - New workflow search for: Computer Science LLMs (max_results: 10)
+2025-09-07 14:21:53,615 - INFO - Searching arXiv: 'Computer Science LLMs' (results 1-10)
+2025-09-07 14:21:53,757 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Computer+Science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:21:54,092 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:22:00,717 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Computer+Science+LLMs&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 63441
+2025-09-07 14:22:01,868 - INFO - Got first page: 100 of 858501 total results
+2025-09-07 14:22:01,922 - INFO - Found 10 papers (more available: True)
+2025-09-07 14:22:27,978 - INFO - Received message: download papers, workflow_step: download
+2025-09-07 14:22:28,016 - INFO - Starting download: 2 papers, field=Computer Science, topic=LLMs
+2025-09-07 14:22:35,200 - DEBUG - Successfully generated summary for "Which LLM should I use?": Eva...
+2025-09-07 14:22:42,253 - DEBUG - Successfully generated summary for Social Science Meets LLMs: How...
+2025-09-07 14:22:42,462 - INFO - Starting download: 2 papers
+2025-09-07 14:22:43,208 - INFO - Created download directory: E:\Next JS\researchbot\papers\Computer_Science\LLMs
+2025-09-07 14:22:43,616 - INFO - Downloading 2 papers to E:\Next JS\researchbot\papers\Computer_Science\LLMs
+2025-09-07 14:22:45,058 - DEBUG - Loaded metadata for 10 papers
+2025-09-07 14:22:45,167 - INFO - Starting download: 2402.01687v2
+2025-09-07 14:22:45,170 - INFO - Starting download: 2410.23426v1
+2025-09-07 14:22:45,178 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-07 14:22:45,181 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-07 14:22:45,888 - DEBUG - http://arxiv.org:80 "GET /pdf/2410.23426v1 HTTP/1.1" 301 0
+2025-09-07 14:22:45,889 - DEBUG - http://arxiv.org:80 "GET /pdf/2402.01687v2 HTTP/1.1" 301 0
+2025-09-07 14:22:45,909 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-07 14:22:45,912 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-07 14:22:50,168 - DEBUG - https://arxiv.org:443 "GET /pdf/2402.01687v2 HTTP/1.1" 200 212514
+2025-09-07 14:22:50,215 - DEBUG - https://arxiv.org:443 "GET /pdf/2410.23426v1 HTTP/1.1" 200 2235746
+2025-09-07 14:22:51,980 - INFO - Successfully downloaded 2402.01687v2 (207KB)
+2025-09-07 14:23:11,616 - INFO - Successfully downloaded 2410.23426v1 (2183KB)
+2025-09-07 14:23:11,628 - DEBUG - Saved metadata for 12 papers
+2025-09-07 14:23:11,631 - INFO - Download completed: 2 successful downloads
+2025-09-07 14:23:11,633 - INFO - Download summary saved to E:\Next JS\researchbot\papers\Computer_Science\LLMs\download_summary.txt
+2025-09-07 14:23:11,635 - INFO - Download with references completed successfully

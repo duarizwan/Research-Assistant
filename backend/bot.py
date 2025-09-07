@@ -58,10 +58,10 @@ logger = logging.getLogger(__name__)
 # -------------------------------
 def setup_gemini():
     """Setup Gemini API with proper error handling."""
-    api_key = os.getenv("GENAI_API_KEY")
+    api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
-        logger.error("GENAI_API_KEY not found in environment variables")
-        raise SystemExit("❌ Error: Please set GENAI_API_KEY in your .env file")
+        logger.error("GEMINI_API_KEY not found in environment variables")
+        raise SystemExit("❌ Error: Please set GEMINI_API_KEY in your .env file")
     
     try:
         genai.configure(api_key=api_key)
@@ -376,15 +376,20 @@ def summarize_with_gemini(paper_info: dict) -> str:
             
             time.sleep(GEMINI_RATE_LIMIT_DELAY)  # Rate limiting
             
-            prompt = f"""Summarize this research paper briefly in 2-3 sentences focusing on the main contribution and methodology:
+            prompt = f"""Provide a concise summary of this research paper in 100-150 words. Include:
+
+1. Main Research Question/Objective
+2. Key Methodology
+3. Main Findings
+4. Significance
 
 Title: {paper_info['title']}
-Authors: {", ".join(paper_info['authors'][:5])}
+Authors: {", ".join(paper_info['authors'][:3])}
 Published: {paper_info['published']}
-Categories: {", ".join(paper_info.get('categories', []))}
-Abstract: {paper_info['summary'][:800]}...
+Categories: {", ".join(paper_info.get('categories', [])[:2])}
+Abstract: {paper_info['summary'][:500]}...
 
-Provide a concise summary highlighting the key innovation and practical implications."""
+Write a brief, clear summary that captures the essential points of the paper."""
 
             response = model.generate_content(prompt)
             summary = response.text.strip()

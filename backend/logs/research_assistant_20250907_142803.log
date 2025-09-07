@@ -1,0 +1,9 @@
+2025-09-07 14:28:04,018 - DEBUG - Using selector: SelectSelector
+2025-09-07 14:31:21,566 - INFO - Received message: Chemistry organic chemistry, workflow_step: search
+2025-09-07 14:31:21,600 - INFO - New workflow search for: Chemistry organic chemistry (max_results: 10)
+2025-09-07 14:31:21,677 - INFO - Searching arXiv: 'Chemistry organic chemistry' (results 1-10)
+2025-09-07 14:31:21,800 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Chemistry+organic+chemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 14:31:21,956 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 14:31:24,452 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Chemistry+organic+chemistry&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 65760
+2025-09-07 14:31:25,090 - INFO - Got first page: 100 of 57076 total results
+2025-09-07 14:31:25,103 - INFO - Found 10 papers (more available: True)

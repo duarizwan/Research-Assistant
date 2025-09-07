@@ -28,9 +28,15 @@ app = FastAPI(title="Research Assistant API", version="1.0.0")
 logger = setup_logging(verbose=True)
 
 # Enable CORS for Next.js frontend
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=[
+        "http://localhost:3000", 
+        "http://127.0.0.1:3000",
+        FRONTEND_URL,
+        "https://*.vercel.app"  # Allow Vercel deployments
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -440,11 +446,14 @@ async def handle_load_more_papers(query: str, session: ConversationState, max_re
         
         # If still no new papers, try broader searches
         if not new_papers:
-            broader_searches = [
-                f"{query.split()[0]} {query.split()[-1]}",  # First and last word
-                query.split()[0],  # Just the field
-                query.split()[-1],  # Just the topic
-            ]
+            query_parts = query.split()
+            broader_searches = []
+            if len(query_parts) > 1:
+                broader_searches.append(f"{query_parts[0]} {query_parts[-1]}")  # First and last word
+            if len(query_parts) > 0:
+                broader_searches.append(query_parts[0])  # Just the first word (often field)
+                if len(query_parts) > 1:
+                    broader_searches.append(query_parts[-1])  # Just the last word (often topic)
             
             for search_query in broader_searches:
                 logger.info(f"Trying broader search: {search_query}")
@@ -509,6 +518,26 @@ async def handle_load_more_papers(query: str, session: ConversationState, max_re
             action_type="error"
         )
 
+async def generate_detailed_summaries(paper_ids: List[str], papers_info: dict) -> dict:
+    """Generate concise 100-150 word summaries for selected papers"""
+    detailed_summaries = {}
+    
+    for pid in paper_ids:
+        if pid in papers_info:
+            try:
+                # Use the existing summarize_with_gemini function for detailed summaries
+                from bot import summarize_with_gemini
+                detailed_summary = await asyncio.get_event_loop().run_in_executor(
+                    None, summarize_with_gemini, papers_info[pid]
+                )
+                detailed_summaries[pid] = detailed_summary
+            except Exception as e:
+                logger.error(f"Error generating detailed summary for {pid}: {e}")
+                # Fallback to original summary if AI generation fails
+                detailed_summaries[pid] = papers_info[pid]['summary']
+    
+    return detailed_summaries
+
 async def handle_download_request(message: ChatMessage, session: ConversationState, background_tasks: BackgroundTasks) -> ChatResponse:
     """Handle download request with reference generation"""
     try:
@@ -551,47 +580,36 @@ async def handle_download_request(message: ChatMessage, session: ConversationSta
         
         logger.info(f"Starting download: {len(selected_papers)} papers, field={message.field}, topic={message.topic}")
         
+        # Generate detailed summaries for selected papers
+        detailed_summaries = await generate_detailed_summaries(message.paper_ids, selected_papers)
+        
         # Start download in background
         background_tasks.add_task(
             download_with_references,
             message.paper_ids,
             message.topic,
             message.field,
-            selected_papers
+            selected_papers,
+            detailed_summaries
         )
         
-        # Generate download path for user info
-        try:
-            download_path = os.path.join(get_project_papers_directory(), safe_filename(message.field), safe_filename(message.topic))
-            # Make the path relative to project root for display
-            display_path = os.path.join("papers", safe_filename(message.field), safe_filename(message.topic))
-        except Exception as e:
-            logger.error(f"Error getting download path: {e}")
-            download_path = "papers folder"
-            display_path = "papers folder"
-        
-        # Create detailed download info like CLI
-        response_text = f"📥   Starting Download of {len(selected_papers)} Papers  \n\n"
-        
-        # List the papers being downloaded
-        response_text += "📋   Selected Papers:  \n"
-        for i, (pid, paper_info) in enumerate(selected_papers.items(), 1):
-            year = paper_info['published'].split('-')[0] if paper_info['published'] else 'Unknown'
-            title = paper_info['title'][:60] + "..." if len(paper_info['title']) > 60 else paper_info['title']
-            response_text += f"{i}) [{year}] {title} (ID: {pid})\n"
-        
-        response_text += f"\n📁   Download Location:   {display_path}\n"
-        
-        response_text += f"\n⚡   Status:   Downloads are running in the background...\n"
-        response_text += "📄   Files Generated:  \n"
-        response_text += "• PDF files for each paper\n"
-        response_text += "• download_summary.txt (with AI-generated summaries)\n\n"
-        response_text += "🔍 Check the papers folder in your project directory for all downloaded files!"
-        
+        # Return the detailed summaries to frontend for display during download
         return ChatResponse(
-            response=response_text,
-            action_type="download"
+            response=f"📥 Starting download of {len(selected_papers)} papers with detailed summaries...",
+            action_type="download",
+            papers=[Paper(
+                id=pid,
+                title=selected_papers[pid]['title'],
+                authors=selected_papers[pid]['authors'][:3],
+                summary=detailed_summaries.get(pid, selected_papers[pid]['summary']),
+                pdf_url=selected_papers[pid]['pdf_url'],
+                published=selected_papers[pid]['published'],
+                version=selected_papers[pid]['version'],
+                status=selected_papers[pid]['status'],
+                categories=selected_papers[pid].get('categories', [])[:2]
+            ) for pid in message.paper_ids if pid in selected_papers]
         )
+        
         
     except Exception as e:
         logger.error(f"Unexpected error in download request: {e}")
@@ -602,7 +620,7 @@ async def handle_download_request(message: ChatMessage, session: ConversationSta
             action_type="error"
         )
 
-async def download_with_references(paper_ids: List[str], topic: str, field: str, papers_info: dict):
+async def download_with_references(paper_ids: List[str], topic: str, field: str, papers_info: dict, detailed_summaries: dict = None):
     """Background task for downloading papers and generating references"""
     try:
         logger.info(f"Starting download: {len(paper_ids)} papers")
@@ -616,7 +634,7 @@ async def download_with_references(paper_ids: List[str], topic: str, field: str,
             logger.error("No papers info provided for download")
             return
         
-                # Create downloads directory in project papers folder
+        # Create downloads directory in project papers folder
         try:
             papers_dir = os.path.join(get_project_papers_directory(), safe_filename(field), safe_filename(topic))
             os.makedirs(papers_dir, exist_ok=True)
@@ -639,7 +657,7 @@ async def download_with_references(paper_ids: List[str], topic: str, field: str,
         # Generate detailed summary file for web interface
         if successful_downloads:
             try:
-                await generate_download_summary(paper_ids, papers_info, papers_dir, successful_downloads)
+                await generate_download_summary(paper_ids, papers_info, papers_dir, successful_downloads, detailed_summaries)
             except Exception as e:
                 logger.error(f"Error generating download summary: {e}")
         
@@ -652,13 +670,13 @@ async def download_with_references(paper_ids: List[str], topic: str, field: str,
 
 
 
-async def generate_download_summary(paper_ids: List[str], papers_info: dict, papers_dir: str, successful_downloads: List[tuple]):
+async def generate_download_summary(paper_ids: List[str], papers_info: dict, papers_dir: str, successful_downloads: List[tuple], detailed_summaries: dict = None):
     """Generate a detailed download summary with AI summaries like CLI"""
     try:
         from bot import summarize_with_gemini
         
-        summary_content = "📑 Paper Details and AI-Generated Summaries\n"
-        summary_content += "=" * 80 + "\n\n"
+        summary_content = "📑 Downloaded Papers Summary\n"
+        summary_content += "=" * 50 + "\n\n"
         
         for pid in paper_ids:
             if pid not in papers_info:
@@ -671,10 +689,9 @@ async def generate_download_summary(paper_ids: List[str], papers_info: dict, pap
             if not downloaded:
                 continue
             
-            summary_content += f"🔹 {paper['title']}\n"
-            summary_content += f"📅 Published: {paper['published']} | Version: {paper['version']} | Status: {paper['status']}\n"
-            summary_content += f"👥 Authors: {', '.join(paper['authors'])}\n"
-            summary_content += f"🏷️ Categories: {', '.join(paper.get('categories', []))}\n"
+            summary_content += f"📄 {paper['title']}\n"
+            summary_content += f"👥 {', '.join(paper['authors'][:2])}{' et al.' if len(paper['authors']) > 2 else ''}\n"
+            summary_content += f"📅 {paper['published']} | {paper['status']}\n"
             
             # Find the local file
             local_file = None
@@ -684,24 +701,25 @@ async def generate_download_summary(paper_ids: List[str], papers_info: dict, pap
                     break
             
             if local_file:
-                summary_content += f"📄 Local file: {local_file}\n"
+                summary_content += f"💾 {local_file}\n"
             
-            summary_content += f"🔗 ArXiv URL: {paper['pdf_url']}\n"
+            # Use detailed summary if available, otherwise generate AI summary
+            if detailed_summaries and pid in detailed_summaries:
+                summary_content += f"📝 Summary: {detailed_summaries[pid]}\n"
+            else:
+                try:
+                    ai_summary = await asyncio.get_event_loop().run_in_executor(
+                        None, summarize_with_gemini, paper
+                    )
+                    if ai_summary:
+                        summary_content += f"📝 Summary: {ai_summary}\n"
+                    else:
+                        summary_content += f"📝 Abstract: {paper['summary'][:150]}...\n"
+                except Exception as e:
+                    logger.warning(f"Could not generate AI summary for {pid}: {e}")
+                    summary_content += f"📝 Abstract: {paper['summary'][:150]}...\n"
             
-            # Generate AI summary
-            try:
-                ai_summary = await asyncio.get_event_loop().run_in_executor(
-                    None, summarize_with_gemini, paper['summary'], paper['title'], paper['authors']
-                )
-                if ai_summary:
-                    summary_content += f"🤖 AI Summary: {ai_summary}\n"
-                else:
-                    summary_content += f"📝 Abstract: {paper['summary'][:300]}...\n"
-            except Exception as e:
-                logger.warning(f"Could not generate AI summary for {pid}: {e}")
-                summary_content += f"📝 Abstract: {paper['summary'][:300]}...\n"
-            
-            summary_content += "-" * 80 + "\n\n"
+            summary_content += "\n" + "-" * 50 + "\n\n"
         
         # Save summary to file
         summary_file = os.path.join(papers_dir, "download_summary.txt")
@@ -806,10 +824,12 @@ def get_topic_suggestions(field: str) -> List[str]:
     return ["machine learning", "quantum computing", "gene therapy", "optimization", "neural networks"]
 
 if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", 8000))
     uvicorn.run(
         "main:app", 
         host="0.0.0.0", 
-        port=8000, 
-        reload=True,
+        port=port, 
+        reload=os.getenv("ENVIRONMENT", "development") == "development",
         log_level="info"
     )

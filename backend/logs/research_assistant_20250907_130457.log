@@ -1,1 +1,112 @@
 2025-09-07 13:04:57,146 - DEBUG - Using selector: SelectSelector
+2025-09-07 13:08:59,236 - INFO - Received message: Mathematics algebra, workflow_step: search
+2025-09-07 13:08:59,242 - INFO - New workflow search for: Mathematics algebra (max_results: 10)
+2025-09-07 13:08:59,243 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-10)
+2025-09-07 13:08:59,245 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:08:59,257 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:09:01,018 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25468
+2025-09-07 13:09:01,203 - INFO - Got first page: 100 of 361360 total results
+2025-09-07 13:09:01,206 - INFO - Found 10 papers (more available: True)
+2025-09-07 13:09:06,251 - INFO - Received message: Mathematics algebra, workflow_step: load_more
+2025-09-07 13:09:06,253 - INFO - Searching for more papers on: Mathematics algebra (max_results: 5)
+2025-09-07 13:09:06,255 - INFO - Trying search: Mathematics algebra
+2025-09-07 13:09:06,256 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-5)
+2025-09-07 13:09:06,259 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:09:06,262 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:09:06,988 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25468
+2025-09-07 13:09:07,556 - INFO - Got first page: 100 of 361360 total results
+2025-09-07 13:09:07,559 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:09:07,566 - INFO - Trying search: Mathematics algebra recent
+2025-09-07 13:09:07,569 - INFO - Searching arXiv: 'Mathematics algebra recent' (results 1-5)
+2025-09-07 13:09:07,571 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:09:07,578 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:09:08,313 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 31518
+2025-09-07 13:09:08,756 - INFO - Got first page: 100 of 699018 total results
+2025-09-07 13:09:08,758 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:09:08,764 - INFO - Found 5 new papers using search: Mathematics algebra recent
+2025-09-07 13:09:12,056 - INFO - Received message: Mathematics algebra, workflow_step: load_more
+2025-09-07 13:09:12,058 - INFO - Searching for more papers on: Mathematics algebra (max_results: 5)
+2025-09-07 13:09:12,059 - INFO - Trying search: Mathematics algebra
+2025-09-07 13:09:12,060 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-5)
+2025-09-07 13:09:12,062 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:09:12,067 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:09:12,786 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25468
+2025-09-07 13:09:13,131 - INFO - Got first page: 100 of 361360 total results
+2025-09-07 13:09:13,132 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:09:13,135 - INFO - Trying search: Mathematics algebra recent
+2025-09-07 13:09:13,135 - INFO - Searching arXiv: 'Mathematics algebra recent' (results 1-5)
+2025-09-07 13:09:13,136 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:09:13,138 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:09:13,632 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 31518
+2025-09-07 13:09:13,937 - INFO - Got first page: 100 of 699018 total results
+2025-09-07 13:09:13,939 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:09:13,943 - INFO - Trying search: Mathematics algebra 2024
+2025-09-07 13:09:13,943 - INFO - Searching arXiv: 'Mathematics algebra 2024' (results 1-5)
+2025-09-07 13:09:13,944 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra+2024&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:09:13,947 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:09:15,687 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra+2024&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 29394
+2025-09-07 13:09:16,005 - INFO - Got first page: 100 of 644072 total results
+2025-09-07 13:09:16,007 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:09:16,009 - INFO - Found 4 new papers using search: Mathematics algebra 2024
+2025-09-07 13:09:25,418 - INFO - Received message: Mathematics algebra, workflow_step: load_more
+2025-09-07 13:09:25,419 - INFO - Searching for more papers on: Mathematics algebra (max_results: 5)
+2025-09-07 13:09:25,420 - INFO - Trying search: Mathematics algebra
+2025-09-07 13:09:25,421 - INFO - Searching arXiv: 'Mathematics algebra' (results 1-5)
+2025-09-07 13:09:25,422 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:09:25,427 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:09:26,250 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 25468
+2025-09-07 13:09:26,678 - INFO - Got first page: 100 of 361360 total results
+2025-09-07 13:09:26,681 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:09:26,685 - INFO - Trying search: Mathematics algebra recent
+2025-09-07 13:09:26,685 - INFO - Searching arXiv: 'Mathematics algebra recent' (results 1-5)
+2025-09-07 13:09:26,687 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:09:26,695 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:09:27,366 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra+recent&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 31518
+2025-09-07 13:09:27,645 - INFO - Got first page: 100 of 699018 total results
+2025-09-07 13:09:27,646 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:09:27,648 - INFO - Trying search: Mathematics algebra 2024
+2025-09-07 13:09:27,649 - INFO - Searching arXiv: 'Mathematics algebra 2024' (results 1-5)
+2025-09-07 13:09:27,649 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra+2024&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:09:27,651 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:09:28,136 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra+2024&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 29394
+2025-09-07 13:09:28,586 - INFO - Got first page: 100 of 644072 total results
+2025-09-07 13:09:28,601 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:09:28,609 - INFO - Trying search: Mathematics algebra 2023
+2025-09-07 13:09:28,610 - INFO - Searching arXiv: 'Mathematics algebra 2023' (results 1-5)
+2025-09-07 13:09:28,613 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mathematics+algebra+2023&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2025-09-07 13:09:28,617 - DEBUG - Starting new HTTPS connection (1): export.arxiv.org:443
+2025-09-07 13:09:30,322 - DEBUG - https://export.arxiv.org:443 "GET /api/query?search_query=Mathematics+algebra+2023&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100 HTTP/1.1" 200 31784
+2025-09-07 13:09:30,629 - INFO - Got first page: 100 of 606274 total results
+2025-09-07 13:09:30,631 - INFO - Found 5 papers (more available: True)
+2025-09-07 13:09:30,634 - INFO - Found 5 new papers using search: Mathematics algebra 2023
+2025-09-07 13:10:32,060 - INFO - Received message: download papers, workflow_step: download
+2025-09-07 13:10:32,062 - INFO - Starting download: 3 papers, field=Mathematics, topic=algebra
+2025-09-07 13:10:32,067 - INFO - Starting download: 3 papers
+2025-09-07 13:10:32,072 - INFO - Created download directory: E:\Next JS\researchbot\papers\Mathematics\algebra
+2025-09-07 13:10:32,074 - INFO - Downloading 3 papers to E:\Next JS\researchbot\papers\Mathematics\algebra
+2025-09-07 13:10:32,078 - DEBUG - Loaded metadata for 4 papers
+2025-09-07 13:10:32,091 - INFO - Starting download: 1803.04409v1
+2025-09-07 13:10:32,107 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-07 13:10:32,107 - INFO - Starting download: 1503.00614v1
+2025-09-07 13:10:32,121 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-07 13:10:32,125 - INFO - Starting download: 2307.04502v1
+2025-09-07 13:10:32,165 - DEBUG - Starting new HTTP connection (1): arxiv.org:80
+2025-09-07 13:10:32,205 - DEBUG - http://arxiv.org:80 "GET /pdf/2307.04502v1 HTTP/1.1" 301 0
+2025-09-07 13:10:32,205 - DEBUG - http://arxiv.org:80 "GET /pdf/1803.04409v1 HTTP/1.1" 301 0
+2025-09-07 13:10:32,211 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-07 13:10:32,214 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-07 13:10:32,218 - DEBUG - http://arxiv.org:80 "GET /pdf/1503.00614v1 HTTP/1.1" 301 0
+2025-09-07 13:10:32,225 - DEBUG - Starting new HTTPS connection (1): arxiv.org:443
+2025-09-07 13:10:34,160 - DEBUG - https://arxiv.org:443 "GET /pdf/1803.04409v1 HTTP/1.1" 200 235725
+2025-09-07 13:10:34,237 - INFO - Successfully downloaded 1803.04409v1 (230KB)
+2025-09-07 13:10:34,320 - DEBUG - https://arxiv.org:443 "GET /pdf/2307.04502v1 HTTP/1.1" 200 247631
+2025-09-07 13:10:34,402 - INFO - Successfully downloaded 2307.04502v1 (241KB)
+2025-09-07 13:10:34,637 - DEBUG - https://arxiv.org:443 "GET /pdf/1503.00614v1 HTTP/1.1" 200 360980
+2025-09-07 13:10:34,740 - INFO - Successfully downloaded 1503.00614v1 (352KB)
+2025-09-07 13:10:34,750 - DEBUG - Saved metadata for 7 papers
+2025-09-07 13:10:34,751 - INFO - Download completed: 3 successful downloads
+2025-09-07 13:10:34,756 - WARNING - Could not generate AI summary for 1803.04409v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-07 13:10:34,758 - WARNING - Could not generate AI summary for 1503.00614v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-07 13:10:34,760 - WARNING - Could not generate AI summary for 2307.04502v1: summarize_with_gemini() takes 1 positional argument but 3 were given
+2025-09-07 13:10:34,763 - INFO - Download summary saved to E:\Next JS\researchbot\papers\Mathematics\algebra\download_summary.txt
+2025-09-07 13:10:34,767 - INFO - Download with references completed successfully
