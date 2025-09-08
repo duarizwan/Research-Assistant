@@ -227,8 +227,8 @@
     ],
     "arxiv_id": "2402.01687v2",
     "download_status": "success",
-    "download_path": "E:\\Next JS\\researchbot\\papers\\Computer_Science\\LLMs\\2402.01687v2_Which_LLM_should_I_use__Evaluating_LLMs_for_tasks_performed_by_Undergraduate_Co.pdf",
-    "download_timestamp": "2025-09-07T14:22:52.040692"
+    "download_path": "papers\\computer_science\\llms\\2402.01687v2_Which_LLM_should_I_use__Evaluating_LLMs_for_tasks_performed_by_Undergraduate_Co.pdf",
+    "download_timestamp": "2025-09-08T16:38:49.961673"
   },
   "2410.23426v1": {
     "title": "Social Science Meets LLMs: How Reliable Are Large Language Models in Social Simulations?",
@@ -362,5 +362,133 @@
     "download_status": "success",
     "download_path": "E:\\Next JS\\researchbot\\papers\\Biology\\Biology\\0709.0025v1_Borges_Dilemma__Fundamental_Laws__and_Systems_Biology.pdf",
     "download_timestamp": "2025-09-08T13:33:56.260343"
+  },
+  "1703.05777v1": {
+    "title": "What makes papers visible on social media? An analysis of various document characteristics",
+    "authors": [
+      "Zohreh Zahedi",
+      "Rodrigo Costas",
+      "Vincent Larivière",
+      "Stefanie Haustein"
+    ],
+    "summary": "In this study we have investigated the relationship between different\ndocument characteristics and the number of Mendeley readership counts, tweets,\nFacebook posts, mentions in blogs and mainstream media for 1.3 million papers\npublished in journals covered by the Web of Science (WoS). It aims to\ndemonstrate that how factors affecting various social media-based indicators\ndiffer from those influencing citations and which document types are more\npopular across different platforms. Our results highlight the heterogeneous\nnature of altmetrics, which encompasses different types of uses and user groups\nengaging with research on social media.",
+    "pdf_url": "http://arxiv.org/pdf/1703.05777v1",
+    "published": "2017-03-16",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "cs.DL"
+    ],
+    "arxiv_id": "1703.05777v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\media_science\\study_of_journalism\\1703.05777v1_What_makes_papers_visible_on_social_media__An_analysis_of_various_document_chara.pdf",
+    "download_timestamp": "2025-09-08T16:37:47.056181"
+  },
+  "2204.02828v1": {
+    "title": "WeChat uptake of Chinese scholarly journals: an analysis of CSSCI-indexed journals",
+    "authors": [
+      "Ting Cong",
+      "Zhichao Fang",
+      "Rodrigo Costas"
+    ],
+    "summary": "The study of how science is discussed and how scholarly actors interact on\nsocial media has increasingly become popular in the field of scientometrics in\nrecent years. While most prior studies focused on research outputs discussed on\nglobal platforms, such as Twitter or Facebook, the presence of scholarly\njournals on local platforms was seldom studied, especially in the Chinese\nsocial media context. To fill this gap, this study investigates the uptake of\nWeChat (a Chinese social network app) by the Chinese scholarly journals indexed\nby the Chinese Social Sciences Citation Index (CSSCI). The results show that\n65.3% of CSSCI-indexed journals have created WeChat public accounts and posted\nover 193 thousand WeChat posts in total. At the journal level, bibliometric\nindicators (e.g., citations, downloads, and journal impact factors) and WeChat\nindicators (e.g., clicks, likes, replies, and recommendations) are weakly\ncorrelated with each other, reinforcing the idea of fundamentally\ndifferentiated dimensions of indicators between bibliometrics and social media\nmetrics. Results also show that journals with WeChat public accounts slightly\noutperform those without WeChat public accounts in terms of citation impact,\nsuggesting that the WeChat presence of scientific journals is mostly positively\nassociated with their citation impact.",
+    "pdf_url": "http://arxiv.org/pdf/2204.02828v1",
+    "published": "2022-04-06",
+    "version": "1",
+    "status": "archived",
+    "categories": [
+      "cs.DL"
+    ],
+    "arxiv_id": "2204.02828v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\media_science\\study_of_journalism\\2204.02828v1_WeChat_uptake_of_Chinese_scholarly_journals__an_analysis_of_CSSCI-indexed_journa.pdf",
+    "download_timestamp": "2025-09-08T16:37:48.172872"
+  },
+  "2508.15926v1": {
+    "title": "Noise, Adaptation, and Strategy: Assessing LLM Fidelity in Decision-Making",
+    "authors": [
+      "Yuanjun Feng",
+      "Vivek Choudhary",
+      "Yash Raj Shrestha"
+    ],
+    "summary": "Large language models (LLMs) are increasingly used in social science\nsimulations. While their performance on reasoning and optimization tasks has\nbeen extensively evaluated, less attention has been paid to their ability to\nsimulate human decision-making's variability and adaptability. We propose a\nprocess-oriented evaluation framework with progressive interventions\n(Intrinsicality, Instruction, and Imitation) to examine how LLM agents adapt\nunder different levels of external guidance and human-derived noise. We\nvalidate the framework on two classic economics tasks, irrationality in the\nsecond-price auction and decision bias in the newsvendor problem, showing\nbehavioral gaps between LLMs and humans.\n  We find that LLMs, by default, converge on stable and conservative strategies\nthat diverge from observed human behaviors. Risk-framed instructions impact LLM\nbehavior predictably but do not replicate human-like diversity. Incorporating\nhuman data through in-context learning narrows the gap but fails to reach human\nsubjects' strategic variability. These results highlight a persistent alignment\ngap in behavioral fidelity and suggest that future LLM evaluations should\nconsider more process-level realism. We present a process-oriented approach for\nassessing LLMs in dynamic decision-making tasks, offering guidance for their\napplication in synthetic data for social science research.",
+    "pdf_url": "http://arxiv.org/pdf/2508.15926v1",
+    "published": "2025-08-21",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "cs.CE",
+      "cs.AI"
+    ],
+    "arxiv_id": "2508.15926v1",
+    "download_status": "success",
+    "download_path": "papers\\computer_science\\llms\\2508.15926v1_Noise__Adaptation__and_Strategy__Assessing_LLM_Fidelity_in_Decision-Making.pdf",
+    "download_timestamp": "2025-09-08T16:38:50.297602"
+  },
+  "1209.4409v1": {
+    "title": "Nonperturbative Quantum Field Theory in Astrophysics",
+    "authors": [
+      "Dan Mazur"
+    ],
+    "summary": "The extreme electromagnetic or gravitational fields associated with some\nastrophysical objects can give rise to macroscopic effects arising from the\nphysics of the quantum vacuum. Therefore, these objects are incredible\nlaboratories for exploring the physics of quantum field theories. In this\ndissertation, we explore this idea in three astrophysical scenarios.",
+    "pdf_url": "http://arxiv.org/pdf/1209.4409v1",
+    "published": "2012-09-20",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "astro-ph.HE",
+      "hep-th",
+      "quant-ph"
+    ],
+    "arxiv_id": "1209.4409v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Physics\\astrophysics\\1209.4409v1_Nonperturbative_Quantum_Field_Theory_in_Astrophysics.pdf",
+    "download_timestamp": "2025-09-08T17:09:17.704769"
+  },
+  "2412.19994v1": {
+    "title": "From Generalist to Specialist: A Survey of Large Language Models for Chemistry",
+    "authors": [
+      "Yang Han",
+      "Ziping Wan",
+      "Lu Chen",
+      "Kai Yu",
+      "Xin Chen"
+    ],
+    "summary": "Large Language Models (LLMs) have significantly transformed our daily life\nand established a new paradigm in natural language processing (NLP). However,\nthe predominant pretraining of LLMs on extensive web-based texts remains\ninsufficient for advanced scientific discovery, particularly in chemistry. The\nscarcity of specialized chemistry data, coupled with the complexity of\nmulti-modal data such as 2D graph, 3D structure and spectrum, present distinct\nchallenges. Although several studies have reviewed Pretrained Language Models\n(PLMs) in chemistry, there is a conspicuous absence of a systematic survey\nspecifically focused on chemistry-oriented LLMs. In this paper, we outline\nmethodologies for incorporating domain-specific chemistry knowledge and\nmulti-modal information into LLMs, we also conceptualize chemistry LLMs as\nagents using chemistry tools and investigate their potential to accelerate\nscientific research. Additionally, we conclude the existing benchmarks to\nevaluate chemistry ability of LLMs. Finally, we critically examine the current\nchallenges and identify promising directions for future research. Through this\ncomprehensive survey, we aim to assist researchers in staying at the forefront\nof developments in chemistry LLMs and to inspire innovative applications in the\nfield.",
+    "pdf_url": "http://arxiv.org/pdf/2412.19994v1",
+    "published": "2024-12-28",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "physics.chem-ph",
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "arxiv_id": "2412.19994v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Chemistry\\biochemistryv\\2412.19994v1_From_Generalist_to_Specialist__A_Survey_of_Large_Language_Models_for_Chemistry.pdf",
+    "download_timestamp": "2025-09-08T17:11:41.828762"
+  },
+  "2003.01812v1": {
+    "title": "The case for algebraic biology: from research to education",
+    "authors": [
+      "Matthew Macauley",
+      "Nora Youngs"
+    ],
+    "summary": "Though it goes without saying that linear algebra is fundamental to\nmathematical biology, polynomial algebra is less visible. In this article, we\nwill give a brief tour of four diverse biological problems where multivariate\npolynomials play a central role -- a subfield that is sometimes called\n\"algebraic biology.\" Namely, these topics include biochemical reaction\nnetworks, Boolean models of gene regulatory networks, algebraic statistics and\ngenomics, and place fields in neuroscience. After that, we will summarize the\nhistory of discrete and algebraic structures in mathematical biology, from\ntheir early appearances in the late 1960s to the current day. Finally, we will\ndiscuss the role of algebraic biology in the modern classroom and curriculum,\nincluding resources in the literature and relevant software. Our goal is to\nmake this article widely accessible, reaching the mathematical biologist who\nknows no algebra, the algebraist who knows no biology, and especially the\ninterested student who is curious about the synergy between these two seemingly\nunrelated fields.",
+    "pdf_url": "http://arxiv.org/pdf/2003.01812v1",
+    "published": "2020-02-29",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "q-bio.NC",
+      "q-bio.OT",
+      "92B05, 14-01, 13P25, 12Y05, 97M60"
+    ],
+    "arxiv_id": "2003.01812v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Biology\\neuroscience\\2003.01812v1_The_case_for_algebraic_biology__from_research_to_education.pdf",
+    "download_timestamp": "2025-09-08T19:32:45.396655"
   }
 }

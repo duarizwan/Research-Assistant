@@ -120,6 +120,32 @@ const generateMessageId = (): number => {
   return Date.now() + messageIdCounter;
 };
 
+// Reset counters and session state
+const resetCountersAndSession = async () => {
+  console.log("🔄 Resetting counters and session state...");
+  console.log("📊 Before reset - messageIdCounter:", messageIdCounter);
+  messageIdCounter = 0;
+  console.log("📊 After reset - messageIdCounter:", messageIdCounter);
+
+  try {
+    // Reset backend session
+    console.log("🌐 Calling backend reset endpoint...");
+    const response = await fetch("/api/reset", { method: "GET" });
+    console.log("🌐 Backend response status:", response.status);
+
+    if (response.ok) {
+      const data = await response.json();
+      console.log("✅ Session and counters reset successfully:", data);
+    } else {
+      console.warn("⚠️ Session reset response not OK:", response.status);
+      const errorText = await response.text();
+      console.warn("⚠️ Error response:", errorText);
+    }
+  } catch (error) {
+    console.error("❌ Error resetting session:", error);
+  }
+};
+
 const ResearchChatUI = () => {
   const [isDark, setIsDark] = useState(true);
   const [workflow, setWorkflow] = useState<WorkflowState>({
@@ -130,6 +156,7 @@ const ResearchChatUI = () => {
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const [downloadProgress, setDownloadProgress] = useState(0);
 
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
   const welcomeInputRef = useRef<HTMLInputElement | null>(null);
@@ -146,12 +173,49 @@ const ResearchChatUI = () => {
 
   useEffect(() => {
     setIsClient(true);
+    // Reset counters and session on page load/refresh
+    resetCountersAndSession();
+    // Reset workflow state to ensure clean start
+    setWorkflow({
+      step: "greeting",
+      globalPaperMap: {},
+      totalPaperCount: 0,
+      papers: undefined,
+      selectedPapers: undefined,
+      downloadCount: undefined,
+      field: undefined,
+      topic: undefined,
+    });
     // Keep messages empty initially for centered interface
   }, []);
 
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  // Debug workflow step changes
+  useEffect(() => {
+    console.log("🔄 Workflow step changed to:", workflow.step);
+    console.log("📊 Current workflow state:", {
+      step: workflow.step,
+      field: workflow.field,
+      topic: workflow.topic,
+      totalPaperCount: workflow.totalPaperCount,
+      downloadCount: workflow.downloadCount,
+    });
+  }, [
+    workflow.step,
+    workflow.field,
+    workflow.topic,
+    workflow.totalPaperCount,
+    workflow.downloadCount,
+  ]);
+
+  // Force progress tracker re-render when workflow changes
+  useEffect(() => {
+    // This ensures the progress tracker updates when workflow state changes
+    console.log("🔄 Progress tracker should update for step:", workflow.step);
+  }, [workflow.step]);
 
   // Auto-focus input when centered interface is shown
   useEffect(() => {
@@ -559,11 +623,15 @@ const ResearchChatUI = () => {
     }
 
     console.log("Setting download count to:", count);
-    setWorkflow((prev) => ({
-      ...prev,
-      step: "paper_selection",
-      downloadCount: count,
-    }));
+    setWorkflow((prev) => {
+      const newState = {
+        ...prev,
+        step: "paper_selection" as const,
+        downloadCount: count,
+      };
+      console.log("🔄 Workflow state updated to paper_selection:", newState);
+      return newState;
+    });
 
     const botMessage: Message = {
       id: generateMessageId(),
@@ -573,6 +641,14 @@ const ResearchChatUI = () => {
       workflowStep: "paper_selection",
     };
     setMessages((prev) => [...prev, botMessage]);
+
+    // Force a re-render to ensure progress tracker updates
+    setTimeout(() => {
+      console.log(
+        "🔄 Forcing progress tracker update after paper_selection step"
+      );
+      setWorkflow((prev) => ({ ...prev }));
+    }, 100);
   };
 
   const handlePaperSelection = async (selection: string) => {
@@ -657,7 +733,7 @@ const ResearchChatUI = () => {
         workflowStep: "downloading",
       };
       setMessages((prev) => [...prev, finalSelectionMessage]);
-      setWorkflow((prev) => ({ ...prev, step: "downloading" }));
+      // Don't set workflow step here - handleDownloadStart will do it
       await handleDownloadStart(
         workflow.selectedPapers
           .map((id) => workflow.papers?.find((p) => p.id === id))
@@ -918,19 +994,18 @@ const ResearchChatUI = () => {
 
       input.click();
 
-      // Then start the backend download process
-      setWorkflow((prev) => ({ ...prev, step: "downloading" }));
+      // Then start the backend download process (handleDownloadStart will set the workflow step)
       await handleDownloadStart(selectedPapers);
     }
   };
 
   const handleDownloadStart = async (selectedPapers: Paper[]) => {
-    console.log("handleDownloadStart called with papers:", selectedPapers);
-    console.log("Current workflow state at download start:", workflow);
+    console.log("🚀 handleDownloadStart called with papers:", selectedPapers);
+    console.log("📊 Current workflow state at download start:", workflow);
 
     // Validation checks
     if (!selectedPapers || selectedPapers.length === 0) {
-      console.error("Download attempted without selected papers");
+      console.error("❌ Download attempted without selected papers");
       return;
     }
 
@@ -945,6 +1020,15 @@ const ResearchChatUI = () => {
       setMessages((prev) => [...prev, errorMessage]);
       return;
     }
+
+    // Ensure we're in downloading state
+    console.log("🔄 Setting workflow step to downloading...");
+    setDownloadProgress(0); // Reset progress
+    setWorkflow((prev) => {
+      const newState = { ...prev, step: "downloading" as const };
+      console.log("📊 Workflow state updated to downloading:", newState.step);
+      return newState;
+    });
 
     try {
       // Start the actual download process
@@ -986,20 +1070,41 @@ const ResearchChatUI = () => {
       const papersWithSummaries = downloadResult.papers || selectedPapers;
 
       // Show real-time feedback with actual paper details and detailed summaries
+      console.log(
+        `📥 Starting download of ${papersWithSummaries.length} papers...`
+      );
+
       for (let i = 0; i < papersWithSummaries.length; i++) {
         const paper = papersWithSummaries[i];
+        const progress = ((i + 1) / papersWithSummaries.length) * 100;
+
+        console.log(
+          `📊 Download progress: ${i + 1}/${
+            papersWithSummaries.length
+          } (${progress.toFixed(1)}%)`
+        );
+
+        // Update download progress state
+        setDownloadProgress(progress);
 
         // Extract year from published date
         const year = paper.published
           ? paper.published.split("-")[0]
           : "Unknown";
 
+        // Create progress bar visual
+        const progressBar =
+          "█".repeat(Math.floor(progress / 10)) +
+          "░".repeat(10 - Math.floor(progress / 10));
+
         const progressMessage: Message = {
           id: generateMessageId(),
           type: "bot",
           content: `📥 Downloading ${i + 1}/${
             papersWithSummaries.length
-          }:\n\n📄   ${paper.title}  \n👥   Authors:   ${paper.authors
+          } (${progress.toFixed(1)}%)\n\n${progressBar} ${progress.toFixed(
+            1
+          )}%\n\n📄   ${paper.title}  \n👥   Authors:   ${paper.authors
             .slice(0, 3)
             .join(", ")}${
             paper.authors.length > 3 ? " et al." : ""
@@ -1028,7 +1133,15 @@ const ResearchChatUI = () => {
         setMessages((prev) => [...prev, completedMessage]);
       }
 
+      console.log(
+        "✅ All papers downloaded, transitioning to completed state..."
+      );
+
       // Final completion message
+      console.log(
+        "🎉 Download process completed, setting workflow to completed..."
+      );
+
       // First message: Download completion details
       const completionMessage: Message = {
         id: generateMessageId(),
@@ -1054,6 +1167,22 @@ const ResearchChatUI = () => {
       };
       setMessages((prev) => [...prev, completionMessage]);
 
+      // Set workflow to completed BEFORE the timeout
+      console.log("🔄 Setting workflow step to completed...");
+      setDownloadProgress(100); // Set to 100% when completed
+      setWorkflow((prev) => {
+        console.log("📊 Previous workflow step:", prev.step);
+        const newState = { ...prev, step: "completed" as const };
+        console.log("📊 New workflow step:", newState.step);
+        return newState;
+      });
+
+      // Force a re-render to ensure the progress bar updates
+      setTimeout(() => {
+        console.log("🔄 Forcing progress bar update...");
+        setWorkflow((prev) => ({ ...prev }));
+      }, 100);
+
       // Second message: Continue question (sent instantly after)
       setTimeout(() => {
         const continueMessage: Message = {
@@ -1065,8 +1194,6 @@ const ResearchChatUI = () => {
         };
         setMessages((prev) => [...prev, continueMessage]);
       }, 100);
-
-      setWorkflow((prev) => ({ ...prev, step: "completed" }));
     } catch (error) {
       console.error("Download error:", error);
 
@@ -1765,21 +1892,34 @@ const ResearchChatUI = () => {
                 </div>
               </div>
 
-              <button
-                onClick={() => setIsDark(!isDark)}
-                className={`p-2 rounded-lg transition-all duration-300 hover:scale-110 ${
-                  isDark
-                    ? "bg-[#1E293B] hover:bg-[#334155] text-[#F472B6] shadow-lg shadow-[#F472B6]/20 hover:shadow-[#F472B6]/30"
-                    : "bg-[#F3F4F6] hover:bg-[#E5E7EB] text-[#111827] shadow-lg shadow-[#E5E7EB]/20 hover:shadow-[#E5E7EB]/30"
-                }`}
-                title="Toggle Theme"
-              >
-                {isDark ? (
-                  <Sun className="w-5 h-5" />
-                ) : (
-                  <Moon className="w-5 h-5" />
-                )}
-              </button>
+              <div className="flex gap-2">
+                <button
+                  onClick={resetCountersAndSession}
+                  className={`p-2 rounded-lg transition-all duration-300 hover:scale-110 ${
+                    isDark
+                      ? "bg-[#1E293B] hover:bg-[#334155] text-[#10B981] shadow-lg shadow-[#10B981]/20 hover:shadow-[#10B981]/30"
+                      : "bg-[#F3F4F6] hover:bg-[#E5E7EB] text-[#10B981] shadow-lg shadow-[#E5E7EB]/20 hover:shadow-[#E5E7EB]/30"
+                  }`}
+                  title="Reset Session"
+                >
+                  🔄
+                </button>
+                <button
+                  onClick={() => setIsDark(!isDark)}
+                  className={`p-2 rounded-lg transition-all duration-300 hover:scale-110 ${
+                    isDark
+                      ? "bg-[#1E293B] hover:bg-[#334155] text-[#F472B6] shadow-lg shadow-[#F472B6]/20 hover:shadow-[#F472B6]/30"
+                      : "bg-[#F3F4F6] hover:bg-[#E5E7EB] text-[#111827] shadow-lg shadow-[#E5E7EB]/20 hover:shadow-[#E5E7EB]/30"
+                  }`}
+                  title="Toggle Theme"
+                >
+                  {isDark ? (
+                    <Sun className="w-5 h-5" />
+                  ) : (
+                    <Moon className="w-5 h-5" />
+                  )}
+                </button>
+              </div>
             </div>
           ) : (
             <div className="flex items-center justify-between">
@@ -1787,7 +1927,10 @@ const ResearchChatUI = () => {
               <div className="w-12"></div>
 
               {/* Step Icons - Centered */}
-              <div className="flex items-center gap-4">
+              <div
+                key={`progress-tracker-${workflow.step}`}
+                className="flex items-center gap-4"
+              >
                 {[
                   { key: "greeting", label: "Welcome", icon: Bot },
                   { key: "field_selection", label: "Field", icon: BookOpen },
@@ -1800,22 +1943,59 @@ const ResearchChatUI = () => {
                 ].map((step, index) => {
                   const Icon = step.icon;
                   const isActive = step.key === workflow.step;
-                  const currentStepIndex = [
+
+                  // Define the complete step progression including all possible steps
+                  const stepProgression = [
                     "greeting",
                     "field_selection",
                     "topic_selection",
                     "paper_listing",
+                    "load_more", // Include load_more step
                     "download_count",
                     "paper_selection",
+                    "download_confirmation", // Include download_confirmation step
                     "downloading",
                     "completed",
-                  ].findIndex((s) => s === workflow.step);
-                  const isCompleted = currentStepIndex > index;
+                  ];
+
+                  const currentStepIndex = stepProgression.findIndex(
+                    (s) => s === workflow.step
+                  );
+
+                  // A step is completed if:
+                  // 1. The current step index is greater than the step's index in the progression
+                  // 2. OR if the current step is a later step in the progression
+                  const stepIndexInProgression = stepProgression.findIndex(
+                    (s) => s === step.key
+                  );
+
+                  // Ensure we have valid indices
+                  const validCurrentStepIndex =
+                    currentStepIndex >= 0 ? currentStepIndex : 0;
+                  const validStepIndexInProgression =
+                    stepIndexInProgression >= 0 ? stepIndexInProgression : 0;
+
+                  const isCompleted =
+                    validCurrentStepIndex > validStepIndexInProgression;
+
+                  // Debug step indicator state
+                  if (isActive || isCompleted) {
+                    console.log(
+                      `🎯 Step ${step.key} (index ${index}, progression index ${stepIndexInProgression}): isActive=${isActive}, isCompleted=${isCompleted}, currentStepIndex=${currentStepIndex}, workflow.step=${workflow.step}`
+                    );
+                  }
+
+                  // Additional debugging for progress tracker issues
+                  if (workflow.step === "paper_selection") {
+                    console.log(
+                      `🔍 Progress Tracker Debug - Step: ${step.key}, isActive: ${isActive}, isCompleted: ${isCompleted}, validCurrentStepIndex: ${validCurrentStepIndex}, validStepIndexInProgression: ${validStepIndexInProgression}`
+                    );
+                  }
 
                   return (
                     <div
                       key={step.key}
-                      className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+                      className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 relative ${
                         isActive
                           ? isDark
                             ? "bg-[#38BDF8]/20 text-[#38BDF8] shadow-lg shadow-[#38BDF8]/30 ring-2 ring-[#38BDF8]/30"
@@ -1830,6 +2010,16 @@ const ResearchChatUI = () => {
                       }`}
                     >
                       <Icon className="w-4 h-4" />
+                      {/* Show progress for downloading step */}
+                      {step.key === "downloading" &&
+                        isActive &&
+                        downloadProgress > 0 && (
+                          <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-green-500 rounded-full flex items-center justify-center">
+                            <span className="text-xs text-white font-bold">
+                              {Math.round(downloadProgress)}%
+                            </span>
+                          </div>
+                        )}
                     </div>
                   );
                 })}

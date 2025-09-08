@@ -91,6 +91,10 @@ sessions: Dict[str, ConversationState] = {}
 def get_session(session_id: str) -> ConversationState:
     if session_id not in sessions:
         sessions[session_id] = ConversationState()
+        print(f"🆕 NEW SESSION CREATED: {session_id} with next_serial_number=1")
+        logger.info(f"Created new session for session_id: {session_id} with fresh numbering (next_serial_number=1)")
+    else:
+        print(f"♻️ EXISTING SESSION USED: {session_id} with next_serial_number={sessions[session_id].next_serial_number}")
     return sessions[session_id]
 
 def get_project_papers_directory() -> str:
@@ -107,6 +111,41 @@ def get_project_papers_directory() -> str:
 @app.get("/")
 async def root():
     return {"message": "Research Assistant API is running"}
+
+@app.post("/api/reset")
+async def reset_session(session_id: str = "default"):
+    """Reset session state to ensure clean start"""
+    try:
+        if session_id in sessions:
+            del sessions[session_id]
+        logger.info(f"Session reset for session_id: {session_id}")
+        return {"message": "Session reset successfully", "session_id": session_id}
+    except Exception as e:
+        logger.error(f"Error resetting session: {e}")
+        return {"error": "Failed to reset session"}
+
+@app.get("/api/reset")
+async def reset_session_get(session_id: str = "default"):
+    """Reset session state via GET request (for page refresh detection)"""
+    try:
+        print(f"🔄 RESET ENDPOINT CALLED: session_id={session_id}")
+        print(f"📊 Current sessions: {list(sessions.keys())}")
+        
+        session_existed = session_id in sessions
+        if session_existed:
+            del sessions[session_id]
+            print(f"✅ Session deleted: {session_id}")
+            logger.info(f"Session reset via GET for session_id: {session_id} (session existed)")
+        else:
+            print(f"ℹ️ No existing session to delete: {session_id}")
+            logger.info(f"Session reset via GET for session_id: {session_id} (no existing session)")
+        
+        print(f"📊 Sessions after reset: {list(sessions.keys())}")
+        return {"message": "Session reset successfully", "session_id": session_id, "session_existed": session_existed}
+    except Exception as e:
+        print(f"❌ Error in reset endpoint: {e}")
+        logger.error(f"Error resetting session via GET: {e}")
+        return {"error": "Failed to reset session"}
 
 @app.post("/api/chat", response_model=ChatResponse)
 async def chat_endpoint(message: ChatMessage, background_tasks: BackgroundTasks):
@@ -405,7 +444,9 @@ async def handle_paper_search(query: str, session: ConversationState, max_result
         
         # Determine the range of serial numbers
         start_num = session.next_serial_number - len(papers_list)
-        end_num = start_num + len(papers_list) - 1
+        end_num = session.next_serial_number - 1
+        
+        logger.info(f"Paper numbering: start_num={start_num}, end_num={end_num}, next_serial_number={session.next_serial_number}, papers_count={len(papers_list)}")
         
         response_text = f"Found {len(papers_list)} research papers! Here are papers {start_num}-{end_num}:\n\n"
         response_text += "Selected Papers:"
@@ -512,7 +553,9 @@ async def handle_load_more_papers(query: str, session: ConversationState, max_re
         
         # Determine the range of serial numbers
         start_num = session.next_serial_number - len(papers_list)
-        end_num = start_num + len(papers_list) - 1
+        end_num = session.next_serial_number - 1
+        
+        logger.info(f"Load more numbering: start_num={start_num}, end_num={end_num}, next_serial_number={session.next_serial_number}, papers_count={len(papers_list)}")
         
         response_text = f"Found {len(papers_list)} additional papers on the same topic! Here are papers {start_num}-{end_num}:\n\n"
         response_text += "Selected Papers:"
