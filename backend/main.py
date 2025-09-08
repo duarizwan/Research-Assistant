@@ -114,6 +114,18 @@ async def chat_endpoint(message: ChatMessage, background_tasks: BackgroundTasks)
         session = get_session(message.session_id)
         logger.info(f"Received message: {message.message}, workflow_step: {message.workflow_step}")
         
+        # Handle restart commands (q, quit, restart)
+        user_input = message.message.lower().strip()
+        if user_input in ['q', 'quit', 'restart', 'start over', 'new search']:
+            # Reset session state
+            session.__init__()
+            logger.info(f"Session reset for session_id: {message.session_id}")
+            return ChatResponse(
+                response="🔄 Starting fresh!\n\nWhich field of research are you looking for papers in? (e.g., Computer Science, Biology, Physics, Mathematics, Chemistry)",
+                action_type="restart",
+                session_id=message.session_id
+            )
+        
         # Handle different workflow steps
         if message.workflow_step == "search":
             max_results = message.max_results or 10
@@ -393,7 +405,7 @@ async def handle_paper_search(query: str, session: ConversationState, max_result
         
         # Determine the range of serial numbers
         start_num = session.next_serial_number - len(papers_list)
-        end_num = session.next_serial_number - 1
+        end_num = start_num + len(papers_list) - 1
         
         response_text = f"Found {len(papers_list)} research papers! Here are papers {start_num}-{end_num}:\n\n"
         response_text += "Selected Papers:"
@@ -500,7 +512,7 @@ async def handle_load_more_papers(query: str, session: ConversationState, max_re
         
         # Determine the range of serial numbers
         start_num = session.next_serial_number - len(papers_list)
-        end_num = session.next_serial_number - 1
+        end_num = start_num + len(papers_list) - 1
         
         response_text = f"Found {len(papers_list)} additional papers on the same topic! Here are papers {start_num}-{end_num}:\n\n"
         response_text += "Selected Papers:"
