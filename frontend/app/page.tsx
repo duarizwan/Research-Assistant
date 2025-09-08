@@ -129,7 +129,8 @@ const ResearchChatUI = () => {
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const inputRef = useRef<HTMLInputElement | null>(null);
+  const inputRef = useRef<HTMLTextAreaElement | null>(null);
+  const welcomeInputRef = useRef<HTMLInputElement | null>(null);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToBottom = () => {
@@ -138,28 +139,33 @@ const ResearchChatUI = () => {
 
   useEffect(() => {
     setIsClient(true);
-    // Initialize with welcome message only on client
-    if (messages.length === 0) {
-      setMessages([
-        {
-          id: generateMessageId(),
-          type: "bot",
-          content:
-            "Hello 👋 I'm your Research Assistant! I can help you find and download academic papers from arXiv. Let's get started with your research journey!",
-          timestamp: new Date(),
-          workflowStep: "greeting",
-        },
-      ]);
-    }
-  }, [messages.length]);
+    // Keep messages empty initially for centered interface
+  }, []);
 
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
 
+  // Auto-focus input when centered interface is shown
+  useEffect(() => {
+    if (welcomeInputRef.current && messages.length === 0) {
+      // Small delay to ensure DOM is ready
+      setTimeout(() => {
+        if (welcomeInputRef.current) {
+          welcomeInputRef.current.focus();
+        }
+      }, 100);
+    }
+  }, [messages.length]);
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!inputValue.trim() || isLoading) return;
+    if (!inputValue.trim() || isLoading) {
+      return;
+    }
+
+    // Prevent multiple rapid submissions
+    if (isLoading) return;
 
     const userMessage: Message = {
       id: generateMessageId(),
@@ -1117,17 +1123,211 @@ const ResearchChatUI = () => {
 
   const restartWorkflow = () => {
     setWorkflow({ step: "greeting" });
-    setMessages([
-      {
-        id: generateMessageId(),
-        type: "bot",
-        content:
-          "Hello 👋 I'm your Research Assistant! I can help you find and download academic papers from arXiv. Let's get started with your research journey!",
-        timestamp: new Date(),
-        workflowStep: "greeting",
-      },
-    ]);
+    setMessages([]);
   };
+
+  const CenteredInterface = () => (
+    <div className="flex flex-col items-center justify-center min-h-[60vh] px-4">
+      <div className="text-center mb-8">
+        <h2
+          className={`text-3xl font-semibold mb-4 leading-tight ${
+            isDark ? "text-[#F9FAFB]" : "text-[#111827]"
+          }`}
+          style={{ lineHeight: "1.2" }}
+        >
+          What Can Research Assistant Help You With Today?
+        </h2>
+        <p
+          className={`text-lg font-medium ${
+            isDark ? "text-[#94A3B8]" : "text-[#4B5563]"
+          }`}
+          style={{ lineHeight: "1.4" }}
+        >
+          Find and download academic papers from arXiv with AI-powered summaries
+        </p>
+      </div>
+
+      <div className="w-full max-w-2xl">
+        <form onSubmit={handleSubmit} className="relative">
+          <div
+            className={`flex items-center gap-3 p-4 rounded-2xl border transition-all duration-300 ${
+              isDark
+                ? "bg-[#1E293B]/90 border-[#334155] shadow-xl shadow-[#0F172A]/30"
+                : "bg-[#FFFFFF] border-[#E5E7EB] shadow-xl shadow-[#F9FAFB]/30"
+            }`}
+          >
+            <input
+              ref={welcomeInputRef}
+              type="text"
+              value={inputValue}
+              onChange={(e) => {
+                setInputValue(e.target.value);
+                // Ensure focus is maintained after state update
+                setTimeout(() => {
+                  if (welcomeInputRef.current) {
+                    welcomeInputRef.current.focus();
+                  }
+                }, 0);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && inputValue.trim() && !isLoading) {
+                  // Allow Enter to submit only when conditions are met
+                  return;
+                }
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                }
+              }}
+              placeholder="Write anything to start your research journey..."
+              className={`flex-1 bg-transparent outline-none text-base font-normal transition-all duration-300 ${
+                isDark
+                  ? "text-[#F9FAFB] placeholder-[#94A3B8]"
+                  : "text-[#111827] placeholder-[#4B5563]"
+              }`}
+              style={{ lineHeight: "1.5" }}
+              autoComplete="off"
+              autoCorrect="off"
+              autoCapitalize="off"
+              spellCheck="false"
+            />
+            <button
+              type="submit"
+              disabled={!inputValue.trim() || isLoading}
+              className={`p-3 rounded-full transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 ${
+                !inputValue.trim() || isLoading
+                  ? isDark
+                    ? "bg-[#334155] text-[#64748B]"
+                    : "bg-[#E5E7EB] text-[#9CA3AF]"
+                  : isDark
+                  ? "bg-[#38BDF8] text-white hover:bg-[#0EA5E9] shadow-lg shadow-[#38BDF8]/40"
+                  : "bg-[#2563EB] text-white hover:bg-[#1D4ED8] shadow-lg shadow-[#2563EB]/30"
+              }`}
+            >
+              {isLoading ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : (
+                <Send className="w-4 h-4" />
+              )}
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-2xl">
+        <div
+          className={`p-4 rounded-xl border transition-all duration-200 hover:shadow-lg cursor-pointer ${
+            isDark
+              ? "bg-[#1E293B]/60 border-[#334155] hover:bg-[#1E293B]/80"
+              : "bg-[#FFFFFF] border-[#E5E7EB] hover:bg-[#F9FAFB]"
+          }`}
+        >
+          <div className="text-center">
+            <div
+              className={`w-8 h-8 mx-auto mb-2 rounded-lg flex items-center justify-center ${
+                isDark
+                  ? "bg-[#38BDF8]/20 text-[#38BDF8]"
+                  : "bg-[#2563EB]/10 text-[#2563EB]"
+              }`}
+            >
+              <Search className="w-4 h-4" />
+            </div>
+            <p
+              className={`text-sm font-medium ${
+                isDark ? "text-[#F9FAFB]" : "text-[#111827]"
+              }`}
+              style={{ lineHeight: "1.4" }}
+            >
+              Search Papers
+            </p>
+          </div>
+        </div>
+
+        <div
+          className={`p-4 rounded-xl border transition-all duration-200 hover:shadow-lg cursor-pointer ${
+            isDark
+              ? "bg-[#1E293B]/60 border-[#334155] hover:bg-[#1E293B]/80"
+              : "bg-[#FFFFFF] border-[#E5E7EB] hover:bg-[#F9FAFB]"
+          }`}
+        >
+          <div className="text-center">
+            <div
+              className={`w-8 h-8 mx-auto mb-2 rounded-lg flex items-center justify-center ${
+                isDark
+                  ? "bg-[#A78BFA]/20 text-[#A78BFA]"
+                  : "bg-[#10B981]/10 text-[#10B981]"
+              }`}
+            >
+              <FileText className="w-4 h-4" />
+            </div>
+            <p
+              className={`text-sm font-medium ${
+                isDark ? "text-[#F9FAFB]" : "text-[#111827]"
+              }`}
+              style={{ lineHeight: "1.4" }}
+            >
+              AI Summaries
+            </p>
+          </div>
+        </div>
+
+        <div
+          className={`p-4 rounded-xl border transition-all duration-200 hover:shadow-lg cursor-pointer ${
+            isDark
+              ? "bg-[#1E293B]/60 border-[#334155] hover:bg-[#1E293B]/80"
+              : "bg-[#FFFFFF] border-[#E5E7EB] hover:bg-[#F9FAFB]"
+          }`}
+        >
+          <div className="text-center">
+            <div
+              className={`w-8 h-8 mx-auto mb-2 rounded-lg flex items-center justify-center ${
+                isDark
+                  ? "bg-[#F472B6]/20 text-[#F472B6]"
+                  : "bg-[#9333EA]/10 text-[#9333EA]"
+              }`}
+            >
+              <FolderDown className="w-4 h-4" />
+            </div>
+            <p
+              className={`text-sm font-medium ${
+                isDark ? "text-[#F9FAFB]" : "text-[#111827]"
+              }`}
+              style={{ lineHeight: "1.4" }}
+            >
+              Download PDFs
+            </p>
+          </div>
+        </div>
+
+        <div
+          className={`p-4 rounded-xl border transition-all duration-200 hover:shadow-lg cursor-pointer ${
+            isDark
+              ? "bg-[#1E293B]/60 border-[#334155] hover:bg-[#1E293B]/80"
+              : "bg-[#FFFFFF] border-[#E5E7EB] hover:bg-[#F9FAFB]"
+          }`}
+        >
+          <div className="text-center">
+            <div
+              className={`w-8 h-8 mx-auto mb-2 rounded-lg flex items-center justify-center ${
+                isDark
+                  ? "bg-[#38BDF8]/20 text-[#38BDF8]"
+                  : "bg-[#2563EB]/10 text-[#2563EB]"
+              }`}
+            >
+              <Bot className="w-4 h-4" />
+            </div>
+            <p
+              className={`text-sm font-medium ${
+                isDark ? "text-[#F9FAFB]" : "text-[#111827]"
+              }`}
+              style={{ lineHeight: "1.4" }}
+            >
+              Smart Assistant
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 
   const getInputPlaceholder = (): string => {
     switch (workflow.step) {
@@ -1193,18 +1393,18 @@ const ResearchChatUI = () => {
 
   const PaperCard: React.FC<PaperCardProps> = ({ paper, isDark, index }) => (
     <div
-      className={`p-4 rounded-lg border ${
+      className={`p-4 rounded-xl border ${
         isDark
-          ? "bg-gray-800/50 border-gray-700 hover:bg-gray-800/70"
-          : "bg-gray-50 border-gray-200 hover:bg-gray-100"
+          ? "bg-[#1E293B]/60 border-[#334155] hover:bg-[#1E293B]/80"
+          : "bg-[#FFFFFF] border-[#E5E7EB] hover:bg-[#F9FAFB]"
       } transition-all duration-200 hover:shadow-lg`}
     >
       <div className="flex items-start justify-between mb-2">
         <span
           className={`text-xs px-2 py-1 rounded-full font-medium ${
             isDark
-              ? "bg-blue-500/20 text-blue-300"
-              : "bg-blue-100 text-blue-600"
+              ? "bg-[#38BDF8]/20 text-[#38BDF8]"
+              : "bg-[#2563EB]/10 text-[#2563EB]"
           }`}
         >
           #{index + 1}
@@ -1215,8 +1415,8 @@ const ResearchChatUI = () => {
               key={i}
               className={`text-xs px-2 py-1 rounded-full ${
                 isDark
-                  ? "bg-purple-500/20 text-purple-300"
-                  : "bg-purple-100 text-purple-600"
+                  ? "bg-[#A78BFA]/20 text-[#A78BFA]"
+                  : "bg-[#9333EA]/10 text-[#9333EA]"
               }`}
             >
               {cat}
@@ -1227,21 +1427,27 @@ const ResearchChatUI = () => {
 
       <h4
         className={`font-semibold mb-2 line-clamp-2 ${
-          isDark ? "text-blue-300" : "text-blue-600"
+          isDark ? "text-[#38BDF8]" : "text-[#2563EB]"
         }`}
       >
         {paper.title}
       </h4>
 
       <p
-        className={`text-sm mb-2 ${isDark ? "text-gray-300" : "text-gray-600"}`}
+        className={`text-base mb-2 font-normal ${
+          isDark ? "text-[#F9FAFB]" : "text-[#111827]"
+        }`}
+        style={{ lineHeight: "1.5" }}
       >
         <strong>Authors:</strong> {paper.authors.slice(0, 3).join(", ")}
         {paper.authors.length > 3 && ` et al. (${paper.authors.length} total)`}
       </p>
 
       <p
-        className={`text-sm mb-3 ${isDark ? "text-gray-300" : "text-gray-600"}`}
+        className={`text-base mb-3 font-normal ${
+          isDark ? "text-[#F9FAFB]" : "text-[#111827]"
+        }`}
+        style={{ lineHeight: "1.5" }}
       >
         <strong>Published:</strong> {paper.published} | <strong>Status:</strong>{" "}
         {paper.status}
@@ -1249,9 +1455,10 @@ const ResearchChatUI = () => {
 
       {paper.summary && (
         <p
-          className={`text-xs mb-3 ${
-            isDark ? "text-gray-400" : "text-gray-500"
+          className={`text-sm mb-3 font-normal ${
+            isDark ? "text-[#94A3B8]" : "text-[#4B5563]"
           } line-clamp-2`}
+          style={{ lineHeight: "1.5" }}
         >
           {paper.summary.substring(0, 120)}...
         </p>
@@ -1259,11 +1466,12 @@ const ResearchChatUI = () => {
 
       <div className="flex items-center gap-2">
         <button
-          className={`px-3 py-1 text-xs rounded-full transition-all duration-200 ${
+          className={`px-3 py-1 text-sm font-medium rounded-full transition-all duration-200 ${
             isDark
-              ? "bg-gray-700 text-gray-300 hover:bg-gray-600"
-              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              ? "bg-[#334155] text-[#F9FAFB] hover:bg-[#475569]"
+              : "bg-[#F3F4F6] text-[#111827] hover:bg-[#E5E7EB]"
           }`}
+          style={{ lineHeight: "1.4" }}
           onClick={() => window.open(paper.pdf_url, "_blank")}
         >
           <FileText className="w-3 h-3 inline mr-1" />
@@ -1272,87 +1480,6 @@ const ResearchChatUI = () => {
       </div>
     </div>
   );
-
-  const WorkflowProgress: React.FC<{
-    currentStep: WorkflowStep;
-    isDark: boolean;
-  }> = ({ currentStep, isDark }) => {
-    const steps = [
-      { key: "greeting", label: "Welcome", icon: Bot },
-      { key: "field_selection", label: "Field", icon: BookOpen },
-      { key: "topic_selection", label: "Topic", icon: Search },
-      { key: "paper_listing", label: "Papers", icon: FileText },
-      { key: "download_count", label: "Count", icon: ChevronRight },
-      { key: "paper_selection", label: "Select", icon: FileCheck },
-      { key: "downloading", label: "Download", icon: FolderDown },
-      { key: "completed", label: "Done", icon: CheckCircle },
-    ];
-
-    return (
-      <div
-        className={`p-4 mb-4 rounded-lg border ${
-          isDark
-            ? "bg-gray-800/30 border-gray-700"
-            : "bg-gray-50 border-gray-200"
-        }`}
-      >
-        <h3
-          className={`text-sm font-medium mb-3 ${
-            isDark ? "text-gray-300" : "text-gray-600"
-          }`}
-        >
-          Research Progress
-        </h3>
-        <div className="flex items-center justify-between">
-          {steps.map((step, index) => {
-            const Icon = step.icon;
-            const isActive = step.key === currentStep;
-            const isCompleted =
-              steps.findIndex((s) => s.key === currentStep) > index;
-
-            return (
-              <div key={step.key} className="flex flex-col items-center">
-                <div
-                  className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
-                    isActive
-                      ? isDark
-                        ? "bg-blue-500/30 text-blue-300 shadow-lg shadow-blue-500/20"
-                        : "bg-blue-500 text-white shadow-lg shadow-blue-300/30"
-                      : isCompleted
-                      ? isDark
-                        ? "bg-green-500/30 text-green-300"
-                        : "bg-green-500 text-white"
-                      : isDark
-                      ? "bg-gray-700 text-gray-400"
-                      : "bg-gray-200 text-gray-500"
-                  }`}
-                >
-                  <Icon className="w-4 h-4" />
-                </div>
-                <span
-                  className={`text-xs mt-1 ${
-                    isActive
-                      ? isDark
-                        ? "text-blue-300"
-                        : "text-blue-600"
-                      : isCompleted
-                      ? isDark
-                        ? "text-green-300"
-                        : "text-green-600"
-                      : isDark
-                      ? "text-gray-400"
-                      : "text-gray-500"
-                  }`}
-                >
-                  {step.label}
-                </span>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    );
-  };
 
   const MessageComponent: React.FC<MessageProps> = ({ message, isDark }) => (
     <div
@@ -1364,11 +1491,11 @@ const ResearchChatUI = () => {
         className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
           message.type === "user"
             ? isDark
-              ? "bg-blue-500/20 text-blue-300 shadow-lg shadow-blue-500/20"
-              : "bg-blue-100 text-blue-600 shadow-lg shadow-blue-200/50"
+              ? "bg-[#38BDF8]/20 text-[#38BDF8] shadow-lg shadow-[#38BDF8]/20"
+              : "bg-[#2563EB]/10 text-[#2563EB] shadow-lg shadow-[#2563EB]/50"
             : isDark
-            ? "bg-purple-500/20 text-purple-300 shadow-lg shadow-purple-500/20"
-            : "bg-purple-100 text-purple-600 shadow-lg shadow-purple-200/50"
+            ? "bg-[#A78BFA]/20 text-[#A78BFA] shadow-lg shadow-[#A78BFA]/20"
+            : "bg-[#9333EA]/10 text-[#9333EA] shadow-lg shadow-[#9333EA]/50"
         }`}
       >
         {message.type === "user" ? (
@@ -1387,21 +1514,27 @@ const ResearchChatUI = () => {
           className={`inline-block p-4 rounded-2xl transition-all duration-300 hover:shadow-lg ${
             message.type === "user"
               ? isDark
-                ? "bg-blue-500/20 text-blue-100 shadow-lg shadow-blue-500/10 hover:shadow-blue-500/20"
-                : "bg-blue-500 text-white shadow-lg shadow-blue-200/50 hover:shadow-blue-300/50"
+                ? "bg-[#38BDF8]/15 text-[#F9FAFB] shadow-lg shadow-[#38BDF8]/20 hover:shadow-[#38BDF8]/30"
+                : "bg-[#2563EB] text-white shadow-lg shadow-[#2563EB]/50 hover:shadow-[#2563EB]/50"
               : isDark
-              ? "bg-gray-800/60 text-gray-100 shadow-lg shadow-gray-900/20 hover:shadow-gray-900/30"
-              : "bg-white text-gray-800 shadow-lg shadow-gray-200/50 hover:shadow-gray-300/50"
+              ? "bg-[#1E293B]/70 text-[#F9FAFB] shadow-lg shadow-[#0F172A]/30 hover:shadow-[#0F172A]/40"
+              : "bg-[#FFFFFF] text-[#111827] shadow-lg shadow-[#F9FAFB]/50 hover:shadow-[#F9FAFB]/50"
           }`}
         >
-          <div className="whitespace-pre-wrap">{message.content}</div>
+          <div
+            className="whitespace-pre-wrap text-base font-normal"
+            style={{ lineHeight: "1.5" }}
+          >
+            {message.content}
+          </div>
 
           {message.papers && (
             <div className="mt-4 space-y-3">
               <div
-                className={`text-sm font-semibold ${
-                  isDark ? "text-purple-300" : "text-purple-600"
+                className={`text-lg font-medium ${
+                  isDark ? "text-[#A78BFA]" : "text-[#9333EA]"
                 }`}
+                style={{ lineHeight: "1.4" }}
               >
                 {message.workflowStep === "download_confirmation"
                   ? "Selected Papers:"
@@ -1441,34 +1574,38 @@ const ResearchChatUI = () => {
                   <div className="mt-4 p-4 rounded-lg border border-dashed border-gray-400">
                     <div className="text-center">
                       <h3
-                        className={`font-semibold mb-2 ${
-                          isDark ? "text-gray-200" : "text-gray-800"
+                        className={`text-lg font-medium mb-2 ${
+                          isDark ? "text-[#F9FAFB]" : "text-[#111827]"
                         }`}
+                        style={{ lineHeight: "1.4" }}
                       >
                         Ready to Download
                       </h3>
                       <p
-                        className={`text-sm mb-2 ${
-                          isDark ? "text-gray-400" : "text-gray-600"
+                        className={`text-base mb-2 font-normal ${
+                          isDark ? "text-[#94A3B8]" : "text-[#4B5563]"
                         }`}
+                        style={{ lineHeight: "1.5" }}
                       >
                         {message.papers.length} papers selected for download
                       </p>
                       <p
-                        className={`text-xs mb-4 ${
-                          isDark ? "text-gray-500" : "text-gray-500"
+                        className={`text-sm mb-4 font-normal ${
+                          isDark ? "text-[#94A3B8]" : "text-[#4B5563]"
                         }`}
+                        style={{ lineHeight: "1.5" }}
                       >
                         Click to open file browser, select save location, and
                         download PDFs to your PC
                       </p>
                       <button
                         onClick={handleDownloadButtonClick}
-                        className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 ${
+                        className={`px-6 py-3 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 ${
                           isDark
-                            ? "bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/30"
-                            : "bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-300/30"
+                            ? "bg-[#A78BFA] text-white hover:bg-[#8B5CF6] shadow-lg shadow-[#A78BFA]/30"
+                            : "bg-[#10B981] text-white hover:bg-[#059669] shadow-lg shadow-[#10B981]/30"
                         }`}
+                        style={{ lineHeight: "1.4" }}
                       >
                         <FolderDown className="w-5 h-5 inline mr-2" />
                         Download All Papers
@@ -1481,9 +1618,10 @@ const ResearchChatUI = () => {
         </div>
 
         <div
-          className={`text-xs mt-2 ${
-            isDark ? "text-gray-400" : "text-gray-500"
+          className={`text-sm mt-2 font-normal ${
+            isDark ? "text-[#94A3B8]" : "text-[#4B5563]"
           }`}
+          style={{ lineHeight: "1.5" }}
         >
           {message.timestamp.toLocaleTimeString()}
         </div>
@@ -1494,10 +1632,15 @@ const ResearchChatUI = () => {
   // Don't render until client-side hydration is complete
   if (!isClient) {
     return (
-      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="min-h-screen bg-[#0F172A] text-[#F9FAFB] flex items-center justify-center">
         <div className="text-center">
-          <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-gray-400">Loading Research Assistant...</p>
+          <div className="w-8 h-8 border-4 border-[#38BDF8] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p
+            className="text-base font-normal text-[#94A3B8]"
+            style={{ lineHeight: "1.5" }}
+          >
+            Loading Research Assistant...
+          </p>
         </div>
       </div>
     );
@@ -1506,71 +1649,56 @@ const ResearchChatUI = () => {
   return (
     <div
       className={`min-h-screen transition-all duration-500 ${
-        isDark
-          ? "bg-black text-white"
-          : "bg-gradient-to-br from-gray-50 via-white to-gray-50 text-gray-800"
+        isDark ? "bg-[#0F172A] text-[#F9FAFB]" : "bg-[#F9FAFB] text-[#111827]"
       }`}
     >
       <div
         className={`sticky top-0 z-50 backdrop-blur-xl border-b transition-all duration-300 ${
           isDark
-            ? "bg-gray-900/80 border-gray-700 shadow-xl shadow-gray-900/20"
-            : "bg-white/80 border-gray-200 shadow-xl shadow-gray-200/20"
+            ? "bg-[#1E293B]/90 border-[#1E293B] shadow-xl shadow-[#0F172A]/30"
+            : "bg-[#FFFFFF]/80 border-[#E5E7EB] shadow-xl shadow-[#F9FAFB]/20"
         }`}
       >
         <div className="max-w-4xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div
-                className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 ${
-                  isDark
-                    ? "bg-gradient-to-br from-blue-500 to-purple-500 shadow-lg shadow-blue-500/25"
-                    : "bg-gradient-to-br from-blue-600 to-purple-600 shadow-lg shadow-blue-300/25"
-                }`}
-              >
-                <Bot className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <h1
-                  className={`text-xl font-bold transition-all duration-300 ${
+          {messages.length === 0 ? (
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div
+                  className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 ${
                     isDark
-                      ? "bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent"
-                      : "bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+                      ? "bg-gradient-to-br from-[#38BDF8] to-[#A78BFA] shadow-lg shadow-[#38BDF8]/30"
+                      : "bg-gradient-to-br from-[#2563EB] to-[#9333EA] shadow-lg shadow-[#2563EB]/25"
                   }`}
                 >
-                  Research Assistant
-                </h1>
-                <p
-                  className={`text-xs ${
-                    isDark ? "text-gray-400" : "text-gray-500"
-                  }`}
-                >
-                  Powered by arXiv & Gemini AI
-                </p>
+                  <Bot className="w-5 h-5 text-white" />
+                </div>
+                <div className="transition-all duration-500 ease-in-out">
+                  <h1
+                    className={`text-2xl font-semibold transition-all duration-500 leading-tight ${
+                      isDark
+                        ? "text-[#F9FAFB]"
+                        : "bg-gradient-to-r from-[#2563EB] to-[#9333EA] bg-clip-text text-transparent"
+                    }`}
+                    style={{ lineHeight: "1.2" }}
+                  >
+                    Research Assistant
+                  </h1>
+                  <p
+                    className={`text-xs font-medium transition-all duration-500 ${
+                      isDark ? "text-[#94A3B8]" : "text-[#4B5563]"
+                    }`}
+                  >
+                    Powered by arXiv & Gemini AI
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div className="flex items-center gap-2">
-              {workflow.step !== "greeting" && (
-                <button
-                  onClick={restartWorkflow}
-                  className={`p-2 rounded-lg transition-all duration-300 hover:scale-110 ${
-                    isDark
-                      ? "bg-gray-800 hover:bg-gray-700 text-green-300 shadow-lg shadow-green-500/20 hover:shadow-green-500/30"
-                      : "bg-gray-100 hover:bg-gray-200 text-green-600 shadow-lg shadow-green-300/20 hover:shadow-green-300/30"
-                  }`}
-                  title="Start New Search"
-                >
-                  <Search className="w-5 h-5" />
-                </button>
-              )}
 
               <button
                 onClick={() => setIsDark(!isDark)}
                 className={`p-2 rounded-lg transition-all duration-300 hover:scale-110 ${
                   isDark
-                    ? "bg-gray-800 hover:bg-gray-700 text-yellow-300 shadow-lg shadow-yellow-500/20 hover:shadow-yellow-500/30"
-                    : "bg-gray-100 hover:bg-gray-200 text-gray-700 shadow-lg shadow-gray-300/20 hover:shadow-gray-300/30"
+                    ? "bg-[#1E293B] hover:bg-[#334155] text-[#F472B6] shadow-lg shadow-[#F472B6]/20 hover:shadow-[#F472B6]/30"
+                    : "bg-[#F3F4F6] hover:bg-[#E5E7EB] text-[#111827] shadow-lg shadow-[#E5E7EB]/20 hover:shadow-[#E5E7EB]/30"
                 }`}
                 title="Toggle Theme"
               >
@@ -1581,100 +1709,209 @@ const ResearchChatUI = () => {
                 )}
               </button>
             </div>
-          </div>
+          ) : (
+            <div className="flex items-center justify-between">
+              {/* Empty div for spacing */}
+              <div className="w-12"></div>
+
+              {/* Step Icons - Centered */}
+              <div className="flex items-center gap-4">
+                {[
+                  { key: "greeting", label: "Welcome", icon: Bot },
+                  { key: "field_selection", label: "Field", icon: BookOpen },
+                  { key: "topic_selection", label: "Topic", icon: Search },
+                  { key: "paper_listing", label: "Papers", icon: FileText },
+                  { key: "download_count", label: "Count", icon: ChevronRight },
+                  { key: "paper_selection", label: "Select", icon: FileCheck },
+                  { key: "downloading", label: "Download", icon: FolderDown },
+                  { key: "completed", label: "Done", icon: CheckCircle },
+                ].map((step, index) => {
+                  const Icon = step.icon;
+                  const isActive = step.key === workflow.step;
+                  const currentStepIndex = [
+                    "greeting",
+                    "field_selection",
+                    "topic_selection",
+                    "paper_listing",
+                    "download_count",
+                    "paper_selection",
+                    "downloading",
+                    "completed",
+                  ].findIndex((s) => s === workflow.step);
+                  const isCompleted = currentStepIndex > index;
+
+                  return (
+                    <div
+                      key={step.key}
+                      className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+                        isActive
+                          ? isDark
+                            ? "bg-[#38BDF8]/20 text-[#38BDF8] shadow-lg shadow-[#38BDF8]/30 ring-2 ring-[#38BDF8]/30"
+                            : "bg-[#2563EB] text-white shadow-md shadow-[#2563EB]/40"
+                          : isCompleted
+                          ? isDark
+                            ? "bg-[#A78BFA]/20 text-[#A78BFA]"
+                            : "bg-[#10B981] text-white"
+                          : isDark
+                          ? "bg-[#334155]/60 text-[#94A3B8]"
+                          : "bg-[#E5E7EB] text-[#4B5563]"
+                      }`}
+                    >
+                      <Icon className="w-4 h-4" />
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Theme Toggle */}
+              <button
+                onClick={() => setIsDark(!isDark)}
+                className={`p-2 rounded-lg transition-all duration-300 hover:scale-110 ${
+                  isDark
+                    ? "bg-[#1E293B] hover:bg-[#334155] text-[#F472B6] shadow-lg shadow-[#F472B6]/20 hover:shadow-[#F472B6]/30"
+                    : "bg-[#F3F4F6] hover:bg-[#E5E7EB] text-[#111827] shadow-lg shadow-[#E5E7EB]/20 hover:shadow-[#E5E7EB]/30"
+                }`}
+                title="Toggle Theme"
+              >
+                {isDark ? (
+                  <Sun className="w-5 h-5" />
+                ) : (
+                  <Moon className="w-5 h-5" />
+                )}
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 py-6">
-        {workflow.step !== "greeting" && (
-          <WorkflowProgress currentStep={workflow.step} isDark={isDark} />
-        )}
+        {messages.length === 0 ? (
+          <CenteredInterface />
+        ) : (
+          <div className="space-y-6 min-h-[calc(100vh-200px)] pt-4">
+            {messages.map((message) => (
+              <MessageComponent
+                key={message.id}
+                message={message}
+                isDark={isDark}
+              />
+            ))}
 
-        <div className="space-y-6 min-h-[calc(100vh-200px)]">
-          {messages.map((message) => (
-            <MessageComponent
-              key={message.id}
-              message={message}
-              isDark={isDark}
-            />
-          ))}
-
-          {isLoading && (
-            <div className="flex gap-3">
-              <div
-                className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
-                  isDark
-                    ? "bg-purple-500/20 text-purple-300 shadow-lg shadow-purple-500/20"
-                    : "bg-purple-100 text-purple-600 shadow-lg shadow-purple-200/50"
-                }`}
-              >
-                <Bot className="w-4 h-4" />
-              </div>
-              <div
-                className={`p-4 rounded-2xl transition-all duration-300 ${
-                  isDark
-                    ? "bg-gray-800/60 shadow-lg shadow-gray-900/20"
-                    : "bg-white shadow-lg shadow-gray-200/50"
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  <Loader2
-                    className={`w-4 h-4 animate-spin ${
-                      isDark ? "text-purple-300" : "text-purple-600"
-                    }`}
-                  />
-                  <span className={isDark ? "text-gray-300" : "text-gray-600"}>
-                    Searching papers...
-                  </span>
+            {isLoading && (
+              <div className="flex gap-3">
+                <div
+                  className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+                    isDark
+                      ? "bg-[#A78BFA]/20 text-[#A78BFA] shadow-lg shadow-[#A78BFA]/20"
+                      : "bg-[#9333EA]/10 text-[#9333EA] shadow-lg shadow-[#9333EA]/50"
+                  }`}
+                >
+                  <Bot className="w-4 h-4" />
+                </div>
+                <div
+                  className={`p-4 rounded-2xl transition-all duration-300 ${
+                    isDark
+                      ? "bg-[#1E293B]/60 shadow-lg shadow-[#0F172A]/20"
+                      : "bg-[#FFFFFF] shadow-lg shadow-[#F9FAFB]/50"
+                  }`}
+                >
+                  <div className="flex items-center gap-2">
+                    <Loader2
+                      className={`w-4 h-4 animate-spin ${
+                        isDark ? "text-[#A78BFA]" : "text-[#9333EA]"
+                      }`}
+                    />
+                    <span
+                      className={`text-base font-normal ${
+                        isDark ? "text-[#F9FAFB]" : "text-[#111827]"
+                      }`}
+                      style={{ lineHeight: "1.5" }}
+                    >
+                      Searching papers...
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
+            )}
 
-          <div ref={messagesEndRef} />
-        </div>
+            <div ref={messagesEndRef} />
+          </div>
+        )}
       </div>
 
-      {/* {/  Input Form  /}  */}
-      <div
-        className={`sticky bottom-0 backdrop-blur-xl border-t transition-all duration-300 ${
-          isDark
-            ? "bg-gray-900/80 border-gray-700"
-            : "bg-white/80 border-gray-200"
-        }`}
-      >
+      {/* Multi-line Input Field - Second Phase Only */}
+      {messages.length > 0 && (
         <div className="max-w-4xl mx-auto px-4 py-4">
           <form onSubmit={handleSubmit} className="relative">
             <div
-              className={`flex items-center gap-3 p-3 rounded-3xl border transition-all duration-300 ${
+              className={`flex items-start gap-3 px-4 py-2 rounded-2xl border transition-all duration-300 focus-within:ring-2 focus-within:ring-opacity-50 ${
                 isDark
-                  ? "bg-gray-800/90 border-gray-600 shadow-xl shadow-gray-900/20"
-                  : "bg-white border-gray-300 shadow-xl shadow-gray-200/30"
+                  ? "bg-[#1E293B]/90 border-[#334155] shadow-xl shadow-[#0F172A]/30 focus-within:ring-[#38BDF8] focus-within:border-[#38BDF8]"
+                  : "bg-[#FFFFFF] border-[#E5E7EB] shadow-xl shadow-[#F9FAFB]/30 focus-within:ring-[#2563EB] focus-within:border-[#2563EB]"
               }`}
             >
-              <input
+              <textarea
                 ref={inputRef}
-                type="text"
                 value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
+                onChange={(e) => {
+                  setInputValue(e.target.value);
+                  // Auto-resize textarea
+                  e.target.style.height = "auto";
+                  e.target.style.height = e.target.scrollHeight + "px";
+                  // Ensure focus is maintained after state update
+                  setTimeout(() => {
+                    if (inputRef.current) {
+                      inputRef.current.focus();
+                    }
+                  }, 0);
+                }}
+                onKeyDown={(e) => {
+                  if (
+                    e.key === "Enter" &&
+                    !e.shiftKey &&
+                    inputValue.trim() &&
+                    !isLoading
+                  ) {
+                    e.preventDefault();
+                    // Create a synthetic form event
+                    const formEvent = {
+                      ...e,
+                      preventDefault: () => e.preventDefault(),
+                      currentTarget: e.currentTarget.closest(
+                        "form"
+                      ) as HTMLFormElement,
+                    } as React.FormEvent<HTMLFormElement>;
+                    handleSubmit(formEvent);
+                  }
+                }}
                 placeholder={getInputPlaceholder()}
-                className={`flex-1 bg-transparent outline-none text-sm transition-all duration-300 ${
+                className={`flex-1 bg-transparent outline-none text-base font-normal transition-all duration-300 resize-none overflow-hidden ${
                   isDark
-                    ? "text-white placeholder-gray-400"
-                    : "text-gray-800 placeholder-gray-500"
+                    ? "text-[#F9FAFB] placeholder-[#94A3B8]"
+                    : "text-[#111827] placeholder-[#4B5563]"
                 }`}
+                style={{
+                  lineHeight: "1.5",
+                  minHeight: "24px",
+                  maxHeight: "120px",
+                }}
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="off"
+                spellCheck="false"
+                rows={1}
               />
               <button
                 type="submit"
                 disabled={!inputValue.trim() || isLoading}
-                className={`p-2 rounded-full transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 ${
+                className={`p-3 rounded-full transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 flex-shrink-0 ${
                   !inputValue.trim() || isLoading
                     ? isDark
-                      ? "bg-gray-700 text-gray-500"
-                      : "bg-gray-200 text-gray-400"
+                      ? "bg-[#334155] text-[#64748B]"
+                      : "bg-[#E5E7EB] text-[#9CA3AF]"
                     : isDark
-                    ? "bg-blue-500 text-white hover:bg-blue-600 shadow-lg shadow-blue-500/30"
-                    : "bg-blue-500 text-white hover:bg-blue-600 shadow-lg shadow-blue-300/30"
+                    ? "bg-[#38BDF8] text-white hover:bg-[#0EA5E9] shadow-lg shadow-[#38BDF8]/40"
+                    : "bg-[#2563EB] text-white hover:bg-[#1D4ED8] shadow-lg shadow-[#2563EB]/30"
                 }`}
               >
                 {isLoading ? (
@@ -1686,7 +1923,7 @@ const ResearchChatUI = () => {
             </div>
           </form>
         </div>
-      </div>
+      )}
     </div>
   );
 };

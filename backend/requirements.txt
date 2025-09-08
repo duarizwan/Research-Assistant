@@ -6,3 +6,11 @@ google-generativeai==0.3.0
 arxiv==1.4.8
 requests==2.31.0
 pydantic==2.4.2
+EOF
+
+# .\venv\Scripts\Activate.ps1
+# source venv/bin/activate  # If using virtual environment
+# python -m pip install -r requirements.txt
+# python main.py
+# uvicorn main:app --reload --port 8000
+# npm run dev

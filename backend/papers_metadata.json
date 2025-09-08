@@ -343,5 +343,24 @@
     "download_status": "success",
     "download_path": "E:\\Next JS\\researchbot\\papers\\Chemistry\\materials\\2303.10111v2_Theory_and_modeling_of_light-matter_interactions_in_chemistry__current_and_futur.pdf",
     "download_timestamp": "2025-09-07T15:03:27.965737"
+  },
+  "0709.0025v1": {
+    "title": "Borges Dilemma, Fundamental Laws, and Systems Biology",
+    "authors": [
+      "P Ao"
+    ],
+    "summary": "I reason here that the known folk law in biology that there is no general law\nin biology because of exceptions is false. The (quantitative) systems biology\noffers the potential to solve the Borges Dilemma, by transcending it. There\nhave already a plenty of indications on this trend.",
+    "pdf_url": "http://arxiv.org/pdf/0709.0025v1",
+    "published": "2007-09-01",
+    "version": "1",
+    "status": "preprint",
+    "categories": [
+      "q-bio.QM",
+      "q-bio.OT"
+    ],
+    "arxiv_id": "0709.0025v1",
+    "download_status": "success",
+    "download_path": "E:\\Next JS\\researchbot\\papers\\Biology\\Biology\\0709.0025v1_Borges_Dilemma__Fundamental_Laws__and_Systems_Biology.pdf",
+    "download_timestamp": "2025-09-08T13:33:56.260343"
   }
 }
