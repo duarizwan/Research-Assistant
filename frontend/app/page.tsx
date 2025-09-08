@@ -9,6 +9,7 @@ import {
   FileText,
   Loader2,
   ChevronRight,
+  ChevronDown,
   CheckCircle,
   Search,
   BookOpen,
@@ -128,6 +129,7 @@ const ResearchChatUI = () => {
   const [isClient, setIsClient] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [showScrollButton, setShowScrollButton] = useState(false);
 
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
   const welcomeInputRef = useRef<HTMLInputElement | null>(null);
@@ -135,6 +137,11 @@ const ResearchChatUI = () => {
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleScrollToBottom = () => {
+    scrollToBottom();
+    setShowScrollButton(false);
   };
 
   useEffect(() => {
@@ -156,6 +163,25 @@ const ResearchChatUI = () => {
         }
       }, 100);
     }
+  }, [messages.length]);
+
+  // Scroll detection for showing/hiding scroll button
+  useEffect(() => {
+    const handleScroll = () => {
+      if (messages.length === 0) return;
+
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      // Show button if user has scrolled up more than 200px from bottom
+      const isNearBottom = scrollTop + windowHeight >= documentHeight - 200;
+      setShowScrollButton(!isNearBottom && messages.length > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [messages.length]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -180,9 +206,13 @@ const ResearchChatUI = () => {
     setIsLoading(true);
 
     try {
-      // Handle quit command globally
+      // Handle quit/restart commands globally
       const normalizedInput = currentInput.toLowerCase().trim();
-      if (normalizedInput === "quit" || normalizedInput === "q") {
+      if (
+        normalizedInput === "quit" ||
+        normalizedInput === "q" ||
+        normalizedInput === "restart"
+      ) {
         await handleRestartOrContinue(currentInput);
       } else {
         await handleWorkflowStep(currentInput);
@@ -1356,8 +1386,50 @@ const ResearchChatUI = () => {
     const normalizedInput = input.toLowerCase().trim();
 
     // Handle quit/q command from any step
-    if (normalizedInput === "quit" || normalizedInput === "q") {
-      restartWorkflow();
+    if (
+      normalizedInput === "quit" ||
+      normalizedInput === "q" ||
+      normalizedInput === "restart"
+    ) {
+      // Send restart command to backend
+      try {
+        const response = await fetch("/api/chat", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            message: input,
+            workflow_step: "restart",
+            session_id: "default",
+          }),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+
+          // Reset frontend state and transition to field selection
+          setWorkflow({ step: "field_selection" });
+          setMessages([]);
+
+          // Add backend response message
+          const restartMessage: Message = {
+            id: generateMessageId(),
+            type: "bot",
+            content: data.response,
+            timestamp: new Date(),
+            workflowStep: "field_selection",
+          };
+          setMessages((prev) => [...prev, restartMessage]);
+        } else {
+          // Fallback to frontend-only restart
+          restartWorkflow();
+        }
+      } catch (error) {
+        console.error("Error sending restart command:", error);
+        // Fallback to frontend-only restart
+        restartWorkflow();
+      }
       return;
     }
 
@@ -1750,7 +1822,7 @@ const ResearchChatUI = () => {
                             : "bg-[#2563EB] text-white shadow-md shadow-[#2563EB]/40"
                           : isCompleted
                           ? isDark
-                            ? "bg-[#A78BFA]/20 text-[#A78BFA]"
+                            ? "bg-[#00FF00]/20 text-[#00FF00] shadow-lg shadow-[#00FF00]/30"
                             : "bg-[#10B981] text-white"
                           : isDark
                           ? "bg-[#334155]/60 text-[#94A3B8]"
@@ -1922,6 +1994,23 @@ const ResearchChatUI = () => {
               </button>
             </div>
           </form>
+        </div>
+      )}
+
+      {/* Scroll to Bottom Button */}
+      {showScrollButton && (
+        <div className="fixed bottom-20 left-1/2 transform -translate-x-1/2 z-40">
+          <button
+            onClick={handleScrollToBottom}
+            className={`p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 ${
+              isDark
+                ? "bg-[#1E293B] hover:bg-[#334155] text-[#38BDF8] shadow-[#0F172A]/30 hover:shadow-[#38BDF8]/20"
+                : "bg-[#FFFFFF] hover:bg-[#F3F4F6] text-[#2563EB] shadow-[#F9FAFB]/30 hover:shadow-[#2563EB]/20"
+            }`}
+            title="Scroll to Bottom"
+          >
+            <ChevronDown className="w-5 h-5" />
+          </button>
         </div>
       )}
     </div>
